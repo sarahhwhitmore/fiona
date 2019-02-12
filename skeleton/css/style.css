@@ -234,3 +234,41 @@ footer {
 .list-group-item-action:focus, .list-group-item-action:hover {
   color: red;
 }
+
+
+#birth-vid {
+    position: relative;
+    padding-bottom: 56.75%;
+    padding-top: 0;
+    overflow: hidden;
+    z-index: -10000;
+}
+
+#birth-vid video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100000;
+
+}
+
+
+#firststeps-vid {
+  position: relative;
+  padding-bottom: 56.75%;
+  padding-top: 0;
+  overflow: hidden;
+  z-index: -10000;
+}
+
+#firststeps-vid video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100000;
+
+}
