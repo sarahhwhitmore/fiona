@@ -220,3 +220,17 @@ footer {
     z-index: -100000;
 
 }
+
+/* scrollspy */
+
+.list-group a {
+  color: red;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+  color: red;
+}
