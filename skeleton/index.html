@@ -11,6 +11,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <script src="js/myscripts.js"></script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,900" rel="stylesheet">
@@ -97,6 +98,10 @@
         <h3>Birth</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor faucibus porta. Duis ultrices arcu ut dolor cursus vulputate. Vivamus convallis ligula eget dui luctus, sed suscipit elit fringilla. Vestibulum ante ipsum primis
           in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam urna eros, vehicula nec felis et, consequat lobortis tellus.</p>
+
+    <button type="button" data-toggle="popover" title="Popover title" data-content="Here's some amazing content.">Click to toggle popover</button>
+
+
       </div>
       <div class="col-sm-6">
       </div>
@@ -117,9 +122,6 @@
             <video src="img/drone.mp4" autoplay="autoplay"></video>
           </div>
         </div>
-
-        <div class="col-sm-6">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor faucibus porta. Duis ultrices arcu ut dolor cursus vulputate. </p>
         </div>
     </div>
 
@@ -139,9 +141,7 @@
       </div>
 
 
-
-
-    <!--hungry hungry hippo -->
+    <!--HUNGRY HUNGRY HIPPO -->
 
     <div class="row">
       <div class="col-md-12">
@@ -149,7 +149,7 @@
       </div>
     </div>
 
-    <!-- Reuniting with family -->
+    <!-- Reuniting with family, getting into water-->
 
     <div class="row">
       <div class="col-md-12">
@@ -166,7 +166,7 @@
       </div>
     </div>
 
-    <!-- birthday graphic -->
+    <!-- Birthday Graphic -->
 
     <div class="row">
       <div class="col-md-4">
@@ -181,8 +181,6 @@
       </div>
 
     </div>
-
-
 
     <!-- photo comparison slider, where is she now-->
     <div class="row no-gutters">
@@ -199,8 +197,7 @@
       </div>
     </div>
   </div>
-  <!--close container -->
-
+  <!--close main container -->
 
   <!-- begin footer -->
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
@@ -234,10 +231,19 @@
 
       </div>
 
-
-
     </div>
   </footer>
+
+
+  <!-- JavaScript: first jQuery, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <!-- Popover Script -->
+      <script>
+      $('[data-toggle="popover"]').popover();
+      </script>
 
 
   <script>
@@ -330,6 +336,8 @@
     initComparisons();
   </script>
 
+
+<!-- Other scripts ?? -->
   <script src="js/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script>
     window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')
