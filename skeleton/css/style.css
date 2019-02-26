@@ -118,9 +118,9 @@ footer {
 
 /* premature to prima donna  */
 .headline h1 {
-    font-family: 'Raleway', serif;
+    font-family: 'lexia-advertising', serif;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 72px;
     letter-spacing: 3pt;
     text-align: left;
     text-indent: 6rem;
@@ -128,18 +128,19 @@ footer {
 }
 /* The Heartwarming Story of Fiona the Hippo */
 .headline h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+    font-family: 'lexia', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 34px;
     text-align: left;
     color: white;
     letter-spacing: 1.6pt;
 }
 /* Soul of Athens Presents */
 .headline h3 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    font-family: 'lexia', serif;
+    font-weight: 100;
+    font-size: 16px;
     letter-spacing: 4pt;
     text-indent: 6rem;
     text-align: left;
