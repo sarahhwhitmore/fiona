@@ -2,11 +2,13 @@
 
 body {
   padding-top: 0rem;
+  overflow-x: hidden;
 }
 
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 .bd-placeholder-img {
@@ -19,6 +21,12 @@ body {
     font-size: 3.5rem;
   }
 }
+
+.row {
+  padding-bottom: 50px;
+}
+
+
 
 /* photo slider*/
 
@@ -52,7 +60,6 @@ body {
 }
 
 /* footer style*/
-
 footer {
     position: relative;
     border-top-color: black;
@@ -60,32 +67,28 @@ footer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .center-footer {
     color: white;
-    padding-top: 30px;
-
+    padding-top: 20px;
 }
 
 .center-footer h3 {
     position: relative;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'lexia', serif;
     font-weight: 600;
     font-size: 13px;
     padding-top: 2px;
     color: white;
-
 }
 
 .center-footer p {
     position: relative;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'lexia', serif;
     font-weight: 400;
     font-size: 20px;
     padding-left: 5px;
-
 }
 
 
@@ -108,12 +111,37 @@ footer {
 
 /* video header, intro text */
 
-.headline {
+.project-title {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  text-indent: 6rem;
+  z-index: 500;
+  padding-bottom: 50px;
+}
+
+/* .headline {
     position: absolute;
-    top: 65%;
+    top: 55%;
     width: 100%;
     z-index: 1000;
     text-indent: 6rem;
+} */
+
+.project-title img {
+  position: absolute;
+  top: 95%;
+  left: 10%;
+  z-index: 500;
+}
+
+.birth-text {
+      position: absolute;
+      top: 55%;
+      width: 100%;
+      z-index: 10000;
+      text-indent: 6rem;
+      padding-bottom: 40px;
 }
 
 /* premature to prima donna  */
@@ -157,17 +185,20 @@ footer {
 
 }
 
+h6 {
+  font-family: 'lexia', serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
 #introText {
   color: red;
   text-align: left;
-
 }
-
 
 /*Start video background full screen with project title*/
 
-
-#title-vid {
+#full-vid {
     position: relative;
     padding-bottom: 56.75%;
     padding-top: 0;
@@ -175,52 +206,47 @@ footer {
     z-index: -10000;
 }
 
-#animation {
+#full-vid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100000;
+
+}
+
+#full-vid video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100000;
+
+}
+
+#pullquote {
+  background-color: #DCDCDC;
+  padding: 40px;
+}
+
+
+/* #animation {
     position: relative;
     padding-bottom: 56.75%;
     padding-top: 0;
     overflow: hidden;
-}
+} */
 
-
-#title-vid iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -100000;
-
-}
-
-#title-vid video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -100000;
-
-}
-
-#animation iframe {
+/* #animation iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 
-}
-
-#title-vid video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -100000;
-
-}
+} */
 
 /* scrollspy */
 
@@ -237,15 +263,13 @@ footer {
 }
 
 
-#birth-vid {
-    position: relative;
-    padding-bottom: 56.75%;
+#gaining-vid {
+    /* padding-bottom: 56.75%; */
     padding-top: 0;
-    overflow: hidden;
-    z-index: -10000;
+    z-index: 100;
 }
 
-#birth-vid video {
+#gaining-vid video {
     position: absolute;
     top: 0;
     left: 0;
@@ -254,7 +278,6 @@ footer {
     z-index: -100000;
 
 }
-
 
 #firststeps-vid {
   position: relative;
@@ -271,5 +294,16 @@ footer {
     width: 100%;
     height: 100%;
     z-index: -100000;
+}
 
+.fionafact {
+  background-color: #a3dad7;
+  font-family: 'lexia', serif;
+  font-size: 16px;
+
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: #4d5d5d;
 }
