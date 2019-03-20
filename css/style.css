@@ -193,8 +193,12 @@ h6 {
 }
 
 #introText {
-  color: red;
+  color: #4d5d5d;
   text-align: left;
+  font-size: 20px;
+  font-family: 'lexia', sans-serif;
+  font-style: 'thin';
+  z-index: 700;
 }
 
 /*Start video background full screen with project title*/
@@ -204,7 +208,7 @@ h6 {
     padding-bottom: 56.75%;
     padding-top: 0;
     overflow: hidden;
-    z-index: -10000;
+    z-index: 100;
 }
 
 #full-vid iframe {
@@ -303,7 +307,11 @@ h6 {
 .fionafact {
   background-color: #a3dad7;
   font-family: 'lexia', serif;
-  font-size: 16px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  margin: 0.5rem;
+  box-shadow: 5px 10px 15px #DCDCDC;
 
 }
 
