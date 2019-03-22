@@ -26,8 +26,6 @@ body {
   padding-bottom: 50px;
 }
 
-
-
 /* photo slider*/
 
 .img-comp-container {
@@ -57,6 +55,10 @@ body {
   background-color: #DCDCDC;
   opacity: 0.7;
   border-radius: 0;
+}
+
+.img-responsive {
+  align: center;
 }
 
 /* footer style*/
@@ -107,6 +109,14 @@ footer {
     padding-top: 30px;
     padding-left: 20px;
 
+}
+
+.mainstory p {
+  font-family: 'lexia', serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #4a5234;
+  max-width: 60%;
 }
 
 /* video header, intro text */
@@ -315,12 +325,6 @@ h6 {
 
 }
 
-.mainstory p {
-  font-family: 'lexia', serif;
-  font-weight: 100;
-  font-size: 16px;
-  color: red;
-}
 
 h3 {
   font-size: 1.75rem;
