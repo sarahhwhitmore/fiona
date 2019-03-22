@@ -107,18 +107,13 @@
         <div class="full-vid">
           <iframe src="https://player.vimeo.com/video/320391911" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
+          <div id="birthvid-text">
+              <p>Fiona arrived by surprise just 15 days later on January 24, 2017. </p>
         </div>
-      </div>
+
     </div>
-
-    <div class="container">
-        <!-- <h3>Birth</h3> -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor faucibus porta. Duis ultrices arcu ut dolor cursus vulputate. Vivamus convallis ligula eget dui luctus, sed suscipit elit fringilla. Vestibulum ante ipsum primis
-          in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam urna eros, vehicula nec felis et, consequat lobortis tellus.</p>
-
   </div>
-
-      <!-- End full width Birth section -->
+  </div>   <!-- End full width Birth section -->
 
       <!-- Struggle Explainer -->
       <div class="container">
@@ -152,7 +147,7 @@
       <!-- Learning to Swim (full vid) -->
       <div class="row no-gutters">
         <div class="col-sm-12">
-       <div id="full-vid">
+       <div class="full-vid">
          <video src="img/intro.mp4" autoplay="autoplay" muted="muted" loop=""></video>
          </div>
          <h3>Learning to Swim</h3>
@@ -174,7 +169,7 @@
 
       <div class="row no-gutters">
         <div class="col-sm-12">
-       <div id="full-vid">
+       <div class="full-vid">
          <video src="img/intro.mp4" autoplay="autoplay" muted="muted" loop=""></video>
          </div>
          <h3>Meeting Mom</h3>
@@ -196,7 +191,7 @@
       <!-- Meeting Dad section -->
       <div class="row no-gutters">
         <div class="col-sm-12">
-       <div id="full-vid">
+       <div class="full-vid">
          <video src="img/intro.mp4" autoplay="autoplay" muted="muted" loop=""></video>
          </div>
          <h3>Meeting Dad</h3>
@@ -422,7 +417,7 @@
           /* Resize the image: */
           img.style.width = x + "px";
           /* Position the slider: */
-          slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+          slider.style.left = img.offsetWidth - (slider.offsetWidth / 4) + "px";
         }
       }
     }
@@ -438,8 +433,6 @@
   <script>
     initComparisons();
   </script>
-
-
 
   <script>
 
@@ -488,6 +481,7 @@
     else {$('#swap7').fadeOut('fast')};
   });
     </script>
+    
     <script>
         var controlsProgressEl = document.querySelector('.timeline-controls-demo .progress');
 
