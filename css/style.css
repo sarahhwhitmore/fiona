@@ -311,8 +311,15 @@ h6 {
   border-radius: 5px;
   border: none;
   margin: 0.5rem;
-  box-shadow: 5px 10px 15px #DCDCDC;
+  /* box-shadow: 5px 10px 15px #DCDCDC; */
 
+}
+
+.mainstory p {
+  font-family: 'lexia', serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: red;
 }
 
 h3 {
