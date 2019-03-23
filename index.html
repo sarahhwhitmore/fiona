@@ -76,9 +76,14 @@
       <div class="col-8" id="introText">
         <p>Fiona, the Nile hippo calf at the Cincinnati Zoo & Botanical Garden has become a social media superstar.
           She is not the first hippo to be born in captivity, but most definitely the first to rise to such stardom. Born much too early to feed or walk on her own, her survival was unlikely. It was up to the teams at the Zoo and Cincinnati Children’s Hospital to help her overcome the odds. </p>
-          <p>Fiona’s journey begins in January 2017 with the discovery of 17-year-old Bibi’s pregnancy.</p>
       </div>
     </div>
+    <div class="row">
+      <div class="focustext">
+      <p>Fiona’s journey begins in January 2017 with the discovery of 17-year-old Bibi’s pregnancy.</p>
+    </div>
+    </div>
+
 
     <!-- End intro text -->
 
@@ -210,10 +215,10 @@
               <p> Slide to see Fiona's progress </p>
               <div class="img-comp-container">
                 <div class="img-comp-img">
-                  <img src="img/at-birth.jpg" width="300" height="200">
+                  <img src="img/bloatof3.jpg" width="300" height="200">
                 </div>
                 <div class="img-comp-img img-comp-overlay">
-                  <img src="img/bloatof3.jpg" width="300" height="200">
+                  <img src="img/at-birth.jpg" width="300" height="200">
                 </div>
               </div>
             </div>
@@ -355,7 +360,7 @@
         w = img.offsetWidth;
         h = img.offsetHeight;
         /* Set the width of the img element to 50%: */
-        img.style.width = (0) + "px";
+        img.style.width = (w/1.2) + "px";
         /* Create slider: */
         slider = document.createElement("DIV");
         slider.setAttribute("class", "img-comp-slider");
@@ -363,7 +368,7 @@
         img.parentElement.insertBefore(slider, img);
         /* Position the slider in the middle: */
         slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
-        slider.style.left = (0) - (slider.offsetWidth / 0) + "px";
+        slider.style.left = (w / 1.2) - (slider.offsetWidth / 1.2) + "px";
         /* Execute a function when the mouse button is pressed: */
         slider.addEventListener("mousedown", slideReady);
         /* And another function when the mouse button is released: */
@@ -481,7 +486,7 @@
     else {$('#swap7').fadeOut('fast')};
   });
     </script>
-    
+
     <script>
         var controlsProgressEl = document.querySelector('.timeline-controls-demo .progress');
 
