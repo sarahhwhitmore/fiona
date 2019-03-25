@@ -69,14 +69,22 @@ body {
 }
 
 /* footer style*/
-footer {
+footer, footer h3 {
     position: relative;
-    border-top-color: black;
-    background-color: #2d3436;
+    border-top-color: #DCDCDC;
+    background-color: #4a5234;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    color: white;
+    font-size: 1.1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1.2rem;
+    /* line-height: 0.8rem; */
+    /* ^^ works for names but not copyright info */
 }
+
 
 .center-footer {
     color: white;
@@ -111,7 +119,7 @@ footer {
     padding-right: 20px;
 }
 
-.left-footer img {
+footer img {
     width: 200px;
     padding-top: 30px;
     padding-left: 20px;
@@ -130,6 +138,21 @@ z-index: 700;
   font-weight: 500;
   font-size: 1.2rem;
   color: #4a5234;
+  z-index: 10000;
+}
+
+#dadvid-text {
+position: absolute;
+top: 10%;
+left: 10%;
+z-index: 700;
+}
+
+#dadvid-text p {
+  font-family: 'lexia', serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #fff;
   z-index: 10000;
 }
 
@@ -156,15 +179,21 @@ z-index: 700;
 
 .focustext p {
   text-align: center;
-  margin-top: 40%;
+  margin-top: 30%;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
   font-family: 'lexia', serif;
   font-weight: 200;
   font-size: 1.2rem;
-
+  max-width: 70%;
 }
-/* video header, intro text */
 
+.focustext h3 {
+  padding-left: 10%;
+}
+
+/* video header, intro text */
 .project-title {
   position: absolute;
   top: 55%;
@@ -293,12 +322,12 @@ h6 {
   z-index: -100000;
 }
 
-#pullquote {
+.pullquote {
   background-color: #DCDCDC;
   padding: 100px;
 }
 
-#pullquote h6 {
+.pullquote h6 {
   font-size: 30px;
 }
 
