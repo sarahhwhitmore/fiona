@@ -35,6 +35,12 @@
 </head>
 
 <body>
+      <div class="header">
+     <div class="progress-container">
+       <div class="progress-bar" id="myBar"></div>
+     </div>
+    </div>
+
   <!--
   <div id="list-example" class="list-group">
     <a class="list-group-item list-group-item-action" href="#list-item-1">Intro</a>
@@ -134,7 +140,7 @@
       </div>
     </div>
     <!-- End Struggle Explainer -->
-    
+
     <div class="row no-gutters">
         <div class="focustext">
         <h3>So the zoo had to help.</h3>
@@ -472,59 +478,16 @@
     </script> -->
   <!-- <script src="js/bootstrap.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script> -->
 
+<script>
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {scrollProgress()};
 
-
-<!-- changing backgrounds on scroll -->
-  <script>
-    $(document).scroll(function() {
-      var y = $(this).scrollTop();
-      var vid = document.getElementById("kittenvid");
-
-      if (y > 1000) {
-        $('#swap1').fadeIn({});
-      } else {
-        $('#swap1').fadeOut('fast')
-      };
-
-      if (y > 2000) {
-        $('#swap2').fadeIn({});
-      } else {
-        $('#swap2').fadeOut('fast')
-      };
-
-      if (y > 3000) {
-        $('#swap3').fadeIn({});
-      } else {
-        $('#swap3').fadeOut('fast')
-      };
-
-      if (y > 4000) {
-        $('#swap4').fadeIn({});
-      } else {
-        $('#swap4').fadeOut('fast')
-      };
-
-      if (y > 4000) {
-        $('#swap5').fadeIn({});
-      } else {
-        $('#swap5').fadeOut('fast')
-      };
-
-      if (y > 5000) {
-        $('#swap6').fadeIn({});
-        vid.play();
-        vid.loop = "true";
-      } else {
-        $('#swap6').fadeOut('fast');
-        vid.pause();
-        vid.loop = "false";
-      };
-      if (y > 6000) {
-        $('#swap7').fadeIn({});
-      } else {
-        $('#swap7').fadeOut('fast')
-      };
-    });
+  function scrollProgress() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
   </script>
 
 </body>
