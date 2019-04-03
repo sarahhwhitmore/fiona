@@ -129,23 +129,25 @@
 
       </div>
     </div>
+  </div>
  <!-- End full width Birth section -->
 
   <!-- Struggle Explainer -->
+  <div class="container">
     <div class="row no-gutters">
       <div class="col-sm-12">
-        <h3>6 Weeks Premature (explainer graphic here)</h3>
+        <h3>Catchy title for explainer</h3>
         <svg width="1150" height="550">
           <rect width="1150" height="500" style="fill:#DCDCDC;stroke-width:0;stroke:rgb(0,0,0)" /></svg>
       </div>
     </div>
+  </div>
     <!-- End Struggle Explainer -->
-
+    <div class="container-fluid">
     <div class="row no-gutters">
         <div class="focustext">
         <h3>So the zoo had to help.</h3>
-        <p>Fiona was so small and vulnerable that she required 24-hour care. Luckily, Bibi was used to standing still for ultrasounds, so caretakers were able to collect milk. It had to be added to a fluid mixture and tube fed to Fiona since she was
-          so weak. Bibi could not produce enough milk to support Fiona, and the Zoo had to come up with a synthetic formula very quickly.</p>
+        <p>Fiona was so small and vulnerable that she required 24-hour care. Luckily, Bibi was used to standing still for ultrasounds, so caretakers were able to collect milk. It had to be added to a fluid mixture and tube fed to Fiona since she was so weak. Bibi could not produce enough milk to support Fiona, and the Zoo had to come up with a synthetic formula very quickly, without any existing knowledge of how to even begin formulating artificial hippo milk. </p>
         <button type="button" class="fionafact" data-toggle="popover" title="" data-content="Zoo staff named the baby hippo “Fiona” after the Shrek heroine and it because it means “fair.”">Fiona Facts</button>
       </div>
       </div>
@@ -153,6 +155,7 @@
     <!-- End Gaining Weight section  -->
 
     <!-- Milking a Hippo(audio slideshow) -->
+    <div class="container">
     <div class="row no-gutters">
       <div class="col-sm-12">
         <div class="full-vid">
@@ -275,22 +278,27 @@
   <!-- Physical Development Infographic -->
     <div class="row">
       <div class="col-md-6">
-      <h3>Physical Development Infographic </h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor faucibus porta. Duis ultrices arcu ut dolor cursus vulputate. </p>
-    </div>
-    <div class="col-md-6" class="slider1">
-      <svg width="400" height="400">
-        <rect width="400" height="400" style="fill:#DCDCDC;stroke-width:0;stroke:rgb(0,0,0)" /></svg>
+      <h3>How Far She's Come </h3>
+                <p>Drag the slider to watch Fiona grow!</p>
+                <input id="slider1" class="slider" type="range" min="0" max="4" value="0">
+            </div>
 
-    </div>
-  </div>
+            <div id="image" class="col-6">
+                <img src="img/kitten1.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div id="caption" class="col-6">
+                <p>At birth: </p>
+                <p>other info here</p>
+            </div>
+        </div>
+
   <!-- End Development infographic  -->
 
   <!-- Fiona's Impact  -->
 
   <div class="row">
     <div class="col-md-12">
-      <h3>Fiona's Impact </h3>
+      <h3>Fiona's Impact</h3>
     </div>
   </div>
 </div>
@@ -380,7 +388,7 @@
     $('[data-toggle="popover"]').popover();
   </script>
 
-<!-- Slider javascript  -->
+<!-- Image comparison javascript  -->
   <script>
     function initComparisons() {
       var x, i;
@@ -478,6 +486,7 @@
     </script> -->
   <!-- <script src="js/bootstrap.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script> -->
 
+<!-- Scroll progress  -->
 <script>
   // When the user scrolls the page, execute myFunction
   window.onscroll = function() {scrollProgress()};
@@ -489,6 +498,48 @@
     document.getElementById("myBar").style.width = scrolled + "%";
   }
   </script>
+
+  <!-- Development slider -->
+    <script>
+    var picsData = [{
+            pic: 'img/kitten1.jpg',
+            caption: 'This is photo 1: blue-gate.jpg'
+        },
+        {
+            pic: 'img/kitten2.jpg',
+            caption: 'This is photo 2: green-catalina.jpg'
+        },
+        {
+            pic: 'img/kitten3.jpg',
+            caption: 'This is photo 3: purple-rocks.jpg'
+        },
+        {
+            pic: 'img/kitten4.jpg',
+            caption: 'This is photo 4: red-market.jpg'
+        },
+        {
+            pic: 'img/sonogram.jpg',
+            caption: 'This is photo 5 yellow-statue.jpg'
+        }
+    ];
+
+    // Function to change data points and update chart
+    var changePic = function (val) {
+        console.log(val, picsData[val]);
+
+        // update intro text with range of years shown
+        $('#image').html('<img src="' + picsData[val].pic + '" class="img-fluid" alt="Responsive image">');
+        $('#caption').html('<p>' + picsData[val].caption + '</p>');
+    };
+
+    // SLIDER INPUT FUNCTION
+    $('#slider1').on('input', function (e) {
+        // get slider value from e (event)
+        var val = e.currentTarget.value;
+        changePic(val);
+    });
+
+    </script>
 
 </body>
 
