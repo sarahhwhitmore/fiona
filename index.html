@@ -141,7 +141,9 @@
   <div class="container">
     <div class="row no-gutters">
       <div class="col-sm-12">
-        <h3>Catchy title for explainer</h3>
+        <div class="mainstory">
+        <p>Being born six weeks early came with a unique and dangerous set of challenges.</p>
+      </div>
         <svg width="1150" height="550">
           <rect width="1150" height="500" style="fill:#DCDCDC;stroke-width:0;stroke:rgb(0,0,0)" /></svg>
       </div>
@@ -291,9 +293,14 @@
             <div id="image" class="col-6">
                 <img src="img/kitten1.jpg" class="img-fluid" alt="Responsive image">
             </div>
-            <div id="caption" class="col-6">
+            <div id="line1">
                 <p>At birth: </p>
-                <p>other info here</p>
+            </div>
+            <div id="line2">
+                <p>Weight: </p>
+            </div>
+            <div id="line3">
+                <p>Food intake: </p>
             </div>
         </div>
 
@@ -529,23 +536,33 @@
     <script>
     var picsData = [{
             pic: 'img/kitten1.jpg',
-            caption: 'This is photo 1: blue-gate.jpg'
+            line1: 'Birth',
+            line2: 'Weight: 24 pounds ',
+            line3: 'Food intake: '
         },
         {
             pic: 'img/kitten2.jpg',
-            caption: 'This is photo 2: green-catalina.jpg'
+            line1: '3 months',
+            line2: 'Weight: ',
+            line3: 'Food intake: '
         },
         {
             pic: 'img/kitten3.jpg',
-            caption: 'This is photo 3: purple-rocks.jpg'
+            line1: '6 months',
+            line2: 'Weight: ',
+            line3: 'Food intake: '
         },
         {
             pic: 'img/kitten4.jpg',
-            caption: 'This is photo 4: red-market.jpg'
+            line1: '1 year',
+            line2: 'Weight: ',
+            line3: 'Food intake: '
         },
         {
             pic: 'img/sonogram.jpg',
-            caption: 'This is photo 5 yellow-statue.jpg'
+            line1: '2 years',
+            line2: 'Weight: ',
+            line3: 'Food intake: '
         }
     ];
 
@@ -555,7 +572,9 @@
 
         // update intro text with range of years shown
         $('#image').html('<img src="' + picsData[val].pic + '" class="img-fluid" alt="Responsive image">');
-        $('#caption').html('<p>' + picsData[val].caption + '</p>');
+        $('#line1').html('<p>' + picsData[val].line1 + '</p>');
+        $('#line2').html('<p>' + picsData[val].line2 + '</p>');
+        $('#line3').html('<p>' + picsData[val].line3 + '</p>');
     };
 
     // SLIDER INPUT FUNCTION
