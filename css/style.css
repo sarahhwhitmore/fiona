@@ -142,9 +142,7 @@ z-index: 700;
 
 
 .focustext {
-  background-image : linear-gradient(to bottom,
-                     rgba(77,93,93,0),
-                     rgba(0,0,0, 1) 90%);
+  background-image : linear-gradient(rgba(77,93,93,0), rgba(77,93,93, 1) 80%);
   top: 0;
   left: 0;
   width: 100%;
