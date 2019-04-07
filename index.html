@@ -87,11 +87,19 @@
       </div>
       <div class="col-8" id="introText">
         <p>Fiona, the Nile hippo calf at the Cincinnati Zoo & Botanical Garden has become a social media superstar.
-          She is not the first hippo to be born in captivity, but most definitely the first to rise to such stardom. Born much too early to feed or walk on her own, her survival was unlikely. It was up to the teams at the Zoo and Cincinnati
-          Children’s Hospital to help her overcome the odds. </p>
+          She is not the first hippo to be born in captivity, but most definitely the first to rise to such stardom. Born much too early to feed or walk on her own, her survival was unlikely. It was up to the teams at the Zoo and Cincinnati Children’s Hospital to help her overcome the odds. </p>
       </div>
     </div>
   </div>
+
+    <!-- <div class="spacer s2"></div>
+    <div id="trigger2" class="spacer s0"></div>
+    <div id="pin2" class="box2 blue">
+      <p>Take me with you!</p>
+    </div>
+      <div class="spacer s2"> </div> -->
+
+
   <!-- Focus text complete container -->
   <div class="container-fluid">
     <div class="row">
@@ -411,7 +419,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <script src="anime.min.js"></script>
+
+  <!-- ScrollMagic CDN -->
+<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+<script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 
   <!-- AOS library -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -419,9 +430,7 @@
     AOS.init();
   </script>
 
-<!-- ScrollMagic CDN -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+
 
   <!-- Popover Script -->
   <script>
@@ -592,6 +601,22 @@
     });
 
     </script>
+
+<script>
+    //init controller
+    var controller = new ScrollMagic.Controller();
+
+    //pin the intro text
+    var pinIntroScene = new ScrollMagic.SCene({
+      triggerElement: "#introText",
+      triggerHook: 0,
+      duration: '10%'
+
+    })
+
+    .setPin('#introText')
+    .addTo(controller);
+  </script>
 
 </body>
 
