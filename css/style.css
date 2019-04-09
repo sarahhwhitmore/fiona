@@ -1,6 +1,9 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 /* style guide colors  */
+
 /* brownish tan : #877b70
 light tan : #d8coa8
 medium green #83a03d
@@ -14,21 +17,20 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background: linear-gradient(to bottom, #4d5d5d, #c1705e );
+  background: linear-gradient(to bottom, #4d5d5d, #c1705e);
   background-size: 100%;
   background-repeat: no-repeat;
-
 }
 
-body:before{
-	content:'';
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	z-index: -10000;
+body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -10000;
   opacity: 0.4;
-	background: linear-gradient(to right bottom, #4d5d5d 75%);
+  background: linear-gradient(to right bottom, #4d5d5d 75%);
 }
 
 p {
@@ -40,9 +42,9 @@ p {
   max-width: 70ch;
 }
 
-.big-text{
-font-size: 35px;
-color: #ffffff;
+.big-text {
+  font-size: 35px;
+  color: #ffffff;
 }
 
 .little-text {
@@ -50,17 +52,20 @@ color: #ffffff;
 }
 
 .alignCenter {
-    align-items: center;
+  align-items: center;
 }
+
 .justifyCenter {
-    justify-content: center;
-    text-align: center;
+  justify-content: center;
+  text-align: center;
 }
+
 .flex {
-    display: flex;
+  display: flex;
 }
+
 .h100 {
-    height: 100vh;
+  height: 100vh;
 }
 
 .container-fluid {
@@ -71,15 +76,15 @@ color: #ffffff;
 }
 
 .container {
-padding: 30px 60px;
+  padding: 30px 60px;
 }
 
 main {
-	background-color: #f7f7f7;
-	padding: 20px;
-	border-radius: 10px;
-	color: #6b6b6b;
-	margin: 40px 0;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  color: #6b6b6b;
+  margin: 40px 0;
 }
 
 .bd-placeholder-img {
@@ -101,7 +106,8 @@ main {
 
 .img-comp-container {
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  height: 200px;
+  /*should be the same height as the images*/
 }
 
 .img-comp-img {
@@ -130,45 +136,45 @@ main {
 }
 
 /* footer style*/
+
 footer, footer h3 {
-    position: relative;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-size: 1.1rem;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 1.2rem;
-    /* line-height: 0.8rem; */
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 1.1rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1.2rem;
+  /* line-height: 0.8rem; */
 }
 
 .center-footer {
-    color: white;
-    padding-top: 20px;
+  color: white;
+  padding-top: 20px;
 }
 
 .center-footer h3 {
-    position: relative;
-    font-family: 'lexia', serif;
-    font-weight: 600;
-    font-size: 13px;
-    padding-top: 2px;
-    color: white;
+  position: relative;
+  font-family: 'lexia', serif;
+  font-weight: 600;
+  font-size: 13px;
+  padding-top: 2px;
+  color: white;
 }
 
 footer img {
-    width: 200px;
-    padding-top: 30px;
-    padding-left: 20px;
-
+  width: 200px;
+  padding-top: 30px;
+  padding-left: 20px;
 }
 
 #birthvid-text {
-position: absolute;
-top: 10%;
-left: 10%;
-z-index: 700;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 700;
 }
 
 #birthvid-text p, #dadvid-text p {
@@ -176,22 +182,21 @@ z-index: 700;
 }
 
 #dadvid-text {
-position: absolute;
-top: 10%;
-left: 10%;
-z-index: 700;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 700;
 }
 
 #impactHead {
-    background: url('img/fionaoffice_01.jpg') 0 0 no-repeat fixed;
-    height: 100%;
-    overflow: hidden;
-    padding: 3%;
- }
-
+  background: url('img/fionaoffice_01.jpg') 0 0 no-repeat fixed;
+  height: 100%;
+  overflow: hidden;
+  padding: 3%;
+}
 
 .thumbnail {
-    position: relative;
+  position: relative;
 }
 
 .thumbnail img {
@@ -199,6 +204,7 @@ z-index: 700;
 }
 
 /* Fiona's Impact text  */
+
 .caption p {
   position: absolute;
   top: 45%;
@@ -210,6 +216,7 @@ z-index: 700;
 }
 
 /* video header, intro text */
+
 .project-title {
   position: absolute;
   top: 55%;
@@ -220,7 +227,7 @@ z-index: 700;
 }
 
 .headline {
-    z-index: 1000;
+  z-index: 1000;
 }
 
 .project-title img {
@@ -232,48 +239,50 @@ z-index: 700;
 }
 
 .birth-text {
-      position: absolute;
-      top: 55%;
-      width: 100%;
-      z-index: 10000;
-      padding-left: 4rem;
-      padding-bottom: 40px;
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  z-index: 10000;
+  padding-left: 4rem;
+  padding-bottom: 40px;
 }
-
 
 /* premature to prima donna  */
+
 .headline h1 {
-    font-family: 'lexia-advertising', serif;
-    font-weight: 400;
-    font-size: 4rem;
-    letter-spacing: 3pt;
-    text-align: left;
-    padding-left: 4rem;
-    color: white;
+  font-family: 'lexia-advertising', serif;
+  font-weight: 400;
+  font-size: 4rem;
+  letter-spacing: 3pt;
+  text-align: left;
+  padding-left: 4rem;
+  color: white;
 }
+
 /* The Heartwarming Story of Fiona the Hippo */
+
 .headline h2 {
-    font-family: 'lexia', serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 34px;
-    text-align: left;
-    padding-left: 4rem;
-    color: white;
-    letter-spacing: 1.6pt;
+  font-family: 'lexia', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 34px;
+  text-align: left;
+  padding-left: 4rem;
+  color: white;
+  letter-spacing: 1.6pt;
 }
+
 /* Soul of Athens Presents */
+
 .headline h3 {
-    font-family: 'lexia', serif;
-    font-weight: 100;
-    font-size: 16px;
-    letter-spacing: 4pt;
-    padding-left: 4rem;
-    text-align: left;
-    color: white;
+  font-family: 'lexia', serif;
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 4pt;
+  padding-left: 4rem;
+  text-align: left;
+  color: white;
 }
-
-
 
 h6 {
   font-family: 'lexia', serif;
@@ -288,32 +297,31 @@ h6 {
   z-index: 700;
 }
 
-
 /*Start video background full screen with project title*/
 
 .full-vid {
-    position: relative;
-    padding-bottom: 56.75%;
-    padding-top: 0;
-    overflow: hidden;
-    z-index: -8000;
+  position: relative;
+  padding-bottom: 56.75%;
+  padding-top: 0;
+  overflow: hidden;
+  z-index: -8000;
 }
 
 .full-vid iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .full-vid video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -100000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100000;
 }
 
 .full-vid img {
@@ -348,7 +356,7 @@ h6 {
   width: 100%;
   height: 100%;
   z-index: -100000;
-  }
+}
 
 .intro-vid img {
   position: absolute;
@@ -408,21 +416,19 @@ h6 {
   color: red;
 }
 
-
 #gaining-vid {
-    /* padding-bottom: 56.75%; */
-    padding-top: 0;
-    z-index: 100;
+  /* padding-bottom: 56.75%; */
+  padding-top: 0;
+  z-index: 100;
 }
 
 #gaining-vid video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -100000;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100000;
 }
 
 #firststeps-vid {
@@ -434,12 +440,12 @@ h6 {
 }
 
 #firststeps-vid video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -100000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100000;
 }
 
 .fionafact {
@@ -450,7 +456,6 @@ h6 {
   border: none;
   margin: 0.5rem;
   /* box-shadow: 5px 10px 15px #DCDCDC; */
-
 }
 
 h3 {
@@ -459,66 +464,90 @@ h3 {
 }
 
 /* Style the header: fixed position (always stay at the top) */
+
 .header {
- position: fixed;
- top: 0;
- z-index: 1;
- width: 100%;
- background-color: #c1705e;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #c1705e;
 }
 
 /* The progress container (grey background) */
+
 .progress-container {
- width: 100%;
- height: 8px;
- background: #4d5d5d;
- z-index: 11000;
+  width: 100%;
+  height: 8px;
+  background: #4d5d5d;
+  z-index: 11000;
 }
 
 /* The progress bar (scroll indicator) */
+
 .progress-bar {
- height: 8px;
- background: #a3dad7;
- width: 0%;
+  height: 8px;
+  background: #a3dad7;
+  width: 0%;
 }
 
 .slidecontainer {
-  width: 100%; /* Width of the outside container */
+  width: 100%;
+  /* Width of the outside container */
 }
 
-
 /* DEVELOPMENT SLIDER */
+
 /* The slider itself */
+
 .slider {
-  -webkit-appearance: none;  /* Override default CSS styles */
+  -webkit-appearance: none;
+  /* Override default CSS styles */
   appearance: none;
-  width: 100%; /* Full-width */
-  height: 20px; /* Specified height */
-  background: #d3d3d3; /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.9; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  width: 100%;
+  /* Full-width */
+  height: 20px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.9;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
   transition: opacity .2s;
 }
 
 /* Mouse-over effects */
+
 .slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+  opacity: 1;
+  /* Fully shown on mouse-over */
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none;
+  /* Override default look */
   appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 15px; /* Slider handle height */
-  background: #83a03d; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 15px;
+  /* Slider handle height */
+  background: #83a03d;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #4a5234; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #4a5234;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
 }
