@@ -277,13 +277,15 @@ h6 {
 }
 
 #introText {
-  color: #ffffff;
   font-size: 20px;
   font-family: 'lexia', sans-serif;
   font-style: 'thin';
   z-index: 700;
 }
 
+#intro{
+  color: #ffffff;
+}
 /*Start video background full screen with project title*/
 
 .full-vid {
