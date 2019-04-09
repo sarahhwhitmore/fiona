@@ -14,7 +14,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background: linear-gradient(to bottom, #83a03d, #a3dad7, #4d5d5d, #c1705e, #006a74 );
+  background: linear-gradient(to bottom, #4d5d5d, #877b70, #d8c0a8, #c1705e );
   background-size: 100%;
   background-repeat: no-repeat;
 
@@ -28,7 +28,7 @@ body:before{
 	width: 100%;
 	z-index: -10000;
   opacity: 0.4;
-	background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #83a03d 75%);
+	background: linear-gradient(to right bottom, #4d5d5d 75%);
 }
 
 p {
@@ -127,8 +127,6 @@ main {
 /* footer style*/
 footer, footer h3 {
     position: relative;
-    border-top-color: #DCDCDC;
-    background-color: #4d5d5d;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -279,7 +277,7 @@ h6 {
 }
 
 #introText {
-  color: #4d5d5d;
+  color: #ffffff;
   font-size: 20px;
   font-family: 'lexia', sans-serif;
   font-style: 'thin';
