@@ -119,8 +119,15 @@ footer img {
 
 }
 
-#birthvid-text, #dadvid-text {
+#birthvid-text{
 position: absolute;
+top: 10%;
+left: 10%;
+z-index: 700;
+}
+
+#dadvid-text {
+  position: absolute;
 top: 10%;
 left: 10%;
 z-index: 700;
