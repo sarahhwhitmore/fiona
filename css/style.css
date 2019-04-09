@@ -11,8 +11,10 @@ dark green #4a5234
 medium teal #006a74 */
 
 body {
-  padding-top: 0rem;
+  padding: 0;
+  margin: 0;
   overflow-x: hidden;
+
 }
 
 p{
@@ -28,6 +30,7 @@ p{
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+  position: relative;
 }
 
 .bd-placeholder-img {
@@ -109,11 +112,6 @@ footer, footer h3 {
     color: white;
 }
 
-
-
-
-
-
 footer img {
     width: 200px;
     padding-top: 30px;
@@ -121,7 +119,7 @@ footer img {
 
 }
 
-#birthvid-text {
+#birthvid-text, #dadvid-text {
 position: absolute;
 top: 10%;
 left: 10%;
@@ -129,17 +127,32 @@ z-index: 700;
 }
 
 
+#impactHead {
+    background: url('img/fionaoffice_01.jpg') 0 0 no-repeat fixed;
+    height: 100%;
+    overflow: hidden;
+    padding: 3%;
+ }
 
-#dadvid-text {
-position: absolute;
-top: 10%;
-left: 10%;
-z-index: 700;
+
+.thumbnail {
+    position: relative;
 }
 
+.thumbnail img {
+  opacity: 0.30;
+}
 
-
-
+/* Fiona's Impact text  */
+.caption p {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  width: 100%;
+  font-size: 5rem;
+  font-weight: '400';
+  color: #4a5234;
+}
 
 .focustext {
   background-image : linear-gradient(rgba(77,93,93,0), rgba(77,93,93, 1) 80%);
@@ -150,6 +163,7 @@ z-index: 700;
   z-index: -100000;
   padding-bottom: 10%;
 }
+
 
 .focustext p {
   text-align: center;
@@ -280,6 +294,40 @@ h6 {
 }
 
 .full-vid img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100000;
+}
+
+.intro-vid {
+  position: relative;
+  padding-bottom: 56.75%;
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.intro-vid iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100000;
+}
+
+.intro-vid video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100000;
+  }
+
+.intro-vid img {
   position: absolute;
   top: 0;
   left: 0;
