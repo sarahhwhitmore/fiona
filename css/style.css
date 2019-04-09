@@ -44,6 +44,10 @@ p {
 font-size: 35px;
 }
 
+.little-text {
+  font-size: 20px;
+}
+
 .alignCenter {
     align-items: center;
 }
