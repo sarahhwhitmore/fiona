@@ -27,7 +27,7 @@ body:before{
 	bottom: 0;
 	width: 100%;
 	z-index: -10000;
-  opacity: 0.5;
+  opacity: 0.4;
 	background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #83a03d 75%);
 }
 
@@ -41,8 +41,9 @@ p {
 }
 
 .big-text{
-font-size: 30px;
-
+font-size: 35px;
+text-align: center;
+padding: 3rem 1rem 1rem 3rem;
 }
 
 .container-fluid {
@@ -54,7 +55,6 @@ font-size: 30px;
 
 .container {
 background-color: #FFF;
-margin: 80px 10%;
 padding: 30px 60px;
 border-radius: 20px;
 box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
@@ -157,7 +157,10 @@ position: absolute;
 top: 10%;
 left: 10%;
 z-index: 700;
-font-size: 3rem;
+}
+
+#birthvid-text p, #dadvid-text p {
+  font-size: 1.4rem;
 }
 
 #dadvid-text {
@@ -165,9 +168,7 @@ position: absolute;
 top: 10%;
 left: 10%;
 z-index: 700;
-font-size: 3rem;
 }
-
 
 #impactHead {
     background: url('img/fionaoffice_01.jpg') 0 0 no-repeat fixed;
