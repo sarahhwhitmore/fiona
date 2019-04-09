@@ -26,6 +26,11 @@ p{
   z-index: 10000;
 }
 
+.big-text{
+font-size: 30px;
+
+}
+
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
