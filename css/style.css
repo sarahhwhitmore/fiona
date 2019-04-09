@@ -14,16 +14,30 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  background: linear-gradient(to bottom, #83a03d, #a3dad7, #4d5d5d, #c1705e, #006a74 );
+  background-size: 100%;
+  background-repeat: no-repeat;
 
 }
 
-p{
+body:before{
+	content:'';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -10000;
+  opacity: 0.5;
+	background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #83a03d 75%);
+}
+
+p {
   font-family: 'lexia', serif;
   font-weight: 200;
   font-size: 16px;
   color: #4a5234;
-  max-width: 70%;
   z-index: 10000;
+  max-width: 70ch;
 }
 
 .big-text{
@@ -36,6 +50,22 @@ font-size: 30px;
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+.container {
+background-color: #FFF;
+margin: 80px 10%;
+padding: 30px 60px;
+border-radius: 20px;
+box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+}
+
+main {
+	background-color: #f7f7f7;
+	padding: 20px;
+	border-radius: 10px;
+	color: #6b6b6b;
+	margin: 40px 0;
 }
 
 .bd-placeholder-img {
@@ -99,9 +129,7 @@ footer, footer h3 {
     padding-right: 10%;
     padding-top: 1.2rem;
     /* line-height: 0.8rem; */
-    /* ^^ works for names but not copyright info */
 }
-
 
 .center-footer {
     color: white;
@@ -129,6 +157,7 @@ position: absolute;
 top: 10%;
 left: 10%;
 z-index: 700;
+font-size: 3rem;
 }
 
 #dadvid-text {
@@ -136,6 +165,7 @@ position: absolute;
 top: 10%;
 left: 10%;
 z-index: 700;
+font-size: 3rem;
 }
 
 
@@ -166,39 +196,12 @@ z-index: 700;
   color: #4a5234;
 }
 
-.focustext {
-  background-image : linear-gradient(rgba(77,93,93,0), rgba(77,93,93, 1) 80%);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -100000;
-  padding-bottom: 10%;
-}
-
-
-.focustext p {
-  text-align: center;
-  margin-top: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  font-family: 'lexia', serif;
-  font-weight: 200;
-  font-size: 1.2rem;
-  max-width: 70%;
-}
-
-.focustext h3 {
-  padding-left: 10%;
-}
-
 /* video header, intro text */
 .project-title {
   position: absolute;
   top: 55%;
   width: 100%;
-  text-indent: 6rem;
+  padding-left: 4rem;
   z-index: 500;
   padding-bottom: 50px;
 }
@@ -224,7 +227,7 @@ z-index: 700;
       top: 55%;
       width: 100%;
       z-index: 10000;
-      text-indent: 6rem;
+      padding-left: 4rem;
       padding-bottom: 40px;
 }
 
@@ -236,7 +239,7 @@ z-index: 700;
     font-size: 4rem;
     letter-spacing: 3pt;
     text-align: left;
-    text-indent: 6rem;
+    padding-left: 4rem;
     color: white;
 }
 /* The Heartwarming Story of Fiona the Hippo */
@@ -246,6 +249,7 @@ z-index: 700;
     font-style: italic;
     font-size: 34px;
     text-align: left;
+    padding-left: 4rem;
     color: white;
     letter-spacing: 1.6pt;
 }
@@ -255,7 +259,7 @@ z-index: 700;
     font-weight: 100;
     font-size: 16px;
     letter-spacing: 4pt;
-    text-indent: 6rem;
+    padding-left: 4rem;
     text-align: left;
     color: white;
 }
@@ -284,6 +288,7 @@ h6 {
     padding-bottom: 56.75%;
     padding-top: 0;
     overflow: hidden;
+    z-index: -8000;
 }
 
 .full-vid iframe {
@@ -292,8 +297,6 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -100000;
-
 }
 
 .full-vid video {
@@ -349,12 +352,22 @@ h6 {
 }
 
 .pullquote {
-  background-color: #DCDCDC;
-  padding: 100px;
+  background-color: #4d5d5d;
+  padding: 2rem 1rem 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.pullquote p {
+  color: #fff;
 }
 
 .pullquote h6 {
-  font-size: 30px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.impactpic img {
+  padding: 2%;
 }
 
 /* #animation {
