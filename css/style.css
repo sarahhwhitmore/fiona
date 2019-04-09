@@ -27,10 +27,10 @@ p{
 }
 
 .container-fluid {
+  position: relative;
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  position: relative;
 }
 
 .bd-placeholder-img {
