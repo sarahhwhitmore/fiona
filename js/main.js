@@ -12,16 +12,4 @@ $(document).ready(function(){
 	.setPin('#intro', {pushFollowers: false})
 	.addTo(controller);
 
-	// pin again
-	var pinIntroScene2 = new ScrollMagic.Scene({
-		triggerElement: '#project01',
-		triggerHook: 0.4
-	})
-	.setPin('#intro', {pushFollowers: false})
-	.addTo(controller);
-
-	// loop through each .project element
-	$('.project').each(function(){
-	});
-
 });
