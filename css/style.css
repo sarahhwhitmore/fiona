@@ -453,16 +453,6 @@ h6 {
   z-index: -100000;
 }
 
-.fionafact {
-  background-color: #a3dad7;
-  font-family: 'lexia', serif;
-  font-size: 20px;
-  border-radius: 5px;
-  border: none;
-  margin: 0.5rem;
-  /* box-shadow: 5px 10px 15px #DCDCDC; */
-}
-
 h3 {
   font-size: 1.75rem;
   color: #4d5d5d;
@@ -498,61 +488,4 @@ h3 {
 .slidecontainer {
   width: 100%;
   /* Width of the outside container */
-}
-
-/* DEVELOPMENT SLIDER */
-
-/* The slider itself */
-
-.slider {
-  -webkit-appearance: none;
-  /* Override default CSS styles */
-  appearance: none;
-  width: 100%;
-  /* Full-width */
-  height: 20px;
-  /* Specified height */
-  background: #d3d3d3;
-  /* Grey background */
-  outline: none;
-  /* Remove outline */
-  opacity: 0.9;
-  /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s;
-  /* 0.2 seconds transition on hover */
-  transition: opacity .2s;
-}
-
-/* Mouse-over effects */
-
-.slider:hover {
-  opacity: 1;
-  /* Fully shown on mouse-over */
-}
-
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  /* Override default look */
-  appearance: none;
-  width: 25px;
-  /* Set a specific slider handle width */
-  height: 15px;
-  /* Slider handle height */
-  background: #83a03d;
-  /* Green background */
-  cursor: pointer;
-  /* Cursor on hover */
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  /* Set a specific slider handle width */
-  height: 25px;
-  /* Slider handle height */
-  background: #4a5234;
-  /* Green background */
-  cursor: pointer;
-  /* Cursor on hover */
 }
