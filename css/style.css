@@ -35,7 +35,7 @@ body:before {
 
 p {
   font-family: 'lexia', serif;
-  font-weight: 200;
+  font-weight:lighter;
   font-size: 16px;
   color: #FFFF;
   z-index: 10000;
