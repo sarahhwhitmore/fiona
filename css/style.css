@@ -297,6 +297,10 @@ h6 {
   z-index: 700;
 }
 
+.intro-darker {
+  background: #010610;
+}
+
 /*Start video background full screen with project title*/
 
 .full-vid {
