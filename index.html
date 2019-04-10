@@ -166,10 +166,15 @@
   <div class="container">
     <div class="row no-gutters h100">
       <div class="col-lg-12">
+<<<<<<< HEAD
         <p class="big-text flex alignCenter">So the zoo had to help.</p>
         <p class="little-text flex alignCenter"> Fiona was so small and vulnerable that she required 24-hour care. Luckily, Bibi was used to standing still for ultrasounds, so caretakers were able to collect milk. It had to be added to a fluid mixture and tube fed to Fiona since she was so weak.
           Bibi could not produce enough milk to support Fiona, and the Zoo had to come up with a synthetic formula very quickly, without any existing knowledge of how to even begin formulating artificial hippo milk.</p>
         <button type="button" class="fionafact" data-toggle="popover" title="" data-content="Zoo staff named the baby hippo “Fiona” after the Shrek heroine and it because it means “fair.”">Fiona Facts</button>
+=======
+        <p class="big-text flex alignCenter justifyCenter">So the zoo had to help.</p>
+        <p class="little-text flex alignCenter justifyCenter"> Fiona was so small and vulnerable that she required 24-hour care. Luckily, Bibi was used to standing still for ultrasounds, so caretakers were able to collect milk. It had to be added to a fluid mixture and tube fed to Fiona since she was so weak.  Bibi could not produce enough milk to support Fiona, and the Zoo had to come up with a synthetic formula very quickly, without any existing knowledge of how to even begin formulating artificial hippo milk.</p>
+>>>>>>> d3b433a05f7b0e03e9be9563f6731afa13c61ff6
       </div>
       <!-- end column -->
     </div>
@@ -542,6 +547,7 @@
         <i class="fab fa-instagram"></i>
       </span></a>
 
+<<<<<<< HEAD
       </div>
       <!--ending col-md-12-->
     </div>
@@ -773,6 +779,222 @@
       changePic(val);
     });
   </script>
+=======
+      </div><!--ending col-md-12-->
+        </div><!-- end row -->
+      </div><!--ending container-->
+
+      <!-- End Social links -->
+      <!--close main container -->
+
+      <footer>
+        <div class="row">
+          <div class="col-md-3">
+            <a href="http://2019.soulofathens.com" target="_blank"><img src="img/SOA-logo-transparent-background.png" alt="Soul of Athens Main Site Logo"></a>
+          </div><!--ending col-md-3-->
+          <div class="col-md-2">
+            <h3>Lauren Klintworth</h3>
+            <h3><i>UX Designer</i></h3>
+          </div><!--ending Lauren-->
+
+          <div class="col-md-2">
+            <h3>Riley Watson</h3>
+            <h3><i> Designer, Video Editor</i></h3>
+          </div><!--ending Riley-->
+
+          <div class="col-md-2">
+            <h3>Sarah H. Whitmore</h3>
+            <h3><i>Developer </i></h3>
+          </div><!--ending Sarah-->
+
+          <div class="col-md-3">
+            <h3>&copy 2019 Ohio University School of Visual Communication</h3>
+          </div><!--ending copyright-->
+        </div><!--ending row-->
+      </footer>
+
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <!-- ScrollMagic -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+
+      <!-- SrollMagic commands  -->
+      <script src="js/main.js"></script>
+
+
+          <!-- AOS library -->
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
+
+          <!-- Popover Script -->
+          <script>
+            $('[data-toggle="popover"]').popover();
+          </script>
+
+          <!-- Image comparison javascript  -->
+          <script>
+            function initComparisons() {
+              var x, i;
+              /* Find all elements with an "overlay" class: */
+              x = document.getElementsByClassName("img-comp-overlay");
+              for (i = 0; i < x.length; i++) {
+                /* Once for each "overlay" element:
+                pass the "overlay" element as a parameter when executing the compareImages function: */
+                compareImages(x[i]);
+              }
+              function compareImages(img) {
+                var slider, img, clicked = 0,
+                  w, h;
+                /* Get the width and height of the img element */
+                w = img.offsetWidth;
+                h = img.offsetHeight;
+                /* Set the width of the img element to 50%: */
+                img.style.width = (w / 1.2) + "px";
+                /* Create slider: */
+                slider = document.createElement("DIV");
+                slider.setAttribute("class", "img-comp-slider");
+                /* Insert slider */
+                img.parentElement.insertBefore(slider, img);
+                /* Position the slider in the middle: */
+                slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+                slider.style.left = (w / 1.2) - (slider.offsetWidth / 1.2) + "px";
+                /* Execute a function when the mouse button is pressed: */
+                slider.addEventListener("mousedown", slideReady);
+                /* And another function when the mouse button is released: */
+                window.addEventListener("mouseup", slideFinish);
+                /* Or touched (for touch screens: */
+                slider.addEventListener("touchstart", slideReady);
+                /* And released (for touch screens: */
+                window.addEventListener("touchstop", slideFinish);
+                function slideReady(e) {
+                  /* Prevent any other actions that may occur when moving over the image: */
+                  e.preventDefault();
+                  /* The slider is now clicked and ready to move: */
+                  clicked = 1;
+                  /* Execute a function when the slider is moved: */
+                  window.addEventListener("mousemove", slideMove);
+                  window.addEventListener("touchmove", slideMove);
+                }
+                function slideFinish() {
+                  /* The slider is no longer clicked: */
+                  clicked = 0;
+                }
+                function slideMove(e) {
+                  var pos;
+                  /* If the slider is no longer clicked, exit this function: */
+                  if (clicked == 0) return false;
+                  /* Get the cursor's x position: */
+                  pos = getCursorPos(e)
+                  /* Prevent the slider from being positioned outside the image: */
+                  if (pos < 0) pos = 0;
+                  if (pos > w) pos = w;
+                  /* Execute a function that will resize the overlay image according to the cursor: */
+                  slide(pos);
+                }
+                function getCursorPos(e) {
+                  var a, x = 0;
+                  e = e || window.event;
+                  /* Get the x positions of the image: */
+                  a = img.getBoundingClientRect();
+                  /* Calculate the cursor's x coordinate, relative to the image: */
+                  x = e.pageX - a.left;
+                  /* Consider any page scrolling: */
+                  x = x - window.pageXOffset;
+                  return x;
+                }
+                function slide(x) {
+                  /* Resize the image: */
+                  img.style.width = x + "px";
+                  /* Position the slider: */
+                  slider.style.left = img.offsetWidth - (slider.offsetWidth / 4) + "px";
+                }
+              }
+            }
+          </script>
+
+          <script>
+            initComparisons();
+          </script>
+
+          <!-- Other scripts ?? -->
+          <!-- <script src="js/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>
+          window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')
+        </script> -->
+          <!-- <script src="js/bootstrap.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script> -->
+
+          <!-- Scroll progress  -->
+          <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {
+              scrollProgress()
+            };
+            function scrollProgress() {
+              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("myBar").style.width = scrolled + "%";
+            }
+          </script>
+
+      <!-- Development slider -->
+      <script>
+        var picsData = [{
+            pic: 'img/kitten1.jpg',
+            line1: 'Birth',
+            line2: 'Weight: 24 pounds ',
+            line3: 'Food intake: '
+          },
+          {
+            pic: 'img/kitten2.jpg',
+            line1: '3 months',
+            line2: 'Weight: ',
+            line3: 'Food intake: '
+          },
+          {
+            pic: 'img/kitten3.jpg',
+            line1: '6 months',
+            line2: 'Weight: ',
+            line3: 'Food intake: '
+          },
+          {
+            pic: 'img/kitten4.jpg',
+            line1: '1 year',
+            line2: 'Weight: ',
+            line3: 'Food intake: '
+          },
+          {
+            pic: 'img/sonogram.jpg',
+            line1: '2 years',
+            line2: 'Weight: ',
+            line3: 'Food intake: '
+          }
+        ];
+
+        // Function to change data points and update chart
+               var changePic = function(val) {
+                 console.log(val, picsData[val]);
+                 // update intro text with range of years shown
+                 $('#image').html('<img src="' + picsData[val].pic + '" class="img-fluid" alt="Responsive image">');
+                 $('#line1').html('<p>' + picsData[val].line1 + '</p>');
+                 $('#line2').html('<p>' + picsData[val].line2 + '</p>');
+                 $('#line3').html('<p>' + picsData[val].line3 + '</p>');
+               };
+               // SLIDER INPUT FUNCTION
+               $('#slider1').on('input', function(e) {
+                 // get slider value from e (event)
+                 var val = e.currentTarget.value;
+                 changePic(val);
+               });
+             </script>
+>>>>>>> d3b433a05f7b0e03e9be9563f6731afa13c61ff6
 
 
 
