@@ -311,7 +311,7 @@ h6 {
   padding-bottom: 56.75%;
   padding-top: 0;
   overflow: hidden;
-  z-index: -8000;
+  z-index: 600;
 }
 
 .full-vid iframe {
