@@ -13,6 +13,40 @@ sorta peach #c1705e
 dark green #4a5234
 medium teal #006a74 */
 
+.bgneutral {
+  background-color: #877b70;
+}
+
+.bggreen1 {
+  background-color: #83a03d;
+}
+
+.bgteal1 {
+    background-color: #a3dad7;
+}
+
+.bgnavy {
+    background-color: #4d5d5d;
+}
+
+.bgpeach {
+      background-color: #c1705e;
+}
+
+.bggreen2 {
+      background-color: #4a5234;
+}
+
+.bgteal2 {
+      background-color: #006a74;
+}
+
+.bgblack {
+  z-index: -1000;
+  background-color: #000;
+
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -44,6 +78,12 @@ p {
   max-width: 70ch;
 }
 
+#grow {
+  width: auto;
+  height: 100%;
+  background-color: gray;
+}
+
 .big-text {
   font-size: 35px;
   color: #ffffff;
@@ -51,6 +91,10 @@ p {
 
 .little-text {
   font-size: 20px;
+}
+
+.slider-text {
+  font-size: 30px;
 }
 
 .alignCenter {
@@ -69,17 +113,25 @@ p {
   height: 100vh;
 }
 
+.h70 {
+  height: 70vh;
+}
+
 .container-fluid {
   position: relative;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
 }
 
 .container {
   padding: 30px 60px;
 }
 
+.bgred {
+  background-color: darkred;
+}
+
+.bgblue {
+  background-color: darkblue;
+}
 
 main {
   background-color: #f7f7f7;
@@ -100,42 +152,9 @@ main {
   }
 }
 
-.row {
+/* .row {
   padding-bottom: 50px;
-}
-
-/* photo slider*/
-
-.img-comp-container {
-  position: relative;
-  height: 200px;
-  /*should be the same height as the images*/
-}
-
-.img-comp-img {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow: hidden;
-}
-
-.img-comp-img img {
-  display: block;
-  vertical-align: middle;
-}
-
-.img-comp-slider {
-  position: absolute;
-  z-index: 9;
-  cursor: ew-resize;
-  /*set the appearance of the slider:*/
-  width: 10px;
-  height: 50px;
-  background-color: #DCDCDC;
-  opacity: 0.7;
-  border-radius: 0;
-  box-shadow: 3px 3px 20px #DCDCDC;
-}
+} */
 
 /* footer style*/
 
@@ -176,7 +195,7 @@ footer img {
   position: absolute;
   top: 10%;
   left: 10%;
-  z-index: 700;
+  z-index: 1000;
 }
 
 #birthvid-text p, #dadvid-text p {
@@ -190,20 +209,13 @@ footer img {
   z-index: 700;
 }
 
-#impactHead {
-  background: url('img/fionaoffice_01.jpg') 0 0 no-repeat fixed;
-  height: 100%;
-  overflow: hidden;
-  padding: 3%;
-}
-
 .thumbnail {
   position: relative;
 }
 
 .thumbnail img {
   opacity: 0.30;
-  z-index: 900;
+  z-index: 100;
 }
 
 /* Fiona's Impact text  */
@@ -221,24 +233,16 @@ footer img {
 /* video header, intro text */
 
 .project-title {
-  position: absolute;
-  top: 55%;
-  width: 100%;
-  padding-left: 4rem;
-  z-index: 500;
-  padding-bottom: 50px;
-}
-
-.headline {
-  z-index: 1000;
+  margin-bottom: 0%;
+  z-index: 10000;
 }
 
 .project-title img {
-  position: absolute;
-  top: 97%;
-  left: 45%;
-  z-index: 500;
   opacity: 0.7;
+}
+
+.arrow {
+  height: 10vh;
 }
 
 .birth-text {
@@ -251,38 +255,33 @@ footer img {
 }
 
 /* premature to prima donna  */
-
-.headline h1 {
+.project-title h1 {
   font-family: 'lexia-advertising', serif;
   font-weight: 400;
   font-size: 4rem;
   letter-spacing: 3pt;
   text-align: left;
-  padding-left: 4rem;
   color: white;
 }
 
 /* The Heartwarming Story of Fiona the Hippo */
-
-.headline h2 {
+.project-title h2 {
   font-family: 'lexia', serif;
   font-weight: 700;
   font-style: italic;
   font-size: 34px;
   text-align: left;
-  padding-left: 4rem;
   color: white;
   letter-spacing: 1.6pt;
 }
 
 /* Soul of Athens Presents */
 
-.headline h3 {
+.project-title h3 {
   font-family: 'lexia', serif;
   font-weight: 100;
   font-size: 16px;
   letter-spacing: 4pt;
-  padding-left: 4rem;
   text-align: left;
   color: white;
 }
@@ -300,6 +299,19 @@ h6 {
   z-index: 800;
 }
 
+#sonogramText {
+font-size: 20px;
+font-family: 'lexia', serif;
+font-style: 'thin';
+z-index: 800;
+}
+
+#sonogramText video {
+  z-index: 1000;
+  width: 100%;
+  height: auto;
+}
+
 .intro-darker {
   z-index: 700;
   opacity: 0.50;
@@ -313,7 +325,7 @@ h6 {
   padding-bottom: 56.75%;
   padding-top: 0;
   overflow: hidden;
-  z-index: -8000;
+  z-index: 600;
 }
 
 .full-vid iframe {
@@ -342,44 +354,38 @@ h6 {
   z-index: -100000;
 }
 
-.intro-vid {
-  position: relative;
-  padding-bottom: 56.75%;
-  padding-top: 0;
-  overflow: hidden;
+#newintro {
+  width: 100vw;
 }
 
-.intro-vid iframe {
+.lighten {
+  background-color: none;
+}
+
+.fill-cont video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -100000;
+}
+/* Becky said use fixed for position here  */
+.intro-vid {
+  position: fixed;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 .intro-vid video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -100000;
-}
-
-.intro-vid img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -100000;
+width: 100%;
+height: auto;
 }
 
 .pullquote {
-  background-color: #4d5d5d;
-  padding: 2rem 1rem 1rem 2rem;
-  margin-bottom: 1rem;
+  background-color: #877b70;
+  padding: 3rem 1rem 1rem 3rem;
 }
 
 .pullquote p {
@@ -483,7 +489,7 @@ h4{
   width: 100%;
   height: 8px;
   background: #4d5d5d;
-  z-index: 11000;
+
 }
 
 /* The progress bar (scroll indicator) */
@@ -492,6 +498,7 @@ h4{
   height: 8px;
   background: #a3dad7;
   width: 0%;
+  z-index: 11000;
 }
 
 .slidecontainer {
