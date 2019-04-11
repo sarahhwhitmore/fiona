@@ -297,6 +297,7 @@ h6 {
   font-family: 'lexia', serif;
   font-style: 'thin';
   z-index: 800;
+  padding-top: 20%;
 }
 
 #sonogramText {
@@ -306,11 +307,6 @@ font-style: 'thin';
 z-index: 800;
 }
 
-#sonogramText video {
-  z-index: 1000;
-  width: 100%;
-  height: auto;
-}
 
 .intro-darker {
   z-index: 700;
@@ -325,7 +321,7 @@ z-index: 800;
   padding-bottom: 56.75%;
   padding-top: 0;
   overflow: hidden;
-  z-index: 600;
+  z-index: 300;
 }
 
 .full-vid iframe {
