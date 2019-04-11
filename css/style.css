@@ -47,6 +47,10 @@ medium teal #006a74 */
 
 }
 
+.bgwhite {
+      background-color: #FFFF;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -537,7 +541,6 @@ hover .btn-link{
 .box {
   width:5%;
   height:5%;
-  background-image: url(img/spot.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -545,33 +548,33 @@ hover .btn-link{
 }
 
 #pin-1 {
-  top:28%;
-  left:7%;
+  top:25%;
+  left:22.5%;
+  /*background-color: red;*/
 }
 
 #pin-2 {
-  top:26%;
-  left:12.5%;
+  top:55%;
+  left:56%;
+  /*background-color: purple;*/
 }
 
 #pin-3 {
-  top:31%;
-  left:16.5%;
+  top:41%;
+  left:23%;
+  /*background-color: blue;*/
 }
 
 #pin-4 {
-  top:36%;
-  left:15%;
+  top:27%;
+  left:68%;
+  /*background-color: green;*/
 }
 
 #pin-5 {
-  top:65.5%;
-  left:22.5%;
-}
-
-#pin-6 {
-  top:22%;
-  left:69.7%;
+  top:77%;
+  left:28%;
+  /*background-color: black;*/
 }
 
 
@@ -627,7 +630,7 @@ hover .btn-link{
 
 .pin-text {
     color:white;
-    background-color: #cf9747;
+    background-color: #006a74;
     opacity: 60%;
     padding: 0.5rem;
     width: 300px;
