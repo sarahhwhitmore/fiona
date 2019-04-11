@@ -78,6 +78,13 @@ p {
   padding: 30px 60px;
 }
 
+.bgred {
+  background-color: darkred;
+}
+
+.bgblue {
+  background-color: darkblue;
+}
 
 main {
   background-color: #f7f7f7;
@@ -298,6 +305,13 @@ h6 {
   z-index: 800;
 }
 
+#sonogramText {
+font-size: 20px;
+font-family: 'lexia', serif;
+font-style: 'thin';
+z-index: 800;
+}
+
 .intro-darker {
   z-index: 700;
   opacity: 0.50;
@@ -503,4 +517,13 @@ h4{
 
 .mb-0{
   color: #FFFF;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .sonogramVid {
+    background: url('img/spineribs2.mp4') no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
 }

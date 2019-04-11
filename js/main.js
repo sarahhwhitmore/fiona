@@ -7,29 +7,20 @@ $(document).ready(function(){
 	var pinIntroScene = new ScrollMagic.Scene({
 		triggerElement: '#intro',
 		triggerHook: 0,
-		duration: '200%'
+		duration: '160%'
 	})
 	.setPin('#intro', {pushFollowers: false})
+	.addIndicators()
 	.addTo(controller);
-
-	var controller = new ScrollMagic.Controller();
 
 	// pin the intro
 	var pinIntroScene2 = new ScrollMagic.Scene({
-		triggerElement: '#intro',
-		triggerHook: 0,
-		duration: '200%'
+		triggerElement: '#introText',
+		triggerHook: 0.8,
+		duration: '30%'
 	})
-	.setPin('#intro', {pushFollowers: false})
-	.addTo(controller);
-
-	// pin the intro
-	var pinIntroScene3 = new ScrollMagic.Scene({
-		triggerElement: '#intro',
-		triggerHook: 0,
-		duration: '200%'
-	})
-	.setPin('#intro', {pushFollowers: false})
+	.setPin('#introText', {pushFollowers: false})
+	.addIndicators()
 	.addTo(controller);
 
 });
