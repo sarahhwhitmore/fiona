@@ -5,22 +5,21 @@ $(document).ready(function(){
 
 	// pin the intro
 	var pinIntroScene = new ScrollMagic.Scene({
-		triggerElement: '#intro',
+		triggerElement: '#newintro',
 		triggerHook: 0,
-		duration: '160%'
+		duration: '140%'
 	})
-	.setPin('#intro', {pushFollowers: false})
+	.setPin('#newintro', {pushFollowers: true})
 	.addIndicators()
 	.addTo(controller);
 
 	// pin the intro
 	var pinIntroScene2 = new ScrollMagic.Scene({
 		triggerElement: '#introText',
-		triggerHook: 0.8,
-		duration: '30%'
+		triggerHook: 0.18,
+		duration: '60%'
 	})
-	.setPin('#introText', {pushFollowers: false})
+	.setPin('#introText', {pushFollowers: true})
 	.addIndicators()
 	.addTo(controller);
-
 });
