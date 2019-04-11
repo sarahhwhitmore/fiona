@@ -22,4 +22,10 @@ $(document).ready(function(){
 	.setPin('#introText', {pushFollowers: true})
 	.addIndicators()
 	.addTo(controller);
+
+
+  var fadeInBg = new TimelineMax()
+          .from(".trigger", 0.70, {
+                  autoAlpha:0
+          });
 });
