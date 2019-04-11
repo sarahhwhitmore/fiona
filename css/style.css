@@ -51,7 +51,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  /* background: linear-gradient(to bottom, #4d5d5d, #c1705e); */
+  background: linear-gradient(to bottom, #006a74, #83a03d);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -66,6 +66,8 @@ body:before {
   opacity: 0.4;
   background: linear-gradient(to right bottom, #4d5d5d 75%);
 }
+
+
 
 p {
   font-family: 'lexia', serif;
@@ -494,7 +496,7 @@ h4{
 
 .progress-bar {
   height: 8px;
-  background: #d8c0a8;
+  background: #a3dad7;
   width: 0%;
   z-index: 11000;
 }
@@ -505,24 +507,129 @@ h4{
 }
 
 .card{
-  background-color: #c1705e;
+  background-color: #4d5d5d;
 }
 
-.mb-0{
+.btn-link{
   color: #FFFF;
 }
 
-@media only screen and (max-width: 560px) {
-  .intro-vid video {
-  width: auto;
-  height: 100%;
-
-  }
+hover .btn-link{
+  color: #FFFF;
 }
 
-@media only screen and (max-width: 1254px) {
-  .intro-vid video {
-    width: auto;
-    height: 100%;
-  }
+
+/*explainer hot spots */
+
+.explainer-image {
+  margin:10px;
+  border:none;
+  position: relative;
+  display: inline-block;
+
+}
+
+.explainer-image img {
+  max-width:100%;
+  display: block;
+}
+
+.box {
+  width:5%;
+  height:5%;
+  background-image: url(img/spot.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+#pin-1 {
+  top:28%;
+  left:7%;
+}
+
+#pin-2 {
+  top:26%;
+  left:12.5%;
+}
+
+#pin-3 {
+  top:31%;
+  left:16.5%;
+}
+
+#pin-4 {
+  top:36%;
+  left:15%;
+}
+
+#pin-5 {
+  top:65.5%;
+  left:22.5%;
+}
+
+#pin-6 {
+  top:22%;
+  left:69.7%;
+}
+
+
+.box:hover > .pin-text {
+  display: block;
+}
+
+.pin-text {
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:-100%;
+  display: none;
+}
+
+.pin-text2 {
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:75%;
+  display: none;
+}
+
+.pin-text h3 {
+    color:white;
+    opacity: 60%;
+    font-size: 20px;
+    padding: 0.5rem;
+    width: 280px;
+}
+
+.pin-text2 p {
+    color:white;
+    opacity: 60%;
+    padding: 0.5rem;
+    width: 280px;
+}
+
+.pin-text2 h3 {
+    color:white;
+    opacity: 60%;
+    font-size: 20px;
+    padding: 0.5rem;
+    width: 280px;
+}
+
+.pin-text p {
+    color:white;
+    opacity: 60%;
+    padding: 0.5rem;
+    width: 280px;
+}
+
+.pin-text {
+    color:white;
+    background-color: #cf9747;
+    opacity: 60%;
+    padding: 0.5rem;
+    width: 300px;
+    text-overflow: inherit;
 }
