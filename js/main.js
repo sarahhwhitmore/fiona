@@ -43,7 +43,7 @@ $(document).ready(function(){
 	.addIndicators()
 	.addTo(controller);
 
-	// 3. Fiona's Journey Begins...
+	// 5. Zoo staff captured the first-ever...
 	var pinSonogramText = new ScrollMagic.Scene({
 		triggerElement: '#sonogramText',
 		triggerHook: 0,
@@ -53,29 +53,27 @@ $(document).ready(function(){
 	.addIndicators()
 	.addTo(controller);
 
-	//
-	// // 5. pin sonogram text
-	// var pinSonogramText = new ScrollMagic.Scene({
-	// 	triggerElement: '#sonogramText',
-	// 	triggerHook: 0,
-	// 	duration: '100%'
-	// })
-	// .setPin('#sonogramText', {pushFollowers: true})
-	// .addIndicators()
-	// .addTo(controller);
+	// 6. explainer intro slide
+	var pinSonogramText = new ScrollMagic.Scene({
+		triggerElement: '#explainerIntro',
+		triggerHook: 0,
+		duration: '100%'
+	})
+	.setPin('#explainerIntro', {pushFollowers: true})
+	.addIndicators()
+	.addTo(controller);
+
+
+
+
+
+
 
 	// video autoplay fix
-		var videoStartStop_scene = new ScrollScene({triggerElement: "#secc2"}).addTo(controller);
+		// var videoStartStop_scene = new ScrollScene({triggerElement: "#secc2"}).addTo(controller);
 
-	videoStartStop_scene.on("leave", function(e){
-	     if(e.scrollDirection=="FORWARD")
-	          myPlayer.pause();
-	     else
-	          myPlayer.play();
-
-						
-	});
-
+		var v = document.getElementsByTagName("video")[0];
+v.play();
 
 
 });
