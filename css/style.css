@@ -42,7 +42,6 @@ medium teal #006a74 */
 }
 
 .bgblack {
-  z-index: -1000;
   background-color: #000;
 
 }
@@ -354,6 +353,41 @@ z-index: 800;
   z-index: -100000;
 }
 
+.new-vid {
+  position: relative;
+  padding-bottom: 56.75%;
+  padding-top: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 300;
+}
+
+/* .new-vid iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.new-vid video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100000;
+}
+
+.new-vid img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100000;
+}
+
 #newintro {
   width: 100vw;
 }
@@ -368,6 +402,7 @@ z-index: 800;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  display: none;
 }
 
 .intro-vid video {
