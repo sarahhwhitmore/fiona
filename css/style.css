@@ -84,6 +84,16 @@ body:before {
 .white-text{
   font-family: 'lexia', serif;
   font-weight:lighter;
+  font-style: italic;
+  font-size: 18px;
+  color: #FFFF;
+  z-index: 10000;
+  max-width: 70ch;
+}
+
+#quote-person{
+  font-family: 'lexia', serif;
+  font-weight:lighter;
   font-size: 18px;
   color: #FFFF;
   z-index: 10000;
@@ -419,7 +429,7 @@ height: auto;
 }
 
 .pullquote {
-  background-color: #877b70;
+  background-color: #006a74;
   padding: 3rem 1rem 1rem 3rem;
 }
 
@@ -501,7 +511,7 @@ height: auto;
 h3 {
   font-family: 'lexia', serif;
   font-size: 1.75rem;
-  color: black;
+  color: #c1705e;
 }
 
 h4{
@@ -531,7 +541,7 @@ h4{
 
 .progress-bar {
   height: 8px;
-  background: #a3dad7;
+  background: #c1705e;
   width: 0%;
   z-index: 11000;
 }
