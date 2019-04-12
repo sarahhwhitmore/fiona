@@ -63,6 +63,15 @@ $(document).ready(function(){
 	.addIndicators()
 	.addTo(controller);
 
+	// 7. pin explainer
+	var pinExplainer = new ScrollMagic.Scene({
+		triggerElement: '#explainer',
+		triggerHook: 0,
+		duration: '100%'
+	})
+	.setPin('#explainer', {pushFollowers: true})
+	.addIndicators()
+	.addTo(controller);
 
 
 
