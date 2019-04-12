@@ -2,6 +2,10 @@ $(document).ready(function(){
 
 	// Init ScrollMagic
 	var controller = new ScrollMagic.Controller();
+	// var fadeInBg = new TimelineMax()
+	// 		.from(".trigger", 1, {
+	// 				autoAlpha:0
+	// 		});
 
 	// 1. pin the intro
 	var pinIntroScene = new ScrollMagic.Scene({
@@ -12,6 +16,17 @@ $(document).ready(function(){
 	.setPin('#newintro', {pushFollowers: true})
 	.addIndicators()
 	.addTo(controller);
+
+	// // 1.5 pin background fade intro-dark
+	// 	new ScrollMagic.Scene({
+	// 				triggerElement: "#intro-darker",
+	// 				triggerHook: "onLeave",
+	// 				duration: '100%'
+	// 	})
+	// 	.setPin("#intro-darker", {pushFollowers: false})
+	// 	.setTween(fadeInIntro)
+	// 	.addIndicators()
+	// 	.addTo(controller);
 
 	// 2. pin intro text
 	var pinIntroScene2 = new ScrollMagic.Scene({
@@ -26,7 +41,7 @@ $(document).ready(function(){
 	// 3. Fiona's Journey Begins...
 	var pinPregText = new ScrollMagic.Scene({
 		triggerElement: '#pregText',
-		triggerHook: 0.5,
+		triggerHook: 0,
 		duration: '50%'
 	})
 	.setPin('#pregText', {pushFollowers: true})

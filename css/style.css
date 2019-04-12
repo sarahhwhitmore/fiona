@@ -212,6 +212,8 @@ footer img {
 }
 
 #birthvid-text {
+  font-family: 'lexia', serif;
+  font-weight: 400;
   position: absolute;
   top: 10%;
   left: 10%;
@@ -317,14 +319,19 @@ h4 {
   font-family: 'lexia', serif;
   font-style: 'thin';
   z-index: 800;
-  padding-top: 20%;
+
 }
 
-.intro-darker {
-  z-index: 700;
-  opacity: 0.50;
-  background: #010610;
+#row2 {
+    background-color:black;
+    height: 100vh;
+    width: 100vw;
 }
+
+/* #intro-darker {
+  opacity: 1;
+  background: #010610;
+} */
 
 /*Start video background full screen with project title*/
 
@@ -399,6 +406,9 @@ h4 {
 
 #newintro {
   width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
 }
 
 .lighten {

@@ -54,8 +54,8 @@
         <!--ending full-vid-->
 
      <div>
-      <div class="row h100 d-flex justify-content-center align-items-end">
-          <div class="intro-vid" id="newintro">
+      <div class="row h100 d-flex justify-content-center align-items-end" id="newintro">
+          <div class="intro-vid">
             <video src="img/intro.mp4" autoplay="autoplay" muted="muted" loop=""></video>
         </div>
 
@@ -73,10 +73,17 @@
     </div>
   <!--ending container fluid-->
 
+<!--- fading background over home -->
+<div class="container-fluid">
+  <div class="row h100" id="intro-darker">
+
+  </div> <!-- close row -->
+</div>  <!-- close container-fluid -->
+
   <!-- Intro text -->
 <div class="container-fluid">
-    <div class="row h70 flex justify-content-center align-items-center" id="introText">
-      <div class="col-8">
+    <div class="row h100 d-flex justify-content-center align-items-center" id="introText">
+      <div class="col-6">
         <p class="white-text">Fiona, the Nile hippo calf at the Cincinnati Zoo & Botanical Garden has become a social media superstar. She is not the first hippo to be born in captivity, but most definitely the first to rise to such stardom. Born much too early to feed or
           walk on her own, her survival was unlikely. It was up to the teams at the Zoo and Cincinnati Children’s Hospital to help her overcome the odds. </p>
       </div>
@@ -85,6 +92,10 @@
     <!-- ending row -->
    </div>
   <!--ending contianer-->
+
+  <div row id="row2" class="vertical-center trigger pinned-cont">
+        <p class="text-center">Second frame</p>
+        </div><!-- close row2-->
 
   <!-- Focus text complete container -->
   <!-- <div class="container-fluid bgblue">
@@ -95,10 +106,10 @@
     </div> -->
     <!--ending row-->
   <!-- </div> -->
-  <div class="container-fluid">
+  <!-- <div class="container-fluid">
         <div class="row h70 d-flex justify-content-center align-items-center">
         </div>
-      </div>
+      </div> -->
 
 
   <div class="container-fluid bgteal2" id="pregText">
@@ -700,10 +711,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
   <!-- WORKING SCROLLMAGIC SCRIPTS -->
 
   <script src="js/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
   <script src="js/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+
+
 
   <!-- SrollMagic commands  -->
   <script src="js/main.js"></script>
