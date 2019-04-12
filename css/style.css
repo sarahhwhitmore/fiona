@@ -370,6 +370,7 @@ z-index: 800;
   height: 100%;
   z-index: -100000;
 }
+
 /* Becky said use fixed for position here  */
 .intro-vid {
   position: fixed;
