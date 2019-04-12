@@ -57,7 +57,7 @@ $(document).ready(function(){
 	var pinSonogramText = new ScrollMagic.Scene({
 		triggerElement: '#explainerIntro',
 		triggerHook: 0,
-		duration: '100%'
+		duration: '60%'
 	})
 	.setPin('#explainerIntro', {pushFollowers: true})
 	.addIndicators()
@@ -72,6 +72,18 @@ $(document).ready(function(){
 	.setPin('#explainer', {pushFollowers: true})
 	.addIndicators()
 	.addTo(controller);
+
+	// 7. So the zoo had to help
+	var pinZooText = new ScrollMagic.Scene({
+		triggerElement: '#help',
+		triggerHook: 0,
+		duration: '60%'
+	})
+	.setPin('#help', {pushFollowers: true})
+	.addIndicators()
+	.addTo(controller);
+
+
 
 
 
