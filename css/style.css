@@ -72,10 +72,19 @@ body:before {
 
 
 
-p {
+.black-text {
   font-family: 'lexia', serif;
   font-weight:lighter;
-  font-size: 16px;
+  font-size: 18px;
+  color: black;
+  z-index: 10000;
+  max-width: 70ch;
+}
+
+.white-text{
+  font-family: 'lexia', serif;
+  font-weight:lighter;
+  font-size: 18px;
   color: #FFFF;
   z-index: 10000;
   max-width: 70ch;
@@ -88,12 +97,9 @@ p {
 }
 
 .big-text {
+  font-family: 'lexia', serif;
   font-size: 35px;
   color: #ffffff;
-}
-
-.little-text {
-  font-size: 20px;
 }
 
 .slider-text {
@@ -289,7 +295,7 @@ footer img {
   color: white;
 }
 
-h6 {
+h4 {
   font-family: 'lexia', serif;
   font-weight: 500;
   font-size: 20px;
@@ -419,7 +425,7 @@ height: auto;
   color: #fff;
 }
 
-.pullquote h6 {
+.pullquote h4 {
   font-size: 25px;
   color: #fff;
 }
@@ -493,7 +499,7 @@ height: auto;
 h3 {
   font-family: 'lexia', serif;
   font-size: 1.75rem;
-  color: #FFFF;
+  color: black;
 }
 
 h4{
@@ -658,4 +664,22 @@ hover .btn-link{
     padding: 0.5rem;
     width: 300px;
     text-overflow: inherit;
+}
+
+/*Phone sized media query*/
+@media only screen and (max-width: 600px) {
+  .explainer-image{
+    display:none;
+  }
+
+  #explainer-mobile{
+    padding-bottom: 30px;
+  }
+}
+
+/*anything larger than a phone*/
+@media only screen and (min-width: 600px) {
+  #explainer-mobile{
+    display:none;
+  }
 }
