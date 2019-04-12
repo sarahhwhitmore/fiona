@@ -7,7 +7,7 @@ $(document).ready(function(){
 	var pinIntroScene = new ScrollMagic.Scene({
 		triggerElement: '#newintro',
 		triggerHook: 0,
-		duration: '70%'
+		duration: '60%'
 	})
 	.setPin('#newintro', {pushFollowers: true})
 	.addIndicators()
@@ -24,27 +24,58 @@ $(document).ready(function(){
 	.addTo(controller);
 
 	// 3. Fiona's Journey Begins...
-	var pinSonogram = new ScrollMagic.Scene({
+	var pinPregText = new ScrollMagic.Scene({
 		triggerElement: '#pregText',
-		triggerHook: 0.25,
-		duration: '40%'
+		triggerHook: 0.5,
+		duration: '50%'
 	})
 	.setPin('#pregText', {pushFollowers: true})
 	.addIndicators()
 	.addTo(controller);
 
-		// 4. sonogram text fade in
+	// 4. pin sonogram vid
+	var pinSonogramVid = new ScrollMagic.Scene({
+		triggerElement: '#sonogramVid',
+		triggerHook: 0,
+		duration: '200%'
+	})
+	.setPin('#sonogramVid', {pushFollowers: false})
+	.addIndicators()
+	.addTo(controller);
 
-		var fadein_tween = TweenMax
-		.fromTo('.sonogramText', 1, { yPercent:100 , opacity:0.5 }, { yPercent:0 , opacity:1 , ease:Power1.easeInOut  });
+	// 3. Fiona's Journey Begins...
+	var pinSonogramText = new ScrollMagic.Scene({
+		triggerElement: '#sonogramText',
+		triggerHook: 0,
+		duration: '100%'
+	})
+	.setPin('#sonogramText', {pushFollowers: true})
+	.addIndicators()
+	.addTo(controller);
 
-		var scene = new ScrollMagic.Scene({
-		  triggerElement: "#sonogramText",
-		  trigerHook:"onEnter",
-		  duration: "50%"
-		})
-		.setTween(fadein_tween)
-		.addTo(controller);
+	//
+	// // 5. pin sonogram text
+	// var pinSonogramText = new ScrollMagic.Scene({
+	// 	triggerElement: '#sonogramText',
+	// 	triggerHook: 0,
+	// 	duration: '100%'
+	// })
+	// .setPin('#sonogramText', {pushFollowers: true})
+	// .addIndicators()
+	// .addTo(controller);
+
+	// video autoplay fix
+		var videoStartStop_scene = new ScrollScene({triggerElement: "#secc2"}).addTo(controller);
+
+	videoStartStop_scene.on("leave", function(e){
+	     if(e.scrollDirection=="FORWARD")
+	          myPlayer.pause();
+	     else
+	          myPlayer.play();
+
+						
+	});
+
 
 
 });

@@ -120,6 +120,10 @@ p {
   height: 70vh;
 }
 
+.h50 {
+  height: 50vh;
+}
+
 .container-fluid {
   position: relative;
 }
@@ -302,14 +306,6 @@ h6 {
   z-index: 800;
   padding-top: 20%;
 }
-
-#sonogramText {
-font-size: 20px;
-font-family: 'lexia', serif;
-font-style: 'thin';
-z-index: 800;
-}
-
 
 .intro-darker {
   z-index: 700;
