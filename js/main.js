@@ -107,6 +107,13 @@ $(function() {
             .from(".trigger", 1, {
                     autoAlpha:0
             });
+
+    // 2 fade black sonogram
+      		var fadeInBlack = new TimelineMax()
+                  .from(".trigger", 1, {
+                          autoAlpha:0
+                  });
+
   /* STEP 2: Create animation if desired
     var slideBox = new TimelineMax()
                 });*/
@@ -162,6 +169,17 @@ $(function() {
 						.addIndicators()
 						.addTo(controller);
 
+            // fade to darker sonogram
+                new ScrollMagic.Scene({
+                        triggerElement: ".trigger2",
+                        triggerHook: "onLeave",
+                        duration: "100%"
+                    })
+                    .setPin(".pinned-cont2", {pushFollowers: false})
+                    .setTween(fadeInBlack)
+                    .addIndicators()
+                    .addTo(controller);
+
 						// Zoo staff captured the first-ever...
 						new ScrollMagic.Scene({
 							triggerElement: '#sonogramText',
@@ -171,6 +189,17 @@ $(function() {
 						.setPin('#sonogramText', {pushFollowers: true})
 						.addIndicators()
 						.addTo(controller);
+
+            // Fiona arrived just 15 days later...
+            new ScrollMagic.Scene({
+              triggerElement: '#birthIntro',
+              triggerHook: 0,
+              duration: '50%'
+            })
+            .setPin('#birthIntro', {pushFollowers: true})
+            .addIndicators()
+            .addTo(controller);
+
 
 						// explainer intro slide
 						new ScrollMagic.Scene({
@@ -182,15 +211,15 @@ $(function() {
 						.addIndicators()
 						.addTo(controller);
 
-						// pin explainer
-					new ScrollMagic.Scene({
-							triggerElement: '#explainer',
-							triggerHook: 0,
-							duration: '100%'
-						})
-						.setPin('#explainer', {pushFollowers: true})
-						.addIndicators()
-						.addTo(controller);
+						// pin explainer -- ready to go, comment back in if sizing of graphic can fit well within viewport all at once
+					// new ScrollMagic.Scene({
+					// 		triggerElement: '#explainer',
+					// 		triggerHook: 0,
+					// 		duration: '100%'
+					// 	})
+					// 	.setPin('#explainer', {pushFollowers: true})
+					// 	.addIndicators()
+					// 	.addTo(controller);
 
 						// So the zoo had to help
 						 new ScrollMagic.Scene({

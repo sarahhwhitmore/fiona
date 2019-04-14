@@ -236,6 +236,10 @@ footer img {
   font-size: 1.4rem;
 }
 
+#FionaFloatingHead {
+  z-index: 500;
+}
+
 .thumbnail {
   position: relative;
 }
