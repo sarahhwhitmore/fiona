@@ -108,9 +108,9 @@ $(function() {
                     autoAlpha:0
             });
 
-    // 2 fade black sonogram
+  // 2 fade black sonogram
       		var fadeInBlack = new TimelineMax()
-                  .from(".trigger", 1, {
+                  .from(".trigger2", 1, {
                           autoAlpha:0
                   });
 
@@ -173,7 +173,7 @@ $(function() {
                 new ScrollMagic.Scene({
                         triggerElement: ".trigger2",
                         triggerHook: "onLeave",
-                        duration: "100%"
+                        duration: "20%"
                     })
                     .setPin(".pinned-cont2", {pushFollowers: false})
                     .setTween(fadeInBlack)
