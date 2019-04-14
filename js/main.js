@@ -149,7 +149,7 @@ $(function() {
 						.addIndicators()
 						.addTo(controller);
 
-						//  Fiona's Journey Begins...
+						//  4. Fiona's Journey Begins...
 					new ScrollMagic.Scene({
 							triggerElement: '#pregText',
 							triggerHook: 0,
@@ -159,28 +159,38 @@ $(function() {
 						.addIndicators()
 						.addTo(controller);
 
-						//  pin sonogram vid
+						//  5. pin sonogram vid
 		 			new ScrollMagic.Scene({
 							triggerElement: '#sonogramVid',
 							triggerHook: 0,
 							duration: '200%'
 						})
 						.setPin('#sonogramVid', {pushFollowers: false})
-						.addIndicators()
+
 						.addTo(controller);
 
-            // fade to darker sonogram
+            // 6. fade to darker sonogram
                 new ScrollMagic.Scene({
                         triggerElement: ".trigger2",
-                        triggerHook: "onLeave",
-                        duration: "20%"
+                        triggerHook: "0",
+                        duration: "100%"
                     })
                     .setPin(".pinned-cont2", {pushFollowers: false})
                     .setTween(fadeInBlack)
                     .addIndicators()
                     .addTo(controller);
 
-						// Zoo staff captured the first-ever...
+        // 7. fade to darker PIN
+            // new ScrollMagic.Scene({
+            //         triggerElement: ".trigger2",
+            //         triggerHook: "onLeave",
+            //         duration: "100%"
+            //     })
+            //     .setPin(".pinned-cont2", {pushFollowers: false})
+            //     .addIndicators()
+            //     .addTo(controller);
+
+						// 8. Zoo staff captured the first-ever...
 						new ScrollMagic.Scene({
 							triggerElement: '#sonogramText',
 							triggerHook: 0,
@@ -190,7 +200,7 @@ $(function() {
 						.addIndicators()
 						.addTo(controller);
 
-            // Fiona arrived just 15 days later...
+            // 9. Fiona arrived just 15 days later...
             new ScrollMagic.Scene({
               triggerElement: '#birthIntro',
               triggerHook: 0,
@@ -201,7 +211,7 @@ $(function() {
             .addTo(controller);
 
 
-						// explainer intro slide
+						// 10. explainer intro slide
 						new ScrollMagic.Scene({
 							triggerElement: '#explainerIntro',
 							triggerHook: 0,
@@ -222,14 +232,14 @@ $(function() {
 					// 	.addTo(controller);
 
 						// So the zoo had to help
-						 new ScrollMagic.Scene({
-							triggerElement: '#help',
-							triggerHook: 0,
-							duration: '60%'
-						})
-						.setPin('#help', {pushFollowers: true})
-						.addIndicators()
-						.addTo(controller);
+						//  new ScrollMagic.Scene({
+						// 	triggerElement: '#help',
+						// 	triggerHook: 0,
+						// 	duration: '60%'
+						// })
+						// .setPin('#help', {pushFollowers: true})
+						// .addIndicators()
+						// .addTo(controller);
 
 						// pin illustration
 						// new ScrollMagic.Scene({
