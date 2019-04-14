@@ -94,9 +94,10 @@ body:before {
   max-width: 50ch;
 }
 
-#quote-person{
+.quote-person{
   font-family: 'lexia', serif;
   font-weight:lighter;
+  font-style: italic;
   font-size: 18px;
   color: #FFFF;
   z-index: 10000;
@@ -699,6 +700,10 @@ hover .btn-link{
 
   #explainer-mobile{
     padding-bottom: 30px;
+  }
+
+  .impactpic{
+    display:none;
   }
 }
 
