@@ -45,6 +45,10 @@ medium teal #006a74 */
   background-color: #000;
 }
 
+.bggradient {
+  background: linear-gradient(inherit, #000);
+}
+
 .bgwhite {
   background-color: #FFFF;
 }
@@ -718,7 +722,7 @@ hover .btn-link {
 
 #row3 {
   background-color: #000;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
 }
 
