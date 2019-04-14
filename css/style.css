@@ -38,7 +38,7 @@ medium teal #006a74 */
 }
 
 .bgteal2 {
-      background-color: #006a74;
+      background-color: #005259;
 }
 
 .bgblack {
@@ -48,6 +48,12 @@ medium teal #006a74 */
 
 .bgwhite {
       background-color: #FFFF;
+}
+
+
+html {
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -686,7 +692,7 @@ hover .btn-link{
 
 /* ---------- ROW 2 ----*/
 #row2 {
-    background-color: #006a74;
+    background-color: #005259;
     height: 100vh;
     width: 100vw;
 }

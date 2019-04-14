@@ -173,7 +173,7 @@ $(function() {
                 new ScrollMagic.Scene({
                         triggerElement: ".trigger2",
                         triggerHook: "onLeave",
-                        duration: "100%"
+                        duration: "20%"
                     })
                     .setPin(".pinned-cont2", {pushFollowers: false})
                     .setTween(fadeInBlack)
