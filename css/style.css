@@ -22,34 +22,32 @@ medium teal #006a74 */
 }
 
 .bgteal1 {
-    background-color: #a3dad7;
+  background-color: #a3dad7;
 }
 
 .bgnavy {
-    background-color: #4d5d5d;
+  background-color: #4d5d5d;
 }
 
 .bgpeach {
-      background-color: #c1705e;
+  background-color: #c1705e;
 }
 
 .bggreen2 {
-      background-color: #4a5234;
+  background-color: #4a5234;
 }
 
 .bgteal2 {
-      background-color: #005259;
+  background-color: #005259;
 }
 
 .bgblack {
   background-color: #000;
-
 }
 
 .bgwhite {
-      background-color: #FFFF;
+  background-color: #FFFF;
 }
-
 
 html {
   padding: 0;
@@ -76,20 +74,18 @@ body:before {
   background: linear-gradient(to right bottom, #4d5d5d 75%);
 }
 
-
-
 .black-text {
   font-family: 'lexia', serif;
-  font-weight:lighter;
+  font-weight: lighter;
   font-size: 18px;
   color: black;
   z-index: 10000;
   max-width: 70ch;
 }
 
-.white-text{
+.white-text {
   font-family: 'lexia', serif;
-  font-weight:lighter;
+  font-weight: lighter;
   font-size: 18px;
   color: #FFFF;
   z-index: 10000;
@@ -100,21 +96,21 @@ body:before {
   max-width: 50ch;
 }
 
-#pregText{
-  background-image: linear-gradient(#005259,#005259,#002e39, black);
+#pregText {
+  background-image: linear-gradient(#005259, #005259, #002e39, black);
 }
 
-#explainerIntro{
-  background-image: linear-gradient(#005259,#005259, #00737a, #00737a, #FFFF);
+#explainerIntro {
+  background-image: linear-gradient(#005259, #005259, #00737a, #00737a, #FFFF);
 }
 
-#birthIntro{
-  background-image: linear-gradient(black,#002e39, #005259,#005259)
+#birthIntro {
+  background-image: linear-gradient(black, #002e39, #005259, #005259)
 }
 
-.quote-person{
+.quote-person {
   font-family: 'lexia', serif;
-  font-weight:lighter;
+  font-weight: lighter;
   font-style: italic;
   font-size: 18px;
   color: #FFFF;
@@ -257,7 +253,7 @@ footer img {
   z-index: 1000;
 }
 
-#birthvid-text p{
+#birthvid-text p {
   font-size: 1.4rem;
 }
 
@@ -311,6 +307,7 @@ footer img {
 }
 
 /* premature to prima donna  */
+
 .project-title h1 {
   font-family: 'lexia-advertising', serif;
   font-weight: 400;
@@ -321,6 +318,7 @@ footer img {
 }
 
 /* The Heartwarming Story of Fiona the Hippo */
+
 .project-title h2 {
   font-family: 'lexia', serif;
   font-weight: 700;
@@ -353,7 +351,6 @@ h4 {
   font-family: 'lexia', serif;
   font-style: 'thin';
   z-index: 800;
-
 }
 
 /* #intro-darker {
@@ -365,18 +362,23 @@ h4 {
 
 .full-vid {
   position: relative;
+  overflow:hidden;
   padding-bottom: 56.75%;
   padding-top: 0;
   overflow: hidden;
   z-index: 300;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .full-vid iframe {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .full-vid video {
@@ -444,6 +446,7 @@ h4 {
 }
 
 /* Becky said use fixed for position here  */
+
 .intro-vid {
   position: fixed;
   overflow: hidden;
@@ -452,8 +455,8 @@ h4 {
 }
 
 .intro-vid video {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .pullquote {
@@ -542,10 +545,11 @@ h3 {
   color: #c1705e;
 }
 
-h4{
+h4 {
   font-family: 'lexia', serif;
   color: #FFFF;
 }
+
 /* Style the header: fixed position (always stay at the top) */
 
 .header {
@@ -562,7 +566,6 @@ h4{
   width: 100%;
   height: 8px;
   background: #4d5d5d;
-
 }
 
 /* The progress bar (scroll indicator) */
@@ -579,37 +582,35 @@ h4{
   /* Width of the outside container */
 }
 
-.card{
+.card {
   background-color: #4d5d5d;
 }
 
-.btn-link{
+.btn-link {
   color: #FFFF;
 }
 
-hover .btn-link{
+hover .btn-link {
   color: #FFFF;
 }
-
 
 /*explainer hot spots */
 
 .explainer-image {
-  margin:10px;
-  border:none;
+  margin: 10px;
+  border: none;
   position: relative;
   display: inline-block;
-
 }
 
 .explainer-image img {
-  max-width:100%;
+  max-width: 100%;
   display: block;
 }
 
 .box {
-  width:5%;
-  height:5%;
+  width: 5%;
+  height: 5%;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -617,102 +618,102 @@ hover .btn-link{
 }
 
 #pin-1 {
-  top:25%;
-  left:22.5%;
+  top: 25%;
+  left: 22.5%;
   /*background-color: red;*/
 }
 
 #pin-2 {
-  top:55%;
-  left:56%;
+  top: 55%;
+  left: 56%;
   /*background-color: purple;*/
 }
 
 #pin-3 {
-  top:41%;
-  left:23%;
+  top: 41%;
+  left: 23%;
   /*background-color: blue;*/
 }
 
 #pin-4 {
-  top:27%;
-  left:68%;
+  top: 27%;
+  left: 68%;
   /*background-color: green;*/
 }
 
 #pin-5 {
-  top:77%;
-  left:28%;
+  top: 77%;
+  left: 28%;
   /*background-color: black;*/
 }
 
-
-.box:hover > .pin-text {
+.box:hover>.pin-text {
   display: block;
 }
 
 .pin-text {
   position: absolute;
-  top:50%;
-  transform:translateY(-50%);
-  left:-100%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -100%;
   display: none;
 }
 
 .pin-text2 {
   position: absolute;
-  top:50%;
-  transform:translateY(-50%);
-  left:75%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 75%;
   display: none;
 }
 
 .pin-text h3 {
-    color:white;
-    opacity: 60%;
-    font-size: 20px;
-    padding: 0.5rem;
-    width: 280px;
+  color: white;
+  opacity: 60%;
+  font-size: 20px;
+  padding: 0.5rem;
+  width: 280px;
 }
 
 .pin-text2 p {
-    color:white;
-    opacity: 60%;
-    padding: 0.5rem;
-    width: 280px;
+  color: white;
+  opacity: 60%;
+  padding: 0.5rem;
+  width: 280px;
 }
 
 .pin-text2 h3 {
-    color:white;
-    opacity: 60%;
-    font-size: 20px;
-    padding: 0.5rem;
-    width: 280px;
+  color: white;
+  opacity: 60%;
+  font-size: 20px;
+  padding: 0.5rem;
+  width: 280px;
 }
 
 .pin-text p {
-    color:white;
-    opacity: 60%;
-    padding: 0.5rem;
-    width: 280px;
+  color: white;
+  opacity: 60%;
+  padding: 0.5rem;
+  width: 280px;
 }
 
 .pin-text {
-    color:white;
-    background-color: #006a74;
-    opacity: 60%;
-    padding: 0.5rem;
-    width: 300px;
-    text-overflow: inherit;
+  color: white;
+  background-color: #006a74;
+  opacity: 60%;
+  padding: 0.5rem;
+  width: 300px;
+  text-overflow: inherit;
 }
 
 /* fade in background */
 
 /* ---------- ROW 2 ----*/
+
 #row2 {
-    background-color: #005259;
-    height: 100vh;
-    width: 100vw;
+  background-color: #005259;
+  height: 100vh;
+  width: 100vw;
 }
 
 #row3 {
@@ -721,33 +722,27 @@ hover .btn-link{
   width: 100vw;
 }
 
-
 /*Phone sized media query*/
-@media only screen and (max-width: 600px) {
-  .explainer-image{
-    display:none;
-  }
 
-  #explainer-mobile{
+@media only screen and (max-width: 600px) {
+  .explainer-image {
+    display: none;
+  }
+  #explainer-mobile {
     padding-bottom: 30px;
   }
-
-  .impactpic{
-    display:none;
-  }
-
-  body{
-    overflow-x: hidden;
+  .impactpic {
+    display: none;
   }
 }
 
 /*anything larger than a phone*/
-@media only screen and (min-width: 600px) {
-  #explainer-mobile{
-    display:none;
-  }
 
-  #impact-mobile{
-    display:none;
+@media only screen and (min-width: 600px) {
+  #explainer-mobile {
+    display: none;
+  }
+  #impact-mobile {
+    display: none;
   }
 }
