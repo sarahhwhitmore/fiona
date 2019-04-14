@@ -735,6 +735,10 @@ hover .btn-link{
   .impactpic{
     display:none;
   }
+
+  body{
+    overflow-x: hidden;
+  }
 }
 
 /*anything larger than a phone*/
