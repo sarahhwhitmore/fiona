@@ -115,7 +115,7 @@ $(function() {
             new ScrollMagic.Scene({
                     triggerElement: ".trigger",
                     triggerHook: "onLeave",
-                    duration: "100%"
+                    duration: "200%"
                 })
                 .setPin(".pinned-cont", {pushFollowers: false})
                 .setTween(fadeInBg)
@@ -123,7 +123,7 @@ $(function() {
                 .addTo(controller);
 
 						//  2. pin the intro
-						var pinIntroScene =	new ScrollMagic.Scene({
+					new ScrollMagic.Scene({
 							triggerElement: '#newintro',
 							triggerHook: 0,
 							duration: '70%'
@@ -132,21 +132,10 @@ $(function() {
 						.addIndicators()
 						.addTo(controller);
 
-						// 1.5 pin background fade intro-dark
-						var pinIntroScene2 = 	new ScrollMagic.Scene({
-										triggerElement: "pinned-cont",
-										triggerHook: "onLeave",
-										duration: '100%'
-							})
-							.setPin(".pinned-cont", {pushFollowers: true})
-							.setTween(fadeInIntro)
-							.addIndicators()
-							.addTo(controller);
-
 						//  3. pin intro text
 					 new ScrollMagic.Scene({
 							triggerElement: '#introText',
-							triggerHook: .5,
+							triggerHook: 0,
 							duration: '50%'
 						})
 						.setPin('#introText', {pushFollowers: true})
@@ -217,7 +206,7 @@ $(function() {
 						new ScrollMagic.Scene({
 						 triggerElement: '#FionaFloatingHead',
 						 triggerHook: 0,
-						 duration: '60%'
+						 duration: '100%'
 					 })
 					 .setPin('#FionaFloatingHead', {pushFollowers: false})
 					 .addIndicators()

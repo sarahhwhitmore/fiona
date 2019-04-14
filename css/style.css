@@ -90,6 +90,10 @@ body:before {
   max-width: 70ch;
 }
 
+#pregText p {
+  max-width: 50ch;
+}
+
 #quote-person{
   font-family: 'lexia', serif;
   font-weight:lighter;
