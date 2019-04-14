@@ -108,7 +108,7 @@ body:before {
 }
 
 #explainerIntro{
-  background-image: linear-gradient(#005259,#005259, #00737a, #00737a, #FFFF);
+  background-image: linear-gradient(#005259, #00737a, #FFFF);
 }
 
 #birthIntro{
