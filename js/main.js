@@ -150,14 +150,14 @@ $(function() {
 						.addTo(controller);
 
 						//  4. Fiona's Journey Begins...
-					new ScrollMagic.Scene({
-							triggerElement: '#pregText',
-							triggerHook: 0,
-							duration: '50%'
-						})
-						.setPin('#pregText', {pushFollowers: true})
-						.addIndicators()
-						.addTo(controller);
+					// new ScrollMagic.Scene({
+					// 		triggerElement: '#pregText',
+					// 		triggerHook: 0,
+					// 		duration: '50%'
+					// 	})
+					// 	.setPin('#pregText', {pushFollowers: true})
+					// 	.addIndicators()
+					// 	.addTo(controller);
 
 						//  5. pin sonogram vid
 		 			new ScrollMagic.Scene({
@@ -193,33 +193,33 @@ $(function() {
 						// 8. Zoo staff captured the first-ever...
 						new ScrollMagic.Scene({
 							triggerElement: '#sonogramText',
-							triggerHook: 0,
-							duration: '100%'
+							triggerHook: 0.4,
+							duration: '50%'
 						})
 						.setPin('#sonogramText', {pushFollowers: true})
 						.addIndicators()
 						.addTo(controller);
 
             // 9. Fiona arrived just 15 days later...
-            new ScrollMagic.Scene({
-              triggerElement: '#birthIntro',
-              triggerHook: 0,
-              duration: '50%'
-            })
-            .setPin('#birthIntro', {pushFollowers: true})
-            .addIndicators()
-            .addTo(controller);
+            // new ScrollMagic.Scene({
+            //   triggerElement: '#birthIntro',
+            //   triggerHook: 0,
+            //   duration: '50%'
+            // })
+            // .setPin('#birthIntro', {pushFollowers: true})
+            // .addIndicators()
+            // .addTo(controller);
 
 
 						// 10. explainer intro slide
-						new ScrollMagic.Scene({
-							triggerElement: '#explainerIntro',
-							triggerHook: 0,
-							duration: '60%'
-						})
-						.setPin('#explainerIntro', {pushFollowers: true})
-						.addIndicators()
-						.addTo(controller);
+						// new ScrollMagic.Scene({
+						// 	triggerElement: '#explainerIntro',
+						// 	triggerHook: 0,
+						// 	duration: '60%'
+						// })
+						// .setPin('#explainerIntro', {pushFollowers: true})
+						// .addIndicators()
+						// .addTo(controller);
 
 						// pin explainer -- ready to go, comment back in if sizing of graphic can fit well within viewport all at once
 					// new ScrollMagic.Scene({
