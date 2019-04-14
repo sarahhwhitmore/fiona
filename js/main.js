@@ -232,14 +232,14 @@ $(function() {
 						.addTo(controller);
 
 						// pin illustration
-						new ScrollMagic.Scene({
-						 triggerElement: '#FionaFloatingHead',
-						 triggerHook: 0,
-						 duration: '100%'
-					 })
-					 .setPin('#FionaFloatingHead', {pushFollowers: false})
-					 .addIndicators()
-					 .addTo(controller);
+						// new ScrollMagic.Scene({
+						//  triggerElement: '#FionaFloatingHead',
+						//  triggerHook: 0,
+						//  duration: '100%'
+					 // })
+					 // .setPin('#FionaFloatingHead', {pushFollowers: false})
+					 // .addIndicators()
+					 // .addTo(controller);
 
 
 
