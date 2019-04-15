@@ -84,6 +84,14 @@ body {
   max-width: 70ch;
 }
 
+.henry-text {
+  font-family: 'lexia', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  max-width: 70ch;
+}
+
 #pregText p {
   max-width: 50ch;
 }
@@ -97,7 +105,7 @@ body {
 }
 
 #birthIntro {
-  background-image: linear-gradient(black, #002e39, #005259, #005259, white)
+  background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,46,57,1) 39%, rgba(0,82,89,1) 54%, rgba(255,255,255,1) 100%);
 }
 
 #teething {
@@ -230,9 +238,7 @@ footer, footer h3 {
   margin-right: auto;
   color: white;
   font-size: 1.1rem;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 1.2rem;
+
   /* line-height: 0.8rem; */
 }
 
@@ -271,6 +277,10 @@ footer img {
 
 #FionaFloatingHead {
   z-index: 100;
+}
+
+#socialMedia {
+  padding-top: 5vh;
 }
 
 .thumbnail {
