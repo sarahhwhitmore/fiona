@@ -123,7 +123,7 @@
   </div>
 
   <!-- Birth Section -->
-  <div class="container-fluid bgteal2" id="birthIntro">
+  <div class="container-fluid" id="birthIntro">
     <div class="row h100 d-flex justify-content-center align-items-center">
       <div class="col-9">
         <p class="big-text" data-aos="fade-up" data-aos-duration="12000" data-aos-easing="ease-in-sine">Fiona arrived by surprise just 15 days later on January 24.</p>
@@ -148,14 +148,14 @@
   <!-- End full width Birth section -->
 
   <!-- Struggle Explainer -->
-  <div class="container-fluid" id="explainerIntro">
+  <!-- <div class="container-fluid" id="explainerIntro">
     <div class="row h100 d-flex justify-content-center align-items-center">
       <div class="col-9">
         <p class="big-text" data-aos="fade-up" data-aos-duration="12000" data-aos-easing="ease-in-sine">Being born six weeks early came with a unique and dangerous set of challenges.</p>
       </div>
     </div>
     <!--ending row-->
-  </div>
+  <!-- </div> -->
   <!--ending contrainer-fluid-->
 
 
@@ -164,6 +164,7 @@
     <div class="explainer-image">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-10">
+          <h2>Being born six weeks early came with a unique and dangerous set of challenges.</h2>
           <img src="img/ProblemExplainer.jpg" class="img-fluid" alt="" />
           <div id="pin-2" class="box">
             <div class="pin-text">
@@ -424,12 +425,23 @@
 
   <!-- Food infographic -->
 
+  <!-- CONTAINER -->
+  <div class="container-fluid bgwhite">
+    <!-- ROW -->
+    <div class="row">
+      <div class="col-lg-10">
+        <h3>chart here</h3>
+        <canvas id="myChart" width="900" height="400"></canvas>
+      </div>
+    </div>
+  </div>
+
   <!-- End food infographic -->
 
 
   <!-- Learning to Swim -->
   <div class="container-fluid bgwhite">
-    <div class="row h100 d-flex justify-content-center align-items-center">
+    <div class="row h50 d-flex justify-content-center align-items-center">
       <div class="col-lg-5 col-sm-10">
         <h3>Learning to Swim</h3>
         <p class="black-text"> Once Fiona began to walk and feed on her own, she could move on to learning other skills. Before she could meet Bibi, Fiona needed to learn how to nurse on her own, walk, swim and get a lot bigger, for her own safety.</p>
@@ -728,9 +740,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
 
+    <!-- CHART.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+
 
     <!-- SrollMagic commands  -->
     <script src="js/main.js"></script>
+
+    <!-- Chart.js -->
+    <script src="js/chart.js"></script>
 
     <!-- AOS library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -784,7 +802,7 @@
             line1: '2 years',
             line2: 'Weight: ',
             line3: 'Food intake: '
-          }
+          }]
     </script>
 
     <!-- Development slider -->
