@@ -112,9 +112,12 @@ body {
   background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,46,57,1) 39%, rgba(0,82,89,1) 54%, rgba(255,255,255,1) 100%);
 }
 
+#happyEnding {
+  background: linear-gradient(rgba(255,255,255,1) 0%, rgba(175,175,175,1) 33%, rgba(26,26,26,1) 100%);
+}
+
 #teething {
   z-index: 400;
-  padding-top: 1000px;
 }
 
 #milkingText {
@@ -129,7 +132,14 @@ body {
 
 #FionaFloatingHead {
   padding-left: 13vh;
-  padding-top: 30vh;
+}
+
+#pawPrints {
+  padding-right: 13vh;
+}
+
+#pawPrints img {
+  opacity: 0.80;
 }
 
 
@@ -142,6 +152,7 @@ body {
   color: #FFFF;
   z-index: 10000;
   max-width: 70ch;
+  margin: 0;
 }
 
 #grow {
@@ -400,7 +411,6 @@ h4 {
   min-width: 100%;
   min-height: 100%;
 }
-ima
 
 .video-fix{
     padding-bottom: 56.75%;
