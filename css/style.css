@@ -732,6 +732,18 @@ hover .btn-link {
   width: 100vw;
 }
 
+#nurses-img{
+  max-height: 500px;
+
+}
+
+.impact-vid{
+  max-width:350px;
+}
+
+.impact-r{
+
+}
 /*Phone sized media query*/
 
 @media only screen and (max-width: 600px) {
