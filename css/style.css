@@ -53,6 +53,10 @@ medium teal #006a74 */
   background-color: #FFFF;
 }
 
+.bgblack90 {
+  background-color: #1A1A1A;
+}
+
 html {
   padding: 0;
   margin: 0;
@@ -72,7 +76,7 @@ body {
   font-family: 'lexia', serif;
   font-weight: lighter;
   font-size: 18px;
-  color: black;
+  color: #1A1A1A;
   max-width: 70ch;
 }
 
@@ -81,6 +85,14 @@ body {
   font-weight: lighter;
   font-size: 18px;
   color: #FFFF;
+  max-width: 70ch;
+}
+
+.henry-text {
+  font-family: 'lexia', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
   max-width: 70ch;
 }
 
@@ -97,15 +109,15 @@ body {
 }
 
 #birthIntro {
-  background-image: linear-gradient(black, #002e39, #005259, #005259, white)
+  background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,46,57,1) 39%, rgba(0,82,89,1) 54%, rgba(255,255,255,1) 100%);
 }
 
 #teething {
-  z-index: 500;
+  z-index: 400;
+  padding-top: 1000px;
 }
 
 #milkingText {
-  padding-bottom: 20vh;
 }
 
 
@@ -113,6 +125,11 @@ body {
   font-family: 'lexia', serif;
   font-size: 35px;
   color: #005259;
+}
+
+#FionaFloatingHead {
+  padding-left: 13vh;
+  padding-top: 30vh;
 }
 
 
@@ -227,9 +244,7 @@ footer, footer h3 {
   margin-right: auto;
   color: white;
   font-size: 1.1rem;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 1.2rem;
+
   /* line-height: 0.8rem; */
 }
 
@@ -268,6 +283,10 @@ footer img {
 
 #FionaFloatingHead {
   z-index: 100;
+}
+
+#socialMedia {
+  padding-top: 10vh;
 }
 
 .thumbnail {
