@@ -401,6 +401,19 @@ h4 {
   min-height: 100%;
 }
 
+
+.video-fix{
+    padding-bottom: 56.75%;
+}
+
+iframe{
+ position:relative;
+ padding-bottom: 56.75%;
+ padding-top: 0;
+ justify-content: center;
+ width: 100%;
+}
+
 #newBirthVid iframe {
   position: absolute;
   top: 0;
