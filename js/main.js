@@ -200,15 +200,15 @@ $(function() {
 						.addTo(controller);
 
 
-            // Fiona Floating Head
-            new ScrollMagic.Scene({
-              triggerElement: '#FionaFloatingHead',
-              triggerHook: 0.25,
-              duration: '85%'
-            })
-            .setPin('#FionaFloatingHead', {pushFollowers: false})
-            .addIndicators()
-            .addTo(controller);
+            // // Fiona Floating Head
+            // new ScrollMagic.Scene({
+            //   triggerElement: '#FionaFloatingHead',
+            //   triggerHook: 0.25,
+            //   duration: '85%'
+            // })
+            // .setPin('#FionaFloatingHead', {pushFollowers: false})
+            // .addIndicators()
+            // .addTo(controller);
 
 
 
