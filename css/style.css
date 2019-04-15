@@ -53,6 +53,10 @@ medium teal #006a74 */
   background-color: #FFFF;
 }
 
+.bgblack90 {
+  background-color: #1A1A1A;
+}
+
 html {
   padding: 0;
   margin: 0;
@@ -72,7 +76,7 @@ body {
   font-family: 'lexia', serif;
   font-weight: lighter;
   font-size: 18px;
-  color: black;
+  color: #1A1A1A;
   max-width: 70ch;
 }
 
@@ -88,7 +92,7 @@ body {
   font-family: 'lexia', serif;
   font-weight: 400;
   font-size: 18px;
-  color: #000;
+  color: #fff;
   max-width: 70ch;
 }
 
@@ -109,11 +113,11 @@ body {
 }
 
 #teething {
-  z-index: 500;
+  z-index: 400;
+  padding-top: 1000px;
 }
 
 #milkingText {
-  padding-bottom: 20vh;
 }
 
 
@@ -121,6 +125,11 @@ body {
   font-family: 'lexia', serif;
   font-size: 35px;
   color: #005259;
+}
+
+#FionaFloatingHead {
+  padding-left: 13vh;
+  padding-top: 30vh;
 }
 
 
@@ -277,7 +286,7 @@ footer img {
 }
 
 #socialMedia {
-  padding-top: 5vh;
+  padding-top: 10vh;
 }
 
 .thumbnail {
