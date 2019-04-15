@@ -92,8 +92,9 @@ body {
   font-family: 'lexia', serif;
   font-weight: 400;
   font-size: 18px;
-  color: #fff;
+  color: #1A1A1A;
   max-width: 70ch;
+  margin: 0;
 }
 
 #pregText p {
@@ -113,7 +114,10 @@ body {
 }
 
 #happyEnding {
-  background: linear-gradient(rgba(255,255,255,1) 0%, rgba(175,175,175,1) 33%, rgba(26,26,26,1) 100%);
+}
+
+#ripHenry {
+  /* background: linear-gradient(rgba(255,255,255,1) 0%, rgba(121,121,121,1) 50%, rgba(0,0,0,1) 100%); */
 }
 
 #teething {
