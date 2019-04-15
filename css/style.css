@@ -93,11 +93,19 @@ body {
 }
 
 #explainerIntro{
-  background-image: linear-gradient(#005259, #00737a, #FFFF);
+  background-image: linear-gradient(#FFFF, #005259, #FFFF);
 }
 
 #birthIntro {
-  background-image: linear-gradient(black, #002e39, #005259, white)
+  background-image: linear-gradient(black, #002e39, #005259, #005259, white)
+}
+
+#teething {
+  z-index: 500;
+}
+
+#milkingText {
+  padding-bottom: 20vh;
 }
 
 .quote-person {
