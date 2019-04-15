@@ -67,23 +67,12 @@ body {
   background-repeat: no-repeat;
 }
 
-body:before {
-  content: '';
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: -10000;
-  opacity: 0.4;
-  background: linear-gradient(to right bottom, #4d5d5d 75%);
-}
 
 .black-text {
   font-family: 'lexia', serif;
   font-weight: lighter;
   font-size: 18px;
   color: black;
-  z-index: 10000;
   max-width: 70ch;
 }
 
@@ -92,7 +81,6 @@ body:before {
   font-weight: lighter;
   font-size: 18px;
   color: #FFFF;
-  z-index: 10000;
   max-width: 70ch;
 }
 
@@ -262,7 +250,7 @@ footer img {
 }
 
 #FionaFloatingHead {
-  z-index: 500;
+  z-index: 100;
 }
 
 .thumbnail {
@@ -276,7 +264,7 @@ footer img {
 
 /* Fiona's Impact text  */
 
-.caption p {
+.thumbnail p {
   position: absolute;
   top: 45%;
   left: 15%;
@@ -354,7 +342,7 @@ h4 {
   font-size: 20px;
   font-family: 'lexia', serif;
   font-style: 'thin';
-  z-index: 800;
+  z-index: 100;
 }
 
 /* #intro-darker {
@@ -370,7 +358,7 @@ h4 {
   padding-bottom: 56.75%;
   padding-top: 0;
   overflow: hidden;
-  z-index: 300;
+  z-index: -150;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -391,7 +379,7 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -100000;
+  z-index: -10000;
 }
 
 .full-vid img {
@@ -400,7 +388,7 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -100000;
+  z-index: -10000;
 }
 
 .new-vid {
@@ -464,7 +452,7 @@ h4 {
 }
 
 .pullquote {
-  background-color: #006a74;
+  background-color: #005259;
   padding: 3rem 1rem 1rem 3rem;
 }
 
@@ -578,7 +566,7 @@ h4 {
   height: 8px;
   background: #c1705e;
   width: 0%;
-  z-index: 11000;
+  z-index: 500;
 }
 
 .slidecontainer {

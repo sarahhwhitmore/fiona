@@ -199,12 +199,14 @@ $(function() {
 						.setPin('#sonogramText', {pushFollowers: true})
 						.addTo(controller);
 
+
+            // Fiona Floating Head
             new ScrollMagic.Scene({
               triggerElement: '#FionaFloatingHead',
               triggerHook: 0.1,
-              duration: '50%'
+              duration: '85%'
             })
-            .setPin('#sonogramText', {pushFollowers: true})
+            .setPin('#FionaFloatingHead', {pushFollowers: false})
             .addTo(controller);
 
 
