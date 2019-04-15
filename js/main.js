@@ -126,7 +126,7 @@ $(function() {
                 })
                 .setPin(".pinned-cont", {pushFollowers: false})
                 .setTween(fadeInBg)
-                .addIndicators()
+
                 .addTo(controller);
 
 						//  2. pin the intro
@@ -136,7 +136,7 @@ $(function() {
 							duration: '70%'
 						})
 						.setPin('#newintro', {pushFollowers: true})
-						.addIndicators()
+
 						.addTo(controller);
 
 						//  3. pin intro text
@@ -146,7 +146,7 @@ $(function() {
 							duration: '50%'
 						})
 						.setPin('#introText', {pushFollowers: true})
-						.addIndicators()
+
 						.addTo(controller);
 
 						//  4. Fiona's Journey Begins...
@@ -177,7 +177,7 @@ $(function() {
                     })
                     .setPin(".pinned-cont2", {pushFollowers: false})
                     .setTween(fadeInBlack)
-                    .addIndicators()
+
                     .addTo(controller);
 
         // 7. fade to darker PIN
@@ -197,8 +197,17 @@ $(function() {
 							duration: '50%'
 						})
 						.setPin('#sonogramText', {pushFollowers: true})
-						.addIndicators()
 						.addTo(controller);
+
+            new ScrollMagic.Scene({
+              triggerElement: '#FionaFloatingHead',
+              triggerHook: 0.1,
+              duration: '50%'
+            })
+            .setPin('#sonogramText', {pushFollowers: true})
+            .addTo(controller);
+
+
 
             // 9. Fiona arrived just 15 days later...
             // new ScrollMagic.Scene({
