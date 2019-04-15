@@ -276,7 +276,7 @@ footer img {
 
 .thumbnail img {
   opacity: 0.30;
-  z-index: 100;
+  z-index: 1000;
 }
 
 /* Fiona's Impact text  */
@@ -381,7 +381,7 @@ h4 {
   min-width: 100%;
   min-height: 100%;
 }
-
+ima
 
 .video-fix{
     padding-bottom: 56.75%;
@@ -515,6 +515,23 @@ iframe{
 
 .impactpic img {
   padding: 2%;
+}
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#fiona-impact{
+  font-size: 60px;
+  color: #006a74;
+}
+
+#impact-quote{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* #animation {
