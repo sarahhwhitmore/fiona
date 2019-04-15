@@ -116,9 +116,6 @@ body {
   padding-bottom: 20vh;
 }
 
-#explainer {
-  padding-top: 5vh;
-}
 
 #explainer h2 {
   font-family: 'lexia', serif;
@@ -796,5 +793,9 @@ hover .btn-link {
   }
   #impact-mobile {
     display: none;
+  }
+
+  #explainer {
+    padding-top:60px;
   }
 }
