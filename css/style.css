@@ -113,20 +113,9 @@ body {
   background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,46,57,1) 39%, rgba(0,82,89,1) 54%, rgba(255,255,255,1) 100%);
 }
 
-#happyEnding {
-}
-
 #ripHenry {
   /* background: linear-gradient(rgba(255,255,255,1) 0%, rgba(121,121,121,1) 50%, rgba(0,0,0,1) 100%); */
 }
-
-#teething {
-  z-index: 400;
-}
-
-#milkingText {
-}
-
 
 #explainer h2 {
   font-family: 'lexia', serif;
@@ -528,6 +517,15 @@ iframe{
 }
 
 .intro-vid video {
+  position: absolute
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
   width: 100%;
   height: auto;
 }
