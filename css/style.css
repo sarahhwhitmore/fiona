@@ -80,10 +80,14 @@ body {
   max-width: 70ch;
 }
 
+.subhead {
+  max-width: 75ch;
+}
+
 .white-text {
   font-family: 'lexia', serif;
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 1.4rem;
   color: #FFFF;
   max-width: 70ch;
 }
