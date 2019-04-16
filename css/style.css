@@ -123,8 +123,11 @@ body {
   color: #005259;
 }
 
-#FionaFloatingHead {
-  padding-left: 13vh;
+#FionaFloatingHead img {
+  padding-left: 10vh;
+  position: relative;
+  top: 45px;
+  left: 20vh;
 }
 
 #pawPrints {
