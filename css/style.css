@@ -113,6 +113,11 @@ body {
   background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,46,57,1) 39%, rgba(0,82,89,1) 54%, rgba(255,255,255,1) 100%);
 }
 
+#chart {
+  padding-top: 10vh;
+}
+}
+
 #ripHenry {
   /* background: linear-gradient(rgba(255,255,255,1) 0%, rgba(121,121,121,1) 50%, rgba(0,0,0,1) 100%); */
 }
@@ -126,8 +131,14 @@ body {
 #FionaFloatingHead img {
   padding-left: 10vh;
   position: relative;
-  top: 45px;
+  top: 50px;
   left: 20vh;
+  opacity: 0.80;
+}
+
+#hungryHippo {
+  height: 20vh;
+  width: 100%;
 }
 
 #pawPrints {
