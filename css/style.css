@@ -114,6 +114,7 @@ body {
 }
 
 #ripHenry {
+  padding-bottom: 30px;
   /* background: linear-gradient(rgba(255,255,255,1) 0%, rgba(121,121,121,1) 50%, rgba(0,0,0,1) 100%); */
 }
 
@@ -372,11 +373,7 @@ footer img {
   color: white;
 }
 
-h4 {
-  font-family: 'lexia', serif;
-  font-weight: 500;
-  font-size: 20px;
-}
+
 
 #introText {
   font-size: 20px;
@@ -535,12 +532,18 @@ iframe{
   padding: 3rem 1rem 1rem 3rem;
 }
 
-.pullquote p {
+
+.quote-text {
+  font-family: 'lexia', serif;
+  font-style: 'thin';
+  font-size: 25px;
   color: #fff;
 }
 
-.pullquote h4 {
-  font-size: 25px;
+#happyFamilyQuote{
+  font-family: 'lexia', serif;
+  font-style: 'thin';
+  font-size:16px;
   color: #fff;
 }
 
@@ -635,7 +638,8 @@ h3 {
 
 h4 {
   font-family: 'lexia', serif;
-  color: #FFFF;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 /* Style the header: fixed position (always stay at the top) */
@@ -815,13 +819,15 @@ hover .btn-link {
 
 }
 
-.impact-vid{
-  max-width:350px;
+#impact-vid{
+  padding-top: 50px;
 }
 
-.impact-r{
-
+.impact-header h4{
+  color: purple;
 }
+
+
 /*Phone sized media query*/
 
 @media only screen and (max-width: 600px) {
@@ -833,6 +839,10 @@ hover .btn-link {
   }
   .impactpic {
     display: none;
+  }
+
+  #happyEnding{
+    padding-bottom: 70px;
   }
 }
 
@@ -849,4 +859,10 @@ hover .btn-link {
   #explainer {
     padding-top:60px;
   }
+
+  .impactpic{
+    padding-bottom: 5px;
+  }
+
+
 }
