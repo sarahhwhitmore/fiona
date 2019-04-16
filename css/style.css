@@ -371,11 +371,6 @@ footer img {
   color: white;
 }
 
-h4 {
-  font-family: 'lexia', serif;
-  font-weight: 500;
-  font-size: 20px;
-}
 
 #introText {
   font-size: 20px;
@@ -547,9 +542,19 @@ h4 {
   color: #fff;
 }
 
-.pullquote h4 {
+
+.quote-text{
   font-size: 25px;
   color: #fff;
+  font-family: 'lexia', serif;
+  font-weight: thin;
+}
+
+#happyFamilyQuote{
+  font-size: 16px;
+  color: #fff;
+  font-family: 'lexia', serif;
+  font-weight: thin;
 }
 
 .impactpic img {
@@ -643,7 +648,7 @@ h3 {
 
 h4 {
   font-family: 'lexia', serif;
-  color: #FFFF;
+  color: #006a74;
 }
 
 /* Style the header: fixed position (always stay at the top) */
@@ -827,9 +832,15 @@ hover .btn-link {
   max-width:350px;
 }
 
-.impact-r{
-
+#ripHenry{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
+.impactpic{
+  padding-bottom: 15px;
+}
+
 /*Phone sized media query*/
 
 @media only screen and (max-width: 600px) {
@@ -842,6 +853,8 @@ hover .btn-link {
   .impactpic {
     display: none;
   }
+
+
 }
 
 /*anything larger than a phone*/
