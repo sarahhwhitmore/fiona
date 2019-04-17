@@ -53,6 +53,7 @@ medium teal #006a74 */
   background-color: #FFFF;
 }
 
+
 .bgblack90 {
   background-color: #1A1A1A;
 }
@@ -75,7 +76,7 @@ body {
 .black-text {
   font-family: 'lexia', serif;
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 1rem;
   color: #1A1A1A;
   max-width: 70ch;
 }
@@ -96,7 +97,7 @@ body {
   font-family: 'lexia', serif;
   font-weight: 400;
   font-size: 18px;
-  color: #1A1A1A;
+  color: white;
   max-width: 70ch;
   margin: 0;
 }
@@ -110,11 +111,15 @@ body {
 }
 
 #explainerIntro{
-  background-image: linear-gradient(#FFFF, #005259, #FFFF);
+  background: linear-gradient(#fff, #a3dad7);
 }
 
+#explainer {
+}
+
+
 #birthIntro {
-  background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,46,57,1) 39%, rgba(0,82,89,1) 54%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,46,57,1) 39%, rgba(0,82,89,1) 54%, rgba(0,0,0,1) 100%);
 }
 
 #chart {
@@ -135,14 +140,17 @@ body {
 #FionaFloatingHead img {
   padding-left: 10vh;
   position: relative;
-  top: 50px;
-  left: 20vh;
+  top: 10vh;
+  left: 10vh;
   opacity: 0.80;
+  z-index: 400;
 }
 
 #hungryHippo {
   height: 20vh;
   width: 100%;
+  z-index: 100;
+  padding-bottom: 40vh ;
 }
 
 #pawPrints {
@@ -159,7 +167,7 @@ body {
   font-weight: lighter;
   font-style: italic;
   font-size: 18px;
-  color: #FFFF;
+  color: #1A1A1A;
   z-index: 10000;
   max-width: 70ch;
   margin: 0;
@@ -179,8 +187,16 @@ body {
 
 .big-text-blue {
   font-family: 'lexia', serif;
-  font-size: 35px;
+  font-size: 1.4rem;
   color: #005259;
+}
+
+.explainer-text-black {
+  font-family: 'lexia', serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #1A1A1A;
+  max-width: 65ch;
 }
 
 #sonogramText2 {
@@ -303,11 +319,23 @@ footer img {
 }
 
 #FionaFloatingHead {
-  z-index: 100;
+  z-index: 0;
 }
 
 #socialMedia {
   padding-top: 10vh;
+}
+
+#fionaLegend {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #005259;
+}
+
+#fulltermLegend {
+  color: #DCDCDC;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .thumbnail {
@@ -391,7 +419,7 @@ footer img {
 
 
 #introText {
-  font-size: 20px;
+  font-size: 1.1rem;
   font-family: 'lexia', serif;
   font-style: 'thin';
   z-index: 100;
@@ -551,6 +579,25 @@ footer img {
   height: auto;
 }
 
+#sonogramVid {
+  width: 100vw;
+  height: 100vh;
+}
+
+#sonogramVid img {
+  position: absolute
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
 .pullquote {
   background-color: #005259;
   padding: 3rem 1rem 1rem 3rem;
@@ -569,11 +616,13 @@ footer img {
 }
 
 #happyFamilyQuote{
-  font-size: 16px;
-  color: #fff;
+  font-size: 1.2rem;
+  color: #1A1A1A;
   font-family: 'lexia', serif;
   font-weight: thin;
 }
+
+
 
 .impactpic img {
   padding: 2%;
@@ -709,8 +758,19 @@ h4 {
   color: #FFFF;
 }
 
-hover .btn-link {
-  color: #FFFF;
+.btn-link:hover {
+  color: #FFF;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0495c9;
+    border-color: #357ebd; /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #00b3db;
+    border-color: #285e8e; /*set the color you want here*/
 }
 
 /*explainer hot spots */
@@ -726,6 +786,44 @@ hover .btn-link {
   max-width: 100%;
   display: block;
 }
+
+#ch1 {
+  background: url(../img/newborn.jpg);
+  background-color: #253440;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed; /* parallax effect */
+}
+
+#ch2 {
+  background: url(../img/bottle.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#ch3 {
+
+}
+
+#ch4 {
+  background: url(../img/bloatof3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
 
 .box {
   width: 5%;
@@ -836,6 +934,18 @@ hover .btn-link {
 }
 
 #row3 {
+  background-color: #000;
+  height: 120vh;
+  width: 100vw;
+}
+
+#row4 {
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(163,218,215,1) 100%);
+  height: 120vh;
+  width: 100vw;
+}
+
+#row5 {
   background-color: #000;
   height: 120vh;
   width: 100vw;

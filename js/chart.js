@@ -2,10 +2,11 @@
 var ctx = $("#myChart")[0].getContext('2d');
 
 // DATA
-var chartData1 = [29, 54, 404, 550, 785, 1000];
+var chartData1 = [29, 181, 400, 550];
+var chartData2 = [75, 250, 460, 560];
 
 // X AXIS LABELS
-var chartLabelsX = ["Birth", "3 months", "6 months", "9 months", "1 year", "2 years"];
+var chartLabelsX = ["Birth", "3 months", "6 months", "9 months"];
 
 // CHART
 var myChart = new Chart(ctx, {
@@ -13,20 +14,38 @@ var myChart = new Chart(ctx, {
   data: {
     labels: chartLabelsX,
     datasets: [{
+        label: "Fiona",
         data: chartData1,
         fill: false,
-        borderColor: '#c1705e',
+        borderColor: '#005259',
+        pointRadius: 5,
+        hoverPointRadius: 5,
         lineTension: 0
       },
-      {}
+      {
+        label: "Full-term hippo",
+        data: chartData2,
+				fill: false,
+        borderColor: '#DCDCDC',
+        pointRadius: 5,
+        hoverPointRadius: 5,
+				lineTension: 0
+      }
     ]
   },
   options: {
 	  legend: {
 	    display: false
 	  },
+    elements: {
+      point : {
+        pointStyle: 'circle',
+        fill: true
+      }
+    },
 		tooltips: {
-      displayColors: false
+      displayColors: false,
+      backgroundColor: '#5C5C5C'
     }
   },
   scales: {
@@ -49,14 +68,3 @@ var myChart = new Chart(ctx, {
 // 	//
 // 	chart.update();
 // };
-
-// Enable button
-$('#btn1').on('click', function() {
-  updateChart(myChart, "G", rand(50, 300), rand(50, 300));
-});
-
-// Generate a random value between a min and max
-var rand = function(min, max) {
-  var num = min + (Math.round(Math.random() * (max - min)));
-  return num;
-}

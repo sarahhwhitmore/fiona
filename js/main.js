@@ -114,6 +114,18 @@ $(function() {
                           autoAlpha:0
                   });
 
+  // 3 fade blue explainer
+          var fadeInBlue = new TimelineMax()
+                  .from(".trigger3", 1, {
+                          autoAlpha:0
+                  });
+
+    // 4 fade over image
+    var fadeInBlack2 = new TimelineMax()
+            .from(".trigger4", 1, {
+                    autoAlpha:0
+            });
+
   /* STEP 2: Create animation if desired
     var slideBox = new TimelineMax()
                 });*/
@@ -126,7 +138,6 @@ $(function() {
                 })
                 .setPin(".pinned-cont", {pushFollowers: false})
                 .setTween(fadeInBg)
-
                 .addTo(controller);
 
 						//  2. pin the intro
@@ -166,7 +177,6 @@ $(function() {
 							duration: '200%'
 						})
 						.setPin('#sonogramVid', {pushFollowers: false})
-
 						.addTo(controller);
 
             // 6. fade to darker sonogram
@@ -177,7 +187,6 @@ $(function() {
                     })
                     .setPin(".pinned-cont2", {pushFollowers: false})
                     .setTween(fadeInBlack)
-
                     .addTo(controller);
 
         // 7. fade to darker PIN
@@ -199,6 +208,69 @@ $(function() {
 						.setPin('#sonogramText', {pushFollowers: true})
 						.addTo(controller);
 
+            // pin birth video
+            new ScrollMagic.Scene({
+                triggerElement: '#birth',
+                triggerHook: 0,
+                duration: '200%'
+              })
+              .setPin('#birth', {pushFollowers: false})
+              .addTo(controller);
+
+            // 6. fade into explainer
+                new ScrollMagic.Scene({
+                        triggerElement: ".trigger3",
+                        triggerHook: "0",
+                        duration: "50%"
+                    })
+
+                    .setTween(fadeInBlue)
+
+                    .addTo(controller);
+
+            // 6. fade into explainer
+                new ScrollMagic.Scene({
+                        triggerElement: ".trigger3",
+                        triggerHook: "0",
+                        duration: "150%"
+                    })
+                    .setPin(".pinned-cont3", {pushFollowers: false})
+
+                    .addTo(controller);
+
+          // pin bottle pic
+                    new ScrollMagic.Scene({
+                      triggerElement: '#ch2',
+                      triggerHook: 0,
+                      duration: '250%'
+                    })
+                    .setPin('#ch2', {pushFollowers: false})
+                    .addTo(controller);
+
+            // fade bottle pic
+            new ScrollMagic.Scene({
+                triggerElement: "#trigger4",
+                triggerHook: "0",
+                duration: "100%"
+            })
+            .setTween(fadeInBlack2)
+            .addTo(controller);
+
+
+          // pin happy family pic
+            new ScrollMagic.Scene({
+              triggerElement: '#ch4',
+              triggerHook: 0,
+              duration: '250%'
+            })
+            .setPin('#ch4', {pushFollowers: false})
+            .addTo(controller);
+
+
+
+
+
+
 
             // // Fiona Floating Head
             // new ScrollMagic.Scene({
@@ -209,6 +281,7 @@ $(function() {
             // .setPin('#FionaFloatingHead', {pushFollowers: false})
             // .addIndicators()
             // .addTo(controller);
+
 
 
 
