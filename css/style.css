@@ -755,12 +755,11 @@ h4 {
   z-index: 10000;
 }
 
-.card {
-  background-color: #4d5d5d;
-}
 
 .btn-link {
   color: #FFFF;
+  font-family: lexia, serif;
+  font-size: 25px;
 }
 
 .btn-link:hover {
@@ -1002,6 +1001,16 @@ h4 {
   }
   .impactpic {
     display: none;
+  }
+
+  .card {
+    background-color: #005259;
+  }
+
+  .explainer-text-mobile{
+    font-family: lexia, serif;
+    font-size: 20px;
+    color: #FFFF;
   }
 
 
