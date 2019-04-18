@@ -223,38 +223,54 @@ $(function() {
                         triggerHook: "0",
                         duration: "50%"
                     })
-
                     .setTween(fadeInBlue)
-
                     .addTo(controller);
 
-            // 6. fade into explainer
+            // 6. pin explainer?
                 new ScrollMagic.Scene({
                         triggerElement: ".trigger3",
                         triggerHook: "0",
                         duration: "150%"
                     })
                     .setPin(".pinned-cont3", {pushFollowers: false})
-
                     .addTo(controller);
 
           // pin bottle pic
                     new ScrollMagic.Scene({
                       triggerElement: '#ch2',
                       triggerHook: 0,
-                      duration: '250%'
+                      duration: '350%'
                     })
                     .setPin('#ch2', {pushFollowers: false})
+                    .addIndicators()
                     .addTo(controller);
 
             // fade bottle pic
             new ScrollMagic.Scene({
-                triggerElement: "#trigger4",
-                triggerHook: "0",
-                duration: "100%"
-            })
-            .setTween(fadeInBlack2)
-            .addTo(controller);
+                    triggerElement: ".trigger4",
+                    triggerHook: "onLeave",
+                    duration: "400%"
+                })
+
+                .setPin(".pinned-cont4", {pushFollowers: false})
+                .setTween(fadeInBlack2)
+                .addIndicators()
+                .addTo(controller);
+
+                // pin fade over bottle pic
+                // new ScrollMagic.Scene({
+                //         triggerElement: "gorsuchQuote",
+                //         triggerHook: "onEnter",
+                //         duration: "200%"
+                //     })
+                //
+                //     .setPin(".pinned-cont4", {pushFollowers: false})
+                //     .addTo(controller);
+                //
+
+
+
+
 
 
           // pin happy family pic
@@ -265,9 +281,6 @@ $(function() {
             })
             .setPin('#ch4', {pushFollowers: false})
             .addTo(controller);
-
-
-
 
 
 
