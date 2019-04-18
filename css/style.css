@@ -961,8 +961,8 @@ h4 {
 
 }
 
-.impact-vid{
-  max-width:350px;
+#impact-vid{
+  padding-top: 30px;
 }
 
 #ripHenry{
@@ -972,6 +972,10 @@ h4 {
 
 .impactpic{
   padding-bottom: 15px;
+}
+
+.impact-videos{
+  max-width: 500px;
 }
 
 /*Phone sized media query*/
