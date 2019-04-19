@@ -153,7 +153,6 @@ $(function() {
     .setPin('#ch2', {
       pushFollowers: false
     })
-    .addIndicators()
     .addTo(controller);
 
   // fade bottle pic
@@ -167,7 +166,6 @@ $(function() {
       pushFollowers: false
     })
     .setTween(fadeInBlack2)
-    .addIndicators()
     .addTo(controller);
 
   // pin happy family pic
@@ -177,8 +175,7 @@ $(function() {
       duration: '300%'
     })
     .setPin('#ch4', {
-      pushFollowers: false
-    })
+      pushFollowers: false })
     .addTo(controller);
 
   // fade in over happy family
@@ -192,7 +189,6 @@ $(function() {
       pushFollowers: false
     })
     .setTween(fadeInBlack3)
-    .addIndicators()
     .addTo(controller);
 
 

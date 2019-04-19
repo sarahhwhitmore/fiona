@@ -610,6 +610,12 @@ footer img {
   color: #fff;
 }
 
+.pullquote img {
+  left: 200;
+  max-width: 50%;
+
+}
+
 .quote-text{
   font-size: 1.2rem;
   color: #fff;
