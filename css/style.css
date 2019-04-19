@@ -283,28 +283,28 @@ footer, footer h3 {
   margin-right: auto;
   color: white;
   font-size: 1.1rem;
+  padding-top: 2rem;
 
   /* line-height: 0.8rem; */
 }
 
-.center-footer {
-  color: white;
-  padding-top: 20px;
-}
-
-.center-footer h3 {
-  position: relative;
-  font-family: 'lexia', serif;
-  font-weight: 600;
-  font-size: 13px;
-  padding-top: 2px;
-  color: white;
-}
-
 footer img {
-  width: 200px;
-  padding-top: 30px;
-  padding-left: 20px;
+  width: 100%;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+#credits p {
+  font-family: 'lexia', serif;
+  padding-top: 0.5rem;
+  text-align: left;
+}
+
+#credits a {
+  font-family: 'lexia', serif;
+  color: #fff;
+  text-align: center;
 }
 
 #FionaFloatingHead {
@@ -412,6 +412,7 @@ footer img {
   font-family: 'lexia', serif;
   font-style: 'thin';
   z-index: 100;
+  color: #FFFF;
 }
 
 /* #intro-darker {
@@ -475,6 +476,15 @@ footer img {
 #hospital {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
   /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(244,199,189,1) 51%, rgba(205,139,124,1) 100%); */
+}
+
+#hospital img {
+  padding-top: 2rem;
+}
+
+.caption-padding {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .full-vid {
@@ -733,6 +743,13 @@ h3 {
 h4 {
   font-family: 'lexia', serif;
   color: #006a74;
+}
+
+h6 {
+  font-family: 'lexia', serif;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 /* Style the header: fixed position (always stay at the top) */
