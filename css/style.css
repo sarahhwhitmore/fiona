@@ -96,11 +96,25 @@ body {
 .henry-text {
   font-family: 'lexia', serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.4rem;
   color: white;
   max-width: 70ch;
   margin: 0;
+  text-align: center;
 }
+
+.henry-text2 {
+  font-family: 'lexia', serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: white;
+  max-width: 70ch;
+  margin: 0;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+
 
 #pregText p {
   max-width: 50ch;
@@ -128,10 +142,6 @@ body {
 
 #chart {
   padding-top: 10vh;
-}
-
-#ripHenry {
-  /* background: linear-gradient(rgba(255,255,255,1) 0%, rgba(121,121,121,1) 50%, rgba(0,0,0,1) 100%); */
 }
 
 #explainer h2 {
@@ -164,17 +174,6 @@ body {
   opacity: 0.80;
 }
 
-
-.quote-person {
-  font-family: 'lexia', serif;
-  font-weight: lighter;
-  font-style: italic;
-  font-size: 18px;
-  color: #1A1A1A;
-  z-index: 10000;
-  max-width: 70ch;
-  margin: 0;
-}
 
 #grow {
   width: auto;
@@ -469,8 +468,13 @@ footer img {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
 }
 
+#impactIntro {
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
+}
+
 #hospital {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
+  /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(244,199,189,1) 51%, rgba(205,139,124,1) 100%); */
 }
 
 .full-vid {
@@ -597,30 +601,39 @@ footer img {
 }
 
 .pullquote {
+/* background: radial-gradient(circle, rgba(0,82,89,1) 0%, rgba(255,255,255,1) 100%); */
   background-color: #005259;
-  padding: 3rem 1rem 1rem 3rem;
+  padding: 2rem;
 }
 
 .pullquote p {
   color: #fff;
 }
 
-
 .quote-text{
-  font-size: 25px;
+  font-size: 1.2rem;
   color: #fff;
   font-family: 'lexia', serif;
   font-weight: thin;
 }
 
+.quote-person {
+  font-family: 'lexia', serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 1rem;
+  color: #fff;
+  z-index: 10000;
+  max-width: 70ch;
+  margin: 0;
+}
+
 #happyFamilyQuote{
   font-size: 1.2rem;
-  color: #1A1A1A;
+  color: #fff;
   font-family: 'lexia', serif;
   font-weight: thin;
 }
-
-
 
 .impactpic img {
   padding: 2%;
@@ -958,6 +971,19 @@ h4 {
   width: 100vw;
 }
 
+/* color overlay on happy family photo */
+#row6 {
+  background-color: #005259;
+  height: 100vh;
+  width: 100vw;
+}
+
+#row7 {
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(163,218,215,1) 100%);
+  height: 120vh;
+  width: 100vw;
+}
+
 #nurses-img{
   max-height: 500px;
 
@@ -968,8 +994,9 @@ h4 {
 }
 
 #ripHenry{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* background: linear-gradient(rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%); */
 }
 
 .impactpic{
