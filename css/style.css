@@ -283,17 +283,22 @@ footer, footer h3 {
   margin-right: auto;
   color: white;
   font-size: 1.1rem;
-  padding-top: 2rem;
 
   /* line-height: 0.8rem; */
 }
 
 footer img {
   width: 100%;
-  padding-top: 3rem;
+  max-width: 200px;
+  /* padding-top: 3rem; */
   padding-left: 2rem;
   padding-bottom: 2rem;
 }
+
+#credits {
+  padding-top: 3rem;
+}
+
 
 #credits p {
   font-family: 'lexia', serif;
@@ -315,16 +320,11 @@ footer img {
   padding-top: 10vh;
 }
 
-#fionaLegend {
-  font-weight: 500;
-  font-size: 1.2rem;
-  color: #005259;
-}
-
-#fulltermLegend {
-  color: #DCDCDC;
-  font-weight: 500;
-  font-size: 1.2rem;
+.socialmedia-text {
+  font-family: 'lexia', serif;
+  color: #1A1A1A;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 .thumbnail {
@@ -332,7 +332,7 @@ footer img {
 }
 
 .thumbnail img {
-  opacity: 0.30;
+  opacity: 0.50;
   z-index: 1000;
 }
 
