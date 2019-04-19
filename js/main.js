@@ -196,7 +196,7 @@ $(function() {
   new ScrollMagic.Scene({
       triggerElement: '#happyText',
       triggerHook: 0,
-      duration: '100%'
+      duration: '30%'
     })
     .setPin('#happyText', {
       pushFollowers: false
