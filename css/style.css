@@ -79,10 +79,13 @@ body {
   font-size: 1rem;
   color: #1A1A1A;
   max-width: 70ch;
+  padding: 1rem;
 }
 
 .subhead {
-  max-width: 75ch;
+  max-width: 70ch;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 
 .white-text {
@@ -91,6 +94,7 @@ body {
   font-size: 1.4rem;
   color: #FFFF;
   max-width: 70ch;
+  padding: 1rem;
 }
 
 .henry-text {
@@ -128,10 +132,6 @@ body {
   background: linear-gradient(#fff, #a3dad7);
 }
 
-#explainer {
-}
-
-
 #birthIntro {
   background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,44,47,1) 25%, rgba(0,82,89,1) 50%, rgba(0,44,47,1) 75%, rgba(0,0,0,1) 100%);
 }
@@ -140,8 +140,8 @@ body {
   z-index: 10;
 } */
 
-#chart {
-  padding-top: 10vh;
+#birth {
+  padding-bottom: 10rem;
 }
 
 #explainer h2 {
@@ -165,15 +165,6 @@ body {
   z-index: 100;
   padding-bottom: 40vh ;
 }
-
-#pawPrints {
-  padding-right: 13vh;
-}
-
-#pawPrints img {
-  opacity: 0.80;
-}
-
 
 #grow {
   width: auto;
@@ -207,6 +198,10 @@ body {
   color: #ffffff;
 }
 
+#dadVid {
+  padding-bottom: 2rem;
+}
+
 .slider-text {
   font-size: 30px;
 }
@@ -227,6 +222,10 @@ body {
   height: 100vh;
 }
 
+.h90 {
+  height: 95vh;
+}
+
 .h70 {
   height: 70vh;
 }
@@ -235,8 +234,17 @@ body {
   height: 50vh;
 }
 
+.h50m {
+  min-height: 50vh;
+}
+
+.h100m {
+  min-height: 100vh;
+}
+
 .container-fluid {
   position: relative;
+  padding: 0;
 }
 
 .container {
@@ -374,7 +382,7 @@ footer img {
 .project-title h1 {
   font-family: 'lexia-advertising', serif;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 3pt;
   text-align: left;
   color: white;
@@ -1075,5 +1083,14 @@ h6 {
 
   #explainer {
     padding-top:60px;
+  }
+
+  .project-title h1 {
+    font-family: 'lexia-advertising', serif;
+    font-weight: 400;
+    font-size: 4rem;
+    letter-spacing: 3pt;
+    text-align: left;
+    color: white;
   }
 }
