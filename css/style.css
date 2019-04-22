@@ -100,6 +100,15 @@ main {
   padding-top: 2rem;
 }
 
+
+#introText {
+  /* font-size: 1.1rem;
+  font-family: 'lexia', serif;
+  font-style: 'thin';
+  z-index: 100;
+  color: #FFFF; */
+}
+
 .white-text {
   font-family: 'lexia', serif;
   font-weight: lighter;
@@ -403,15 +412,6 @@ footer img {
   letter-spacing: 4pt;
   text-align: left;
   color: white;
-}
-
-
-#introText {
-  font-size: 1.1rem;
-  font-family: 'lexia', serif;
-  font-style: 'thin';
-  z-index: 100;
-  color: #FFFF;
 }
 
 /* #intro-darker {
