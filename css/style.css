@@ -72,6 +72,13 @@ body {
   background-repeat: no-repeat;
 }
 
+main {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  color: #6b6b6b;
+  margin: 40px 0;
+}
 
 .black-text {
   font-family: 'lexia', serif;
@@ -79,7 +86,7 @@ body {
   font-size: 1rem;
   color: #1A1A1A;
   max-width: 70ch;
-  padding: 1rem;
+  padding-right: 1rem;
 }
 
 .subhead {
@@ -94,7 +101,6 @@ body {
   font-size: 1.4rem;
   color: #FFFF;
   max-width: 70ch;
-  padding: 1rem;
 }
 
 .henry-text {
@@ -116,12 +122,6 @@ body {
   margin: 0;
   text-align: center;
   padding-top: 1rem;
-}
-
-
-
-#pregText p {
-  max-width: 50ch;
 }
 
 #pregText {
@@ -176,6 +176,7 @@ body {
   font-family: 'lexia', serif;
   font-size: 35px;
   color: #ffffff;
+  max-width: 50ch;
 }
 
 .big-text-blue {
@@ -204,14 +205,6 @@ body {
 
 .slider-text {
   font-size: 30px;
-}
-
-.alignCenter {
-  align-items: center;
-}
-
-.justifyCenter {
-  justify-content: center;
 }
 
 .flex {
@@ -257,14 +250,6 @@ body {
 
 .bgblue {
   background-color: darkblue;
-}
-
-main {
-  background-color: #f7f7f7;
-  padding: 20px;
-  border-radius: 10px;
-  color: #6b6b6b;
-  margin: 40px 0;
 }
 
 .bd-placeholder-img {
@@ -474,6 +459,10 @@ footer img {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
 }
 
+#swimming {
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
+}
+
 #impactIntro {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
 }
@@ -488,7 +477,8 @@ footer img {
 }
 
 .caption-padding {
-  padding-top: 1rem;
+  font-size: 0.9rem;
+  padding-top: 0.7rem;
   padding-bottom: 1.5rem;
 }
 
@@ -505,8 +495,8 @@ footer img {
   min-height: 100%;
 }
 
-.full-vid iframe {
-  position: absolute;
+.full-vid video {
+  position: relative;
   top: 0;
   left: 0;
   min-width: 100%;
@@ -566,12 +556,12 @@ footer img {
   z-index: -100000;
 }
 
-#newintro {
+/* #newintro {
   width: 100vw;
   height: 100vh;
   position: fixed;
   overflow: hidden;
-}
+} */
 
 /* Becky said use fixed for position here  */
 
@@ -583,7 +573,7 @@ footer img {
 }
 
 .intro-vid video {
-  position: absolute
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -845,7 +835,7 @@ h6 {
 }
 
 #ch2 {
-  background: url(../img/bottle.jpg);
+  background: url(../img/bottle2.jpg);
   background-color: #253440;
   background-size: cover;
   background-position: center center;
