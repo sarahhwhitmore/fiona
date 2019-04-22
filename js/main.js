@@ -34,8 +34,7 @@ $(function() {
       autoAlpha: 0
     });
 
-    // 6 quick fade
-    var fade = new TimelineMax()
+    var fadeInBlack4 = new TimelineMax()
       .from(".trigger6", 1, {
         autoAlpha: 0
       });
@@ -168,6 +167,46 @@ $(function() {
     .setTween(fadeInBlack2)
     .addTo(controller);
 
+// pin swimming video
+    new ScrollMagic.Scene({
+        triggerElement: '#swimmingFluff',
+        triggerHook: 0,
+        duration: '300%'
+      })
+      .setPin('#swimmingFluff', { pushFollowers: false })
+      .addIndicators()
+      .addTo(controller);
+
+// new fade to darker swimming vid
+      new ScrollMagic.Scene({
+          triggerElement: ".trigger6",
+          triggerHook: "onLeave",
+          duration: "200%"
+        })
+
+        .setPin(".pinned-cont6", {
+          pushFollowers: false
+        })
+        .setTween(fadeInBlack4)
+        .addTo(controller);
+
+
+      // fade to darker after swimming video
+      // new ScrollMagic.Scene({
+      //     triggerElement: ".trigger6",
+      //     triggerHook: "onEnter",
+      //     duration: "100%"
+      //   })
+      //   // .setPin("pinned-cont6", {  pushFollowers: false  })
+      //   .setTween(fadeInBlack4)
+      //   .addIndicators()
+      //   .addTo(controller);
+
+
+
+
+
+
   // pin happy family pic
   new ScrollMagic.Scene({
       triggerElement: '#ch4',
@@ -193,35 +232,14 @@ $(function() {
 
 
   //  pin happy ending text
-  new ScrollMagic.Scene({
-      triggerElement: '#happyText',
-      triggerHook: 0,
-      duration: '30%'
-    })
-    .setPin('#happyText', {
-      pushFollowers: false
-    })
-    .addTo(controller);
-
-
-    // quick fade to impact intro
-    // new ScrollMagic.Scene({
-    //     triggerElement: ".trigger6",
-    //     triggerHook: "0",
-    //     duration: "50%"
-    //   })
-    //   .setTween(fade)
-    //   .addTo(controller);
-
-
-  // // Fiona Floating Head
   // new ScrollMagic.Scene({
-  //   triggerElement: '#FionaFloatingHead',
-  //   triggerHook: 0.25,
-  //   duration: '85%'
-  // })
-  // .setPin('#FionaFloatingHead', {pushFollowers: false})
-  // .addIndicators()
-  // .addTo(controller);
+  //     triggerElement: '#happyText',
+  //     triggerHook: 0,
+  //     duration: '30%'
+  //   })
+  //   .setPin('#happyText', {
+  //     pushFollowers: false
+  //   })
+  //   .addTo(controller);
 
 });

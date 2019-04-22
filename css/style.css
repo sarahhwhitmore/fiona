@@ -49,6 +49,11 @@ medium teal #006a74 */
   background: linear-gradient(inherit, #000);
 }
 
+.bggradientteal {
+  background: linear-gradient(inherit, #005259);
+}
+
+
 .bgwhite {
   background-color: #FFFF;
 }
@@ -86,7 +91,7 @@ main {
   font-size: 1rem;
   color: #1A1A1A;
   max-width: 70ch;
-  padding-right: 1rem;
+  padding: 1rem;
 }
 
 .subhead {
@@ -101,6 +106,7 @@ main {
   font-size: 1.4rem;
   color: #FFFF;
   max-width: 70ch;
+  padding: 1rem;
 }
 
 .henry-text {
@@ -174,15 +180,10 @@ main {
 
 .big-text {
   font-family: 'lexia', serif;
-  font-size: 35px;
+  font-size: 2.2rem;
   color: #ffffff;
   max-width: 50ch;
-}
-
-.big-text-blue {
-  font-family: 'lexia', serif;
-  font-size: 1.4rem;
-  color: #005259;
+  padding: 1rem;
 }
 
 .explainer-text-black {
@@ -289,6 +290,13 @@ footer img {
   padding-top: 3rem;
 }
 
+#credits h6 {
+  text-align: left;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  max-width: 100ch;
+
+}
 
 #credits p {
   font-family: 'lexia', serif;
@@ -307,7 +315,12 @@ footer img {
 }
 
 #socialMedia {
-  padding-top: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+#icons i {
+  padding: 1rem;
 }
 
 .socialmedia-text {
@@ -319,11 +332,6 @@ footer img {
 
 .thumbnail {
   position: relative;
-}
-
-.thumbnail img {
-  opacity: 0.50;
-  z-index: 1000;
 }
 
 /* Fiona's Impact text  */
@@ -345,6 +353,7 @@ footer img {
   z-index: 10000;
 }
 
+/* svg arrow */
 .project-title img {
   opacity: 0.7;
 }
@@ -367,7 +376,7 @@ footer img {
 .project-title h1 {
   font-family: 'lexia-advertising', serif;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 3pt;
   text-align: left;
   color: white;
@@ -379,7 +388,7 @@ footer img {
   font-family: 'lexia', serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 34px;
+  font-size: 2rem;
   text-align: left;
   color: white;
   letter-spacing: 1.6pt;
@@ -390,7 +399,7 @@ footer img {
 .project-title h3 {
   font-family: 'lexia', serif;
   font-weight: 100;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 4pt;
   text-align: left;
   color: white;
@@ -484,42 +493,56 @@ footer img {
 
 .full-vid {
   position: relative;
-  overflow:hidden;
-  padding-bottom: 56.75%;
-  padding-top: 0;
   overflow: hidden;
-  z-index: -150;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  padding-top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .full-vid video {
   position: relative;
-  top: 0;
-  left: 0;
+  right: 0;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
-.full-vid video {
+.intro-vid {
+  position: fixed;
+  overflow: hidden;
+  padding-top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro-vid video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+/* .full-vid video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -10000;
-}
-
-.full-vid img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10000;
-}
+} */
 
 .new-vid {
   position: relative;
@@ -564,27 +587,6 @@ footer img {
 } */
 
 /* Becky said use fixed for position here  */
-
-.intro-vid {
-  position: fixed;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-}
-
-.intro-vid video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: cover;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-}
 
 #sonogramVid {
   width: 100vw;
@@ -859,6 +861,18 @@ h6 {
   position: relative;
 }
 
+#vid1 {
+  background: url(../img/swimming.mp4);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 10100;
+  background-attachment: fixed;
+}
+
 .map {
   margin:10px;
   border:none;
@@ -1001,20 +1015,21 @@ h6 {
 
 /* color overlay on happy family photo */
 #row6 {
-  background-color: #005259;
+  background: rgb(0,82,89);
+  background: linear-gradient(rgba(0,82,89,1) 0%, rgba(0,0,0,1) 34%);
   height: 100vh;
   width: 100vw;
 }
 
 #row7 {
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(163,218,215,1) 100%);
-  height: 120vh;
+  background: rgba(0, 0, 0, 0.8);
+  /* background-color: #000; */
+  height: 100vh;
   width: 100vw;
 }
 
 #nurses-img{
   max-height: 500px;
-
 }
 
 #impact-vid{
@@ -1075,12 +1090,50 @@ h6 {
     padding-top:60px;
   }
 
+  .black-text {
+    padding: 0;
+  }
+
+  .white-text {
+    padding: 0;
+  }
+}
+
+/*anything smaller than a tablet */
+
+@media only screen and (max-width: 720px) {
+  /* premature to prima donna  */
+
   .project-title h1 {
     font-family: 'lexia-advertising', serif;
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 2.5rem;
     letter-spacing: 3pt;
     text-align: left;
     color: white;
   }
+
+  /* The Heartwarming Story of Fiona the Hippo */
+
+  .project-title h2 {
+    font-family: 'lexia', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.4rem;
+    text-align: left;
+    color: white;
+    letter-spacing: 1.6pt;
+  }
+
+  /* Soul of Athens Presents */
+
+  .project-title h3 {
+    font-family: 'lexia', serif;
+    font-weight: 100;
+    font-size: 1rem;
+    letter-spacing: 4pt;
+    text-align: left;
+    color: white;
+  }
+
 }
