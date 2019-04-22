@@ -174,7 +174,6 @@ $(function() {
         duration: '300%'
       })
       .setPin('#swimmingFluff', { pushFollowers: false })
-      .addIndicators()
       .addTo(controller);
 
 // new fade to darker swimming vid

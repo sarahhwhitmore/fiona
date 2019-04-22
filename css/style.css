@@ -85,6 +85,42 @@ main {
   margin: 40px 0;
 }
 
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text1 {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.image1 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .black-text {
   font-family: 'lexia', serif;
   font-weight: lighter;
@@ -485,10 +521,18 @@ footer img {
   padding-top: 2rem;
 }
 
+#foodInfo {
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
+}
+
 .caption-padding {
   font-size: 0.9rem;
   padding-top: 0.7rem;
   padding-bottom: 1.5rem;
+}
+
+.caption-padding2 {
+  padding-top: 2rem;
 }
 
 .full-vid {
@@ -1072,7 +1116,6 @@ h6 {
     font-size: 20px;
     color: #FFFF;
   }
-
 
 }
 
