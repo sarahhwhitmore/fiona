@@ -158,13 +158,8 @@ main {
   color: #005259;
 }
 
-#FionaFloatingHead img {
-  padding-left: 10vh;
-  position: relative;
-  top: 10vh;
-  left: 10vh;
-  opacity: 0.80;
-  z-index: 400;
+#Fionapeek {
+  height: auto;
 }
 
 #hungryHippo {
@@ -247,14 +242,6 @@ main {
   padding: 30px 60px;
 }
 
-.bgred {
-  background-color: darkred;
-}
-
-.bgblue {
-  background-color: darkblue;
-}
-
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -265,10 +252,6 @@ main {
     font-size: 3.5rem;
   }
 }
-
-/* .row {
-  padding-bottom: 50px;
-} */
 
 /* footer style*/
 
@@ -639,6 +622,8 @@ footer img {
   left: 200;
   max-width: 50%;
 }
+
+
 
 .quote-text{
   font-size: 1.2rem;
@@ -1086,6 +1071,14 @@ h6 {
   padding-bottom: 1rem;
 }
 
+/* #impactrow1 img {
+  padding-left: 1rem;
+} */
+
+.padleft img {
+  padding-left: 1rem;
+}
+
 #impactrow2 {
   padding-bottom: 1rem;
 }
@@ -1129,8 +1122,8 @@ h6 {
     display: none;
   }
 
-  #mobileMichelle {
-    display: none;
+  #mobileMichelle{
+    display:none;
   }
 
   #explainer {
@@ -1146,9 +1139,10 @@ h6 {
   }
 }
 
+
 /*anything smaller than a tablet */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 991.98px) {
   /* premature to prima donna  */
 
   .project-title h1 {
@@ -1194,6 +1188,10 @@ h6 {
 
   .pad2 {
     padding: 2rem;
+  }
+
+  #desktopMichelle{
+    display:none;
   }
 
 }

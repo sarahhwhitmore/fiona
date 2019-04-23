@@ -74,6 +74,11 @@
     </div>
     <!--ending container fluid-->
 
+    <script>
+    document.getElementById("newintro").controls = false;
+
+    </script>
+
     <!--- fading background over home -->
     <div row id="row2" class="trigger pinned-cont">
     </div>
@@ -104,7 +109,7 @@
     <!-- End intro text -->
 
     <div class="container-fluid bgblack" id="sonogramVid">
-      <div class="row h100">
+      <div class="row h100m">
         <img src="img/sonogram2.gif" class="img-fluid" alt="Responsive image">
       </div>
     </div>
@@ -116,7 +121,7 @@
 
     <!-- Pregnancy section -->
     <div class="container-fluid bggradient" id="sonogramText">
-      <div class="row h150 d-flex justify-content-center align-items-center pad1">
+      <div class="row h150m d-flex justify-content-center align-items-center pad1">
         <div class="col-lg-6 col-sm-10">
           <p class="white-text">Fiona was the first-ever ultrasound image of a Nile hippo fetus. Expected not to give birth until March, caretakers thought they had plenty of time to baby-proof the habitat and prepare for the calf's birth, but Fiona had other plans.</p>
         </div>
@@ -127,7 +132,7 @@
     <div class="container-fluid" id="birthIntro">
       <div class="row h100m d-flex justify-content-center align-items-center">
         <div class="col-9">
-          <p class="big-text" data-aos="fade-up" data-aos-duration="8000" data-aos-easing="ease-in-sine">Fiona arrived surprisingly 15 days later. </p>
+          <p class="big-text" data-aos="fade-up" data-aos-duration="8000" data-aos-easing="ease-in-sine">Fiona arrived by surprise 15 days later. </p>
         </div>
         <!--ending col-9-->
       </div>
@@ -367,7 +372,7 @@
           </div>
         </div>
         <div class="row">
-          <img src="img/Fionapeek.png" class="img-fluid">
+          <img src="img/Fionapeek.png" id="Fionapeek" class="img-fluid">
         </div>
         <!--ending pullquote-->
       </div>
@@ -632,28 +637,28 @@
           </div>
           <!--ending col-10-->
 
-          <div class="row d-flex justify-content-center align-items-center pad2">
-            <div id="mobileMichelle">
-            <img src="img/FiMerch_18.jpg" class="img-fluid" alt="Michelle Curley, the zoo's communications director, shows her Fiona tattoo on her upper back.">
-              <p class="black-text caption-padding">Michelle Curley, the zoo's Communications Director, stands in front of her office's impressive collection of Fiona merchandise and pulls her hair to the side to show her Fiona tattoo.</p>
-          </div>
-        </div>
-
         </div> <!--ending row-->
+
+        <div class="row d-flex justify-content-center align-items-center pad2">
+          <div id="mobileMichelle">
+          <img src="img/FiMerch_18.jpg" class="img-fluid" alt="Michelle Curley, the zoo's communications director, shows her Fiona tattoo on her upper back.">
+            <p class="black-text caption-padding">Michelle Curley, the zoo's Communications Director, stands in front of her office's impressive collection of Fiona merchandise and pulls her hair to the side to show her Fiona tattoo.</p>
+        </div>
+      </div>
       <!--ending mobile-->
 
 <!-- impact photos desktop -->
 
-      <div class="row d-flex justify-content-center align-items-center" id="impactrow1">
+      <div class="row d-flex justify-content-center align-items-center no-gutters" id="impactrow1">
           <div class="col-3">
               <img src="img/FiMerch_13.jpg" class="impactpic img-fluid" alt="Fiona-themed ice cream on display in zoo employee offices">
           </div>
 
-          <div class="col-3">
+          <div class="col-3 padleft">
             <img src="img/FiMerch_14.jpg" class="impactpic img-fluid" alt="A painted Fiona trash can at the zoo">
           </div>
 
-          <div class="col-3">
+          <div class="col-3 padleft">
             <img src="img/FiMerch_17.jpg" class="impactpic img-fluid" alt="Fiona stuffed animals, books, t shirts, and hats for sale in a zoo gift shop">
           </div>
 
@@ -732,15 +737,15 @@
 
 
       <!-- Social Media Links -->
-        <div class="row justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-center">
           <div class="col-lg-6 col-sm-8">
-            <p class="socialmedia-text">To keep up with our sassy girl follow her social media accounts!</p>
+            <p class="socialmedia-text">To keep up with our sassy girl follow her on social media accounts!</p>
           </div>
           <!--ending col-->
         </div>
         <!--ending row-->
 
-        <div class="row justify-content-center align-items-center" id="icons">
+        <div class="row d-flex justify-content-center align-items-center" id="icons">
           <div class="col-3">
             <a href="https://www.facebook.com/thefionashow/">
               <span style="font-size: 3em; color: #005259;">
@@ -768,8 +773,8 @@
       <footer>
         <div class="container-fluid bgteal2" id="credits">
           <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-4">
-              <img src="img/grouppic.JPG" class="img-fluid" alt="Sarah, Fiona, Lauren, and Riley">
+            <div class="col-md-4 col-sm-12">
+              <img class="img-fluid" src="img/grouppic.JPG" alt="Sarah, Fiona, Lauren, and Riley">
             </div>
             <!--ending col-md-3-->
             <div class="col-md-8">
