@@ -91,7 +91,7 @@ main {
   font-size: 1rem;
   color: #1A1A1A;
   max-width: 70ch;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .subhead {
@@ -101,22 +101,15 @@ main {
 }
 
 
-#introText {
-  /* font-size: 1.1rem;
-  font-family: 'lexia', serif;
-  font-style: 'thin';
-  z-index: 100;
-  color: #FFFF; */
-}
-
 .white-text {
   font-family: 'lexia', serif;
   font-weight: lighter;
   font-size: 1.4rem;
   color: #FFFF;
   max-width: 70ch;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
+
 
 .henry-text {
   font-family: 'lexia', serif;
@@ -333,6 +326,10 @@ footer img {
   padding: 1rem;
 }
 
+#mobileExplainer {
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
+}
+
 .socialmedia-text {
   font-family: 'lexia', serif;
   color: #1A1A1A;
@@ -498,11 +495,6 @@ footer img {
     background: linear-gradient(inherit, #005259);
 }
 
-#impactrow1 {
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
-}
-
-
 .caption-padding {
   font-size: 0.9rem;
   padding-top: 0.7rem;
@@ -522,12 +514,11 @@ footer img {
 }
 
 .full-vid video {
-  position: relative;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
   height: auto;
   object-fit: cover;
   overflow: hidden;
@@ -635,6 +626,11 @@ footer img {
   padding: 2rem;
 }
 
+#pullquotecol {
+  background-color: #005259;
+  padding: 2rem;
+}
+
 .pullquote p {
   color: #fff;
 }
@@ -642,7 +638,6 @@ footer img {
 .pullquote img {
   left: 200;
   max-width: 50%;
-
 }
 
 .quote-text{
@@ -1082,14 +1077,22 @@ h6 {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
 }
 
-.impactpic{
-  padding-bottom: 15px;
-}
-
 .impact-videos{
   max-width: 500px;
 }
 
+#impactrow1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#impactrow2 {
+  padding-bottom: 1rem;
+}
+
+.impactpic {
+  margin: 0;
+}
 /*Phone sized media query*/
 
 @media only screen and (max-width: 600px) {
@@ -1122,6 +1125,10 @@ h6 {
     display: none;
   }
   #impact-mobile {
+    display: none;
+  }
+
+  #mobileMichelle {
     display: none;
   }
 
@@ -1173,6 +1180,19 @@ h6 {
     letter-spacing: 4pt;
     text-align: left;
     color: white;
+  }
+
+  .person {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  }
+
+  .pad1 {
+    padding: 1rem;
+  }
+
+  .pad2 {
+    padding: 2rem;
   }
 
 }
