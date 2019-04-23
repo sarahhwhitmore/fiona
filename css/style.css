@@ -611,7 +611,9 @@ footer img {
 
 #pullquotecol {
   background-color: #005259;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pullquote p {
@@ -622,6 +624,8 @@ footer img {
   left: 200;
   max-width: 50%;
 }
+
+
 
 .quote-text{
   font-size: 1.2rem;
@@ -1067,6 +1071,14 @@ h6 {
 #impactrow1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+/* #impactrow1 img {
+  padding-left: 1rem;
+} */
+
+.padleft img {
+  padding-left: 1rem;
 }
 
 #impactrow2 {
