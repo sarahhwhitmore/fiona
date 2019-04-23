@@ -611,9 +611,7 @@ footer img {
 
 #pullquotecol {
   background-color: #005259;
-  padding-top: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .pullquote p {
