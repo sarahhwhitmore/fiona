@@ -39,6 +39,21 @@ $(function() {
         autoAlpha: 0
       });
 
+      var fadeInBlack5 = new TimelineMax()
+        .from(".trigger7", 1, {
+          autoAlpha: 0
+        });
+
+        var fadeInBlack7 = new TimelineMax()
+          .from(".trigger8", 1, {
+            autoAlpha: 0
+          });
+
+          var fadeInBlack8 = new TimelineMax()
+            .from(".trigger9", 1, {
+              autoAlpha: 0
+            });
+
   /* STEP 2: Create animation if desired
     var slideBox = new TimelineMax()
                 });*/
@@ -171,7 +186,7 @@ $(function() {
     new ScrollMagic.Scene({
         triggerElement: '#swimmingFluff',
         triggerHook: 0,
-        duration: '300%'
+        duration: '200%'
       })
       .setPin('#swimmingFluff', { pushFollowers: false })
       .addTo(controller);
@@ -189,21 +204,51 @@ $(function() {
         .setTween(fadeInBlack4)
         .addTo(controller);
 
+      // pin crowds video
+          new ScrollMagic.Scene({
+              triggerElement: '#crowds',
+              triggerHook: 0,
+              duration: '200%'
+            })
+            .setPin('#crowds', { pushFollowers: false })
+            .addTo(controller);
 
-      // fade to darker after swimming video
-      // new ScrollMagic.Scene({
-      //     triggerElement: ".trigger6",
-      //     triggerHook: "onEnter",
-      //     duration: "100%"
-      //   })
-      //   // .setPin("pinned-cont6", {  pushFollowers: false  })
-      //   .setTween(fadeInBlack4)
-      //   .addIndicators()
-      //   .addTo(controller);
+      // new fade to content after crowds vid
+            new ScrollMagic.Scene({
+                triggerElement: ".trigger9",
+                triggerHook: "onLeave",
+                duration: "100%"
+              })
 
+              .setPin(".pinned-cont9", {
+                pushFollowers: false
+              })
+              .setTween(fadeInBlack8)
+              .addTo(controller);
 
+// pin 2nd birthday pic
+        new ScrollMagic.Scene({
+            triggerElement: '#ch3',
+            triggerHook: 0,
+            duration: '200%'
+          })
+          .setPin('#ch3', {
+            pushFollowers: false
+          })
+          .addTo(controller);
 
+        // fade 2nd birthday pic
+        new ScrollMagic.Scene({
+            triggerElement: ".trigger8",
+            triggerHook: "onLeave",
+            duration: "200%"
+          })
 
+          .setPin(".pinned-cont8", {
+            pushFollowers: false
+          })
+          .setTween(fadeInBlack7)
+          .addTo(controller);
 
 
   // pin happy family pic

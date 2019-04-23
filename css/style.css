@@ -85,42 +85,6 @@ main {
   margin: 40px 0;
 }
 
-
-.overlay1 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text1 {
-  color: white;
-  font-size: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: left;
-}
-
-.image1 {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .black-text {
   font-family: 'lexia', serif;
   font-weight: lighter;
@@ -362,6 +326,7 @@ footer img {
 #socialMedia {
   padding-top: 5vh;
   padding-bottom: 5vh;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
 }
 
 #icons i {
@@ -508,8 +473,12 @@ footer img {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
 }
 
-#impactIntro {
+#bifiText {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
+}
+
+#bifiText p {
+  padding: 1rem;
 }
 
 #hospital {
@@ -524,6 +493,15 @@ footer img {
 #foodInfo {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
 }
+
+#impactIntro {
+    background: linear-gradient(inherit, #005259);
+}
+
+#impactrow1 {
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
+}
+
 
 .caption-padding {
   font-size: 0.9rem;
@@ -892,7 +870,14 @@ h6 {
 }
 
 #ch3 {
-
+  background: url(../img/2nd-birth.jpg);
+  background-color: #253440;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 #ch4 {
@@ -903,18 +888,6 @@ h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-}
-
-#vid1 {
-  background: url(../img/swimming.mp4);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  z-index: 10100;
-  background-attachment: fixed;
 }
 
 .map {
@@ -1072,6 +1045,25 @@ h6 {
   width: 100vw;
 }
 
+#row8 {
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
+  height: 100vh;
+  width: 100vw;
+}
+
+#row9 {
+  background: rgba(0,82,89, 0.8);
+  height: 100vh;
+  width: 100vw;
+}
+
+#row10 {
+  background: rgba(0,82,89, 0.8);
+  height: 100vh;
+  width: 100vw;
+}
+
+
 #nurses-img{
   max-height: 500px;
 }
@@ -1084,6 +1076,10 @@ h6 {
   padding-top: 2rem;
   padding-bottom: 2rem;
   /* background: linear-gradient(rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%); */
+}
+
+#wholeImpact {
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,245,244,1) 100%);
 }
 
 .impactpic{
