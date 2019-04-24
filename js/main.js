@@ -131,7 +131,7 @@ $(function() {
   new ScrollMagic.Scene({
       triggerElement: '#birth',
       triggerHook: 0,
-      duration: '200%'
+      duration: '150%'
     })
     .setPin('#birth', {
       pushFollowers: false
