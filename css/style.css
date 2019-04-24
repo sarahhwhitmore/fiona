@@ -166,6 +166,7 @@ main {
   color: #ffffff;
   max-width: 50ch;
   padding: 1rem;
+  text-align: center;
 }
 
 .explainer-text-black {
@@ -174,6 +175,10 @@ main {
   font-weight: 500;
   color: #1A1A1A;
   max-width: 65ch;
+}
+
+#rip-text{
+  text-align: center;
 }
 
 #sonogramText2 {
