@@ -145,7 +145,7 @@
 
     <!-- birth video -->
     <div class="container-fluid bgblack" id="birth">
-      <div class="row h100m d-flex justify-content-center">
+      <div class="row h100m d-flex justify-content-center" id="birthRow">
         <div class="col-10 embed-responsive">
           <iframe src="https://player.vimeo.com/video/330366101?color=83a03d&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allowfullscreen></iframe>
           <script src=“https://player.vimeo.com/api/player.js”> </script> <!--ending col-sm-12-->
@@ -312,13 +312,9 @@
 <!--ending container-fluid-->
 
   <!--ending explainer section-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <div id="ch1"> </div>
-    </div>
-  </div>
-<div>
+
+      <div id="ch1">
+      </div>
 
    <div class="container-fluid bgwhite" id="milkingText">
      <div class="row h100m justify-content-center align-items-center">
@@ -389,7 +385,7 @@
 
     <!--Cinci Children's Hospital-->
     <div class="container-fluid bgwhite" id="hospital">
-      <div class="row h50m d-flex justify-content-center align-items-center">
+      <div class="row d50m d-flex justify-content-center align-items-center">
         <div class="col-lg-5 col-sm-10">
           <h3 class="subhead pad1">Seeking Outside Help</h3>
           <p class="black-text pad1"> Fiona’s veins were too fragile to allow an IV placement for life-saving fluids. Rushing against the clock, the zoo reached out to the Cincinnati Children’s Vascular Access Team to provide a special IV catheter. Drip
@@ -403,14 +399,9 @@
         </div>
         <!--closing col-7-->
       </div>
-      <!--ending row no gutter-->
-    </div>
-    <!--ending container-->
-    <!--ending Cinci Children's Hospital-->
 
-    <!-- Learning to Swim -->
-    <div class="container-fluid pad1" id="swimming">
-      <div class="row h50m d-flex justify-content-center align-items-center">
+<!-- Learning to Swim text and video -->
+      <div class="row d50m d-flex justify-content-center align-items-center">
         <div class="col-lg-5 col-sm-10">
           <h3 class="subhead">Learning to Swim</h3>
            <p class="black-text"> Once Fiona began to walk and feed on her own, she could move on to learning other skills. Before she could meet Bibi, Fiona needed to learn how to nurse on her own, walk, swim and get a lot bigger, for her own safety.</p>
@@ -426,7 +417,8 @@
       </div>
       <!--ending row no gutter-->
     </div>
-    <!--closing container-->
+    <!--ending container-->
+    <!--ending Cinci Children's Hospital-->
 
     <div id="swimmingFluff">
       <div class="row h100m d-flex justify-content-center align-items-end">
@@ -534,7 +526,7 @@
     <div class="container-fluid" id="bifiText">
       <div class="row h100m d-flex justify-content-center align-items-center">
         <div class="col-lg-5 col-sm-10">
-          <p class="black-text">Since then, Bibi and Fiona (known by their celebrity name as BiFi, pronounced <i>beefy</i>), recognize that he is gone but are still getting by just fine as a bloat of two. Fiona has continued to grow with no major health issues.
+          <p class="black-text">Since then, Bibi and Fiona (known by their celebrity name as BiFi, pronounced <i>beefy</i>), recognize that he is gone but are still getting by just fine as a bloat of two. Fiona has continued to grow with no major health issues.</p>
         </div>
 
         <div class="col-lg-5 col-sm-12">
@@ -558,7 +550,7 @@
     <div class="container-fluid bggradient" id="sinceThen">
       <div class="row h100m d-flex justify-content-center align-items-center">
         <div class="col-lg-8 col-xs-11">
-          <p class="big-text" data-aos="fade-up" data-aos-duration="8000" data-aos-easing="ease-in-sine">Fiona celebrated her 2nd birthday on January 24, 2019. She has gained over 1,000 pounds since she was born!</p>
+          <p class="white-text" data-aos="fade-up" data-aos-duration="8000" data-aos-easing="ease-in-sine">Fiona celebrated her 2nd birthday on January 24, 2019. Considered the equivalent of a school-age child, Fiona still lives at home with her mom, has gained over 1,000 pounds since birth, and continues to grow and learn as children do.</p>
         </div>
       </div>
     </div>
@@ -593,8 +585,8 @@
         <!-- impact intro text  -->
         <div class="container-fluid" id="impactIntro">
           <div class="row d-flex h100m justify-content-center align-items-center">
-            <div class="col-10 img-responsive">
-              <p class='big-text'>As of April 2019, Fiona is still sassy as ever and has left a huge impact on her friends, caretakers, community and the world. </p>
+            <div class="col-lg-8 col-xs-11">
+              <p class='white-text'>As of April 2019, Fiona is still sassy as ever and has left a huge impact on her friends, caretakers, community and the world. She has a loyal worldwide fanbase has showered her with constant attention. Her most popular video has over 15 million views and her official Facebook video series, <i>The Fiona Show</i>, has more than 1.6 million followers. </p>
             </div>
           </div>
         </div>
@@ -670,22 +662,33 @@
 
       </div>
       <!--ending row-->
-      <div class="row d-flex justify-content-center align-items-start">
 
-        <div class="col-lg-6" id="pullquotecol">
+
+      <div class="row d-flex justify-content-center align-items-center no-gutters" id="impactrow2">
+          <div class="col-3">
+                <img src="img/FiMerch_16.jpg" class="impactpic img-fluid" id="impactrow2" alt="Fiona bobble heads on display in a zoo gift shop">
+          </div>
+
+          <div class="col-3 padleft">
+            <img src="img/FiMerch_15.jpg" class="impactpic img-fluid" alt="Fiona stuffed animals for sale on a wooden shelf in a zoo gift shop">
+          </div>
+
+          <div class="col-3 padleft">
+            <img src="img/FiMerch_18.jpg" class="impactpic img-fluid" alt="Michelle Curley, the zoo's communications director, shows her Fiona tattoo on her upper back.">
+              <p class="black-text caption-padding">Michelle Curley, the zoo's Communications Director, stands in front of her office's impressive collection of Fiona merchandise and pulls her hair to the side to show her Fiona tattoo.</p>
+          </div>
+
+      </div>
+
+
+      <div class="row d-flex justify-content-center align-items-start">
+        <div class="col-lg-9" id="pullquotecol">
             <p class="quote-text">"Some of the biggest impact stories I hear are [from] those that have spent a lot of time in a hospital, themselves or their children, and they say that they would watch her social media updates every day and it kind of kept them going and help them fight the fight with a positive attitude and they believed in themselves, in Fiona, that if a baby hippo can make it, so can they." </p>
             <p class="quote-person">Jenna Wingate</p>
             <p class="quote-person">Senior Keeper, Cincinnati Zoo & Botanical Garden</p>
-        </div> <!-- end pull quote big col -->
-
-          <div class="col-lg-3">
-              <img src="img/FiMerch_16.jpg" class="impactpic img-fluid" id="impactrow2" alt="Fiona bobble heads on display in a zoo gift shop">
-              <div id="desktopMichelle">
-              <img src="img/FiMerch_18.jpg" class="impactpic img-fluid" alt="Michelle Curley, the zoo's communications director, shows her Fiona tattoo on her upper back.">
-                <p class="black-text caption-padding">Michelle Curley, the zoo's Communications Director, stands in front of her office's impressive collection of Fiona merchandise and pulls her hair to the side to show her Fiona tattoo.</p>
-              </div>
         </div>
-      </div>
+      </div> <!-- end pull quote row -->
+
 
         <div id="impact-vid">
           <div class="row d-flex justify-content-center align-items-center">
@@ -752,12 +755,22 @@
         <div class="container-fluid bgteal2" id="credits">
           <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-4 col-sm-12">
-              <img class="img-fluid" src="img/grouppic.JPG" alt="Sarah, Fiona, Lauren, and Riley">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-6">
+                    <a href="http://2019.soulofathens.com/"><img src="img/SOA_2019_logo_transparent.png" class="img-fluid" width="250px"></a>
+                </div>
+              <div class="col-6">
+                <img class="img-fluid" src="img/grouppic.JPG" alt="Sarah, Fiona, Lauren, and Riley">
+              </div>
+
             </div>
+          </div>
+
+
             <!--ending col-md-3-->
             <div class="col-md-8">
-              <div class="row d-flex">
-                <div class="col-md-4 person pad2">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-3 person pad2">
                   <h3>Sarah H. Whitmore</h3>
                   <h3><i>Lead Developer</i></h3>
                   <a href="https://www.linkedin.com/in/sarah-whitmore-859bb6105/"><span style="font-size: 2em; color: #fff;">
@@ -770,7 +783,7 @@
                 </div>
                 <!--ending Sarah-->
 
-                <div class="col-md-4 person pad2">
+                <div class="col-md-3 person pad2">
                   <h3>Lauren Klintworth</h3>
                   <h3><i>UX Designer & Developer</i></h3>
                   <a href="https://www.linkedin.com/in/lauren-klintworth/"><span style="font-size: 2em; color: #fff;">
@@ -783,7 +796,7 @@
                 </div>
                 <!--ending Lauren-->
 
-                <div class="col-md-4 person pad2">
+                <div class="col-md-3 person pad2">
                   <h3>Riley Watson</h3>
                   <h3><i>Video Editor & Illustrator</i></h3>
                   <a href="https://www.linkedin.com/in/riley-watson-92746b108/"><span style="font-size: 2em; color: #fff;">
@@ -796,23 +809,20 @@
                 </div>
                 <!--ending Riley col-->
 
-
               </div> <!-- ending row -->
+            </div>
 
-              <div class="row d-flex justify-content-end align-items-center">
-                <div class="col-md-12 pad2">
-                  <h6>Copyright &copy 2019 School of Visual Communication at Ohio University. Video provided by the Cincinnati Zoo & Botanical Garden. Additional photo and video provided by Nick Bolin and Sarah H. Whitmore.</h6>
-                </div>
-                <!--ending copyright-->
-              </div>
 
-              <div class="row d-flex justify-content-end align-items-center">
-                <div class="col-md-12 pad2">
-                    <a href="http://2019.soulofathens.com/">
-                       <img src="img/SOA_2019_logo_transparent.png" class="img-fluid" width="250px"></a>
+          <div class="col-md-4 pad2">
+          </div>
 
-                </div>
-              </div>
+            <div class="col-md-8 pad2 justify-content-end">
+              <h6>Copyright &copy 2019 School of Visual Communication at Ohio University. Photo and video provided by the Cincinnati Zoo & Botanical Garden. <br/>
+                Additional photo and video provided by Nick Bolin and Sarah H. Whitmore.</h6>
+            </div>
+
+
+
 
               <!--ending row-->
             </div>
