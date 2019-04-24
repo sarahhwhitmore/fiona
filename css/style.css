@@ -308,6 +308,7 @@ footer img {
   color: #1A1A1A;
   text-align: center;
   font-size: 1.4rem;
+  padding-top: 20px;
 }
 
 .thumbnail {
@@ -604,9 +605,7 @@ video::-webkit-media-controls {
   font-weight: thin;
 }
 
-.impactpic img {
-  padding: 2%;
-}
+
 
 .centered{
   position: absolute;
@@ -625,6 +624,14 @@ video::-webkit-media-controls {
   padding-bottom: 20px;
 }
 
+#impact-row{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#impact-first{
+  padding-top: 20px;
+}
 /* #animation {
     position: relative;
     padding-bottom: 56.75%;
