@@ -7,7 +7,6 @@ video::-webkit-media-controls {
     display:none !important;
 }
 
-
 .bggreen1 {
   background-color: #83a03d;
 }
@@ -950,7 +949,7 @@ h6 {
 
 #row2 {
   background-color: #005259;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
 }
 
@@ -969,7 +968,7 @@ h6 {
 /* color overlay on bottle full photo */
 #row5 {
   background-color: #000;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
 }
 
