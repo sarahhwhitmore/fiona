@@ -20,6 +20,28 @@
 
   <link rel="shortcut icon" type="image/png" href="img/float_favicon.png"/>
 
+  <script>
+
+  //For Firefox we have to handle it in JavaScript
+  var vids = $("video");
+  $.each(vids, function(){
+         this.controls = false;
+  });
+  //Loop though all Video tags and set Controls as false
+
+  $("video").click(function() {
+    //console.log(this);
+    if (this.paused) {
+      this.play();
+    } else {
+      this.pause();
+    }
+  });
+
+  // document.getElementById("newintro").controls = false;
+
+  </script> 
+
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -75,10 +97,6 @@
     </div>
     <!--ending container fluid-->
 
-    <script>
-    document.getElementById("newintro").controls = false;
-
-    </script>
 
     <!--- fading background over home -->
     <div row id="row2" class="trigger pinned-cont">

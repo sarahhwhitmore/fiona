@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+
 .bggreen1 {
   background-color: #83a03d;
 }
@@ -525,9 +531,7 @@ footer img {
   height: auto;
 }
 
-video::-webkit-media-controls {
-    display:none !important;
-}
+
 
 /* #newintro {
   width: 100vw;
