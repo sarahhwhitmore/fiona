@@ -469,6 +469,10 @@ footer img {
   padding-bottom: 1.5rem;
 }
 
+#nurse-caption {
+  max-width: 90%;
+}
+
 .caption-padding2 {
   padding-top: 2rem;
 }
@@ -1121,16 +1125,16 @@ h6 {
   }
 
   .person {
-    padding-bottom: 1rem;
-    padding-left: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
   }
 
   .pad1 {
-    padding: 1rem;
+    margin: 1rem;
   }
 
   .pad2 {
-    padding: 2rem;
+    margin: 2rem;
   }
 
   #desktopMichelle{
