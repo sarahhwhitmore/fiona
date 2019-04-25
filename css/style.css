@@ -25,10 +25,12 @@ video::-webkit-media-controls {
 
 .bgteal2 {
   background-color: #005259;
+  height: 100vh;
 }
 
 .bgblack {
   background-color: #000;
+  height: 100vh;
 }
 
 .bggradient {
