@@ -484,6 +484,10 @@ footer img {
   max-width: 90%;
 }
 
+#michelle-caption {
+  max-width 90%;
+}
+
 .caption-padding2 {
   padding-top: 2rem;
 }
@@ -628,12 +632,12 @@ footer img {
 }
 
 #impact-row{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 #impact-first{
-  padding-top: 20px;
+  padding-top: 2rem;
 }
 /* #animation {
     position: relative;
@@ -791,7 +795,7 @@ h6 {
 }
 
 #ch1 {
-  background: url(../img/newborn_small.jpg);
+  background: url(../img/baby_fiona.jpg);
   background-color: #253440;
   background-size: cover;
   background-position: center center;
