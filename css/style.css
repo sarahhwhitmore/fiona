@@ -644,6 +644,10 @@ footer img {
   padding-bottom: 2rem;
 }
 
+#henryPhoto {
+  margin-top: 1rem;
+}
+
 /* #impact-first{
   padding-top: 2rem;
 } */
@@ -1150,11 +1154,17 @@ h6 {
   }
 
   .pad1 {
-    margin: 1rem;
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
   }
 
   .pad2 {
-    margin: 2rem;
+    margin-top: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
   }
 
   #desktopMichelle{
