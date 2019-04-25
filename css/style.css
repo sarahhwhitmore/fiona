@@ -71,6 +71,11 @@ main {
   margin: 40px 0;
 }
 
+.blackcover {
+  background-color: #000;
+  z-index: 100;
+}
+
 .black-text {
   font-family: 'lexia', serif;
   font-weight: lighter;
