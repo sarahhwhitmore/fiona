@@ -72,9 +72,8 @@ body {
   margin: 40px 0;
 } */
 
-.blackcover {
-  background-color: #000;
-  z-index: 100;
+.nooverflow {
+  overflow-x: hidden;
 }
 
 .black-text {
@@ -1077,7 +1076,7 @@ h6 {
   }
 
   .explainer-text-mobile{
-    font-family: lexia, serif;
+    font-family: 'lexia', serif;
     font-size: 20px;
     color: #FFFF;
   }
@@ -1090,6 +1089,7 @@ h6 {
   #explainer-mobile {
     display: none;
   }
+
   #impact-mobile {
     display: none;
   }
