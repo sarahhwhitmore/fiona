@@ -58,7 +58,7 @@ $(function() {
     var slideBox = new TimelineMax()
                 });*/
 
-  // 1. fade in first color
+  // 1. fade in color
   new ScrollMagic.Scene({
       triggerElement: ".trigger",
       triggerHook: "onLeave",
@@ -97,7 +97,7 @@ $(function() {
   new ScrollMagic.Scene({
       triggerElement: '#sonogramVid',
       triggerHook: 0,
-      duration: '220%'
+      duration: '200%'
     })
     .setPin('#sonogramVid', {
       pushFollowers: false
