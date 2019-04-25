@@ -25,7 +25,6 @@ video::-webkit-media-controls {
 
 .bgteal2 {
   background-color: #005259;
-  height: 100vh;
 }
 
 .bgblack {
@@ -65,13 +64,13 @@ body {
   background-repeat: no-repeat;
 }
 
-main {
+/* main {
   background-color: #f7f7f7;
   padding: 20px;
   border-radius: 10px;
   color: #6b6b6b;
   margin: 40px 0;
-}
+} */
 
 .blackcover {
   background-color: #000;
@@ -177,7 +176,7 @@ main {
   font-size: 2.2rem;
   color: #ffffff;
   max-width: 50ch;
-  padding: 1rem;
+  margin: 1rem;
   text-align: center;
 }
 
@@ -238,10 +237,6 @@ main {
 .container-fluid {
   position: relative;
   padding: 0;
-}
-
-.container {
-  padding: 30px 60px;
 }
 
 .bd-placeholder-img {
@@ -308,7 +303,7 @@ footer img {
 }
 
 #icons i {
-  padding: 1rem;
+  margin: 1rem;
 }
 
 #mobileExplainer {
@@ -461,7 +456,7 @@ footer img {
 }
 
 #bifiText p {
-  padding: 1rem;
+  margin: 1rem;
 }
 
 #hospital {
@@ -585,10 +580,10 @@ footer img {
   padding: 2rem;
 }
 
-#pullquotecol {
+/* #pullquotecol {
   background-color: #005259;
   padding: 2rem;
-}
+} */
 
 .pullquote p {
   color: #fff;
