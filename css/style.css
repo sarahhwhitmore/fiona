@@ -1041,7 +1041,6 @@ h6 {
   max-width: 500px;
 }
 
-
 .padleft img {
   padding-left: 1rem;
 }
@@ -1158,17 +1157,13 @@ h6 {
   }
 
   .pad1 {
-    margin-top: 0;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-bottom: 0;
   }
 
   .pad2 {
-    margin-top: 0;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-bottom: 0;
   }
 
   #desktopMichelle{
