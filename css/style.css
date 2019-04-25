@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 video::-webkit-media-controls {
     display:none !important;
 }
@@ -645,9 +644,9 @@ footer img {
   padding-bottom: 2rem;
 }
 
-#impact-first{
+/* #impact-first{
   padding-top: 2rem;
-}
+} */
 /* #animation {
     position: relative;
     padding-bottom: 56.75%;
@@ -1042,14 +1041,6 @@ h6 {
   max-width: 500px;
 }
 
-#impactrow1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-/* #impactrow1 img {
-  padding-left: 1rem;
-} */
 
 .padleft img {
   padding-left: 1rem;
