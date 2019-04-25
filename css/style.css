@@ -802,7 +802,7 @@ h6 {
 }
 
 #ch1 {
-  background: url(../img/bottle2.jpg);
+  background: url(../img/newborn_small.jpg);
   background-color: #253440;
   background-size: cover;
   background-position: center center;
@@ -968,6 +968,7 @@ h6 {
   background-color: #000;
   height: 120vh;
   width: 100vw;
+  padding-bottom: 20vh;
 }
 
 #row4 {
