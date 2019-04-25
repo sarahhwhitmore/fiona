@@ -117,15 +117,15 @@ $(function() {
     .addTo(controller);
 
   // 8. Zoo staff captured the first-ever...
-  new ScrollMagic.Scene({
-      triggerElement: '#sonogramText',
-      triggerHook: 0.4,
-      duration: '50%'
-    })
-    .setPin('#sonogramText', {
-      pushFollowers: true
-    })
-    .addTo(controller);
+  // new ScrollMagic.Scene({
+  //     triggerElement: '#sonogramText',
+  //     triggerHook: 0.4,
+  //     duration: '50%'
+  //   })
+  //   .setPin('#sonogramText', {
+  //     pushFollowers: true
+  //   })
+  //   .addTo(controller);
 
   // pin birth video
   new ScrollMagic.Scene({
