@@ -52,6 +52,7 @@ video::-webkit-media-controls {
 html {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -82,7 +83,7 @@ body {
   font-size: 1rem;
   color: #1A1A1A;
   max-width: 70ch;
-  /* padding: 1rem; */
+
 }
 
 .subhead {
@@ -436,7 +437,7 @@ footer img {
 .milking-vid {
   position: relative;
   padding-bottom: 56.75%;
-  padding-top: 0;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -1171,5 +1172,15 @@ h6 {
     display:none;
   }
 
+}
 
+
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
 }
