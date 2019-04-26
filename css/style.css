@@ -64,14 +64,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/* main {
-  background-color: #f7f7f7;
-  padding: 20px;
-  border-radius: 10px;
-  color: #6b6b6b;
-  margin: 40px 0;
-} */
-
 .nooverflow {
   overflow-x: hidden;
 }
@@ -82,7 +74,6 @@ body {
   font-size: 1rem;
   color: #1A1A1A;
   max-width: 70ch;
-
 }
 
 .subhead {
@@ -139,10 +130,6 @@ body {
   margin-bottom: 400px;
 }
 
-/* #birth iframe {
-  z-index: 10;
-} */
-
 #birth {
   padding-bottom: 10rem;
 }
@@ -155,6 +142,7 @@ body {
 
 #Fionapeek img {
   height: auto;
+  background-color: #000;
 }
 
 #hungryHippo {
@@ -185,10 +173,6 @@ body {
   font-weight: 500;
   color: #1A1A1A;
   max-width: 65ch;
-}
-
-#rip-text{
-  text-align: center;
 }
 
 #sonogramText2 {
@@ -544,17 +528,6 @@ footer img {
   height: auto;
 }
 
-
-
-/* #newintro {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  overflow: hidden;
-} */
-
-/* Becky said use fixed for position here  */
-
 #sonogramVid {
   width: 100vw;
   height: 100vh;
@@ -594,8 +567,6 @@ footer img {
   max-width: 50%;
 }
 
-
-
 .quote-text{
   font-size: 1.2rem;
   color: #fff;
@@ -621,8 +592,6 @@ footer img {
   font-weight: thin;
 }
 
-
-
 .centered{
   position: absolute;
   top: 50%;
@@ -643,27 +612,6 @@ footer img {
 #henryPhoto {
   margin-top: 1rem;
 }
-
-/* #impact-first{
-  padding-top: 2rem;
-} */
-/* #animation {
-    position: relative;
-    padding-bottom: 56.75%;
-    padding-top: 0;
-    overflow: hidden;
-} */
-
-/* #animation iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-} */
-
-/* scrollspy */
 
 .list-group a {
   color: red;
@@ -766,7 +714,6 @@ h6 {
   z-index: 10000;
 }
 
-
 .btn-link {
   color: #FFFF;
   font-family: lexia, serif;
@@ -851,7 +798,6 @@ h6 {
   border:none;
   position: relative;
   display: inline-block;
-
 }
 
 .map img {
@@ -1113,7 +1059,6 @@ h6 {
   }
 }
 
-
 /*anything smaller than a tablet */
 
 @media only screen and (max-width: 991.98px) {
@@ -1171,7 +1116,6 @@ h6 {
   }
 
 }
-
 
 @media screen and (max-width: 667px) {
     body {
