@@ -140,7 +140,7 @@ $(function() {
   new ScrollMagic.Scene({
       triggerElement: ".trigger3",
       triggerHook: "0",
-      duration: "150%"
+      duration: "300%"
     })
     .setPin(".pinned-cont3", {
       pushFollowers: false
