@@ -36,7 +36,7 @@ video::-webkit-media-controls {
 }
 
 .bggradient {
-  background: linear-gradient(inherit, #000);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 79%, rgba(0,0,0,0) 100%);
 }
 
 .bggradientteal {
