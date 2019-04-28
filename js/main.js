@@ -162,7 +162,7 @@ $(function() {
   new ScrollMagic.Scene({
       triggerElement: ".trigger4",
       triggerHook: "onLeave",
-      duration: "80%"
+      duration: "50%"
     })
 
     .setPin(".pinned-cont4", {
