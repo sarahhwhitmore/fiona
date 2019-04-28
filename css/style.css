@@ -68,6 +68,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.img-fluid2 {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
 .nooverflow {
   overflow-x: hidden;
 }
