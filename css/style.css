@@ -507,6 +507,14 @@ footer img {
   max-width 90%;
 }
 
+#Michelleimg {
+  align-self: center;
+}
+
+#grouppic {
+  align-self: center;
+}
+
 .caption-padding2 {
   padding-top: 2rem;
 }
